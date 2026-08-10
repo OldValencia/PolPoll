@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PolPoll - Symulator Karty Polaka</title>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="background-animation">
+        <div class="blob red"></div>
+        <div class="blob white"></div>
+    </div>
+
+    <div class="container">
+        <!-- Start Screen -->
+        <div id="start-screen" class="screen active">
+            <header>
+                <h1>PolPoll 🇵🇱</h1>
+                <p>Przygotowanie do egzaminu na Kartę Polaka</p>
+            </header>
+
+            <div class="glass-panel config-panel">
+                <h2>Konfiguracja testu</h2>
+                
+                <div class="form-group">
+                    <label>Kategorie:</label>
+                    <div class="checkbox-group" id="categories-container">
+                        <!-- Populated by JS -->
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="num-questions">Liczba pytań:</label>
+                    <select id="num-questions">
+                        <option value="10">10 pytań (Szybka powtórka)</option>
+                        <option value="20" selected>20 pytań (Standard)</option>
+                        <option value="50">50 pytań (Symulacja egzaminu)</option>
+                        <option value="all">Wszystkie dostępne</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="test-mode">Tryb nauki:</label>
+                    <select id="test-mode">
+                        <option value="flashcard">Tryb Ustny (Fiszki - Polecane)</option>
+                        <option value="typing">Tryb Pisemny (Sprawdzanie słów kluczowych)</option>
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label class="checkbox-label" style="font-weight: 600; color: #fff;">
+                        <input type="checkbox" id="tts-toggle"> Odtwarzaj pytania na głos (Lektor polski)
+                    </label>
+                </div>
+
+                <button id="start-btn" class="primary-btn">Rozpocznij Test</button>
+            </div>
+        </div>
+
+        <!-- Quiz Screen -->
+        <div id="quiz-screen" class="screen">
+            <div class="progress-container">
+                <div class="progress-info">
+                    <span id="question-counter">Pytanie 1 z 20</span>
+                    <span id="category-badge" class="badge">Historia</span>
+                </div>
+                <div class="progress-bar">
+                    <div id="progress-fill"></div>
+                </div>
+            </div>
+
+            <div class="glass-panel question-panel">
+                <h2 id="question-text">Tutaj pojawi się pytanie...</h2>
+                
+                <!-- Typing Mode Area -->
+                <div id="typing-area" class="input-area hidden">
+                    <textarea id="user-answer" placeholder="Wpisz swoją odpowiedź tutaj..."></textarea>
+                    <button id="check-btn" class="primary-btn">Sprawdź odpowiedź</button>
+                </div>
+
+                <!-- Flashcard Mode Area -->
+                <div id="flashcard-area" class="input-area">
+                    <button id="show-answer-btn" class="secondary-btn">Pokaż odpowiedź</button>
+                </div>
+
+                <!-- Feedback Area (Hidden initially) -->
+                <div id="feedback-area" class="feedback-panel hidden">
+                    <h3 id="feedback-title">Prawidłowa odpowiedź:</h3>
+                    <p id="correct-answer-text">Tutaj poprawna odpowiedź</p>
+                    
+                    <div id="self-grade-controls" class="grade-controls hidden">
+                        <p>Jak Ci poszło?</p>
+                        <div class="btn-group">
+                            <button class="grade-btn error" data-grade="wrong">Nie wiedziałem ❌</button>
+                            <button class="grade-btn partial" data-grade="partial">Coś świtało 🤨</button>
+                            <button class="grade-btn success" data-grade="correct">Wiedziałem! ✅</button>
+                        </div>
+                    </div>
+
+                    <button id="next-btn" class="primary-btn hidden">Następne pytanie ➔</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Result Screen -->
+        <div id="result-screen" class="screen">
+            <div class="glass-panel result-panel">
+                <h2>Koniec testu!</h2>
+                <div class="score-circle">
+                    <span id="score-percentage">85%</span>
+                </div>
+                <p id="score-text">Odpowiedziałeś poprawnie na 17 z 20 pytań.</p>
+                
+                <div class="mistakes-container hidden" id="mistakes-container">
+                    <h3>Pytania do powtórki:</h3>
+                    <ul id="mistakes-list">
+                        <!-- Populated by JS -->
+                    </ul>
+                </div>
+
+                <div class="action-buttons">
+                    <button id="restart-btn" class="secondary-btn">Wróć do menu</button>
+                    <button id="retry-mistakes-btn" class="primary-btn hidden">Powtórz błędy</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Load data -->
+    <script src="questions.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
