@@ -1,0 +1,19 @@
+{
+  "name": "PolPoll - Karta Polaka i pobyt stały",
+  "short_name": "PolPoll",
+  "description": "Trener do rozmowy na Kartę Polaka i kartę stałego pobytu: fiszki, quiz, prawda/fałsz i powtórki rozłożone w czasie.",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#121214",
+  "theme_color": "#121214",
+  "lang": "pl",
+  "categories": ["education"],
+  "icons": [
+    { "src": "assets/icon.svg", "sizes": "any", "type": "image/svg+xml" },
+    { "src": "assets/icon-192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "assets/icon-512.png", "sizes": "512x512", "type": "image/png" },
+    { "src": "assets/icon-maskable-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ]
+}
