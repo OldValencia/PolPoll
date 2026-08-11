@@ -32,6 +32,58 @@
                 <p>Przygotowanie do rozmowy na Kartę Polaka<br>i na kartę stałego pobytu</p>
             </header>
 
+            <!-- Progress, collapsed by default so the start screen stays lean -->
+            <details class="glass-panel dashboard-panel" id="dashboard">
+                <summary class="dash-summary">
+                    <span class="dash-summary-title">Mój postęp</span>
+                    <span class="dash-summary-value" id="dash-summary-value">—</span>
+                </summary>
+
+                <div class="dash-body">
+                    <div class="dash-main">
+                        <div class="ring-wrap">
+                            <svg class="ring" viewBox="0 0 120 120" aria-hidden="true">
+                                <circle class="ring-track" cx="60" cy="60" r="52"></circle>
+                                <circle id="ring-progress" class="ring-fill" cx="60" cy="60" r="52"></circle>
+                            </svg>
+                            <div class="ring-label">
+                                <strong id="dash-percent">0%</strong>
+                                <small>opanowane</small>
+                            </div>
+                        </div>
+                        <div class="dash-stats">
+                            <div class="stat-tile">
+                                <span class="stat-value" id="dash-due">0</span>
+                                <span class="stat-name">Do powtórki dziś</span>
+                            </div>
+                            <div class="stat-tile">
+                                <span class="stat-value" id="dash-new">0</span>
+                                <span class="stat-name">Nowe pytania</span>
+                            </div>
+                            <div class="stat-tile">
+                                <span class="stat-value" id="dash-learning">0</span>
+                                <span class="stat-name">W trakcie nauki</span>
+                            </div>
+                            <div class="stat-tile">
+                                <span class="stat-value" id="dash-streak">0</span>
+                                <span class="stat-name">Dni z rzędu</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <button id="daily-btn" class="primary-btn big-btn">
+                        <span id="daily-label">Sesja dnia</span> <span id="daily-count" class="pill">0</span>
+                    </button>
+                    <p class="dash-hint" id="daily-hint"></p>
+
+                    <div id="cat-progress-list" class="cat-progress-list"></div>
+
+                    <p class="dash-footer">
+                        <button type="button" class="link-btn danger" id="reset-progress">Wyzeruj postęp</button>
+                    </p>
+                </div>
+            </details>
+
             <!-- Configuration -->
             <div class="glass-panel config-panel">
                 <h2>Własny trening</h2>

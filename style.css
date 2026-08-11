@@ -166,6 +166,55 @@ h2 { font-size: 1.4rem; margin-bottom: 1.25rem; font-weight: 600; }
 
 /* Dashboard -------------------------------------------------------------- */
 
+.dashboard-panel { padding: 0; overflow: hidden; }
+
+.dash-summary {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    cursor: pointer;
+    padding: 1.1rem clamp(1.25rem, 4vw, 2.25rem);
+    list-style: none;
+    user-select: none;
+    transition: background 0.15s;
+}
+
+.dash-summary::-webkit-details-marker { display: none; }
+.dash-summary:hover { background: rgba(255, 255, 255, 0.04); }
+
+/* Chevron drawn in CSS so it can rotate on open without an extra element. */
+.dash-summary::after {
+    content: '';
+    width: 8px;
+    height: 8px;
+    margin-left: 0.15rem;
+    border-right: 2px solid var(--text-muted);
+    border-bottom: 2px solid var(--text-muted);
+    transform: rotate(45deg) translate(-2px, -2px);
+    transition: transform 0.2s;
+}
+
+#dashboard[open] .dash-summary::after { transform: rotate(-135deg) translate(-2px, -2px); }
+
+.dash-summary-title { font-weight: 600; font-size: 1.05rem; }
+
+.dash-summary-value {
+    margin-left: auto;
+    font-size: 0.84rem;
+    color: var(--text-muted);
+    text-align: right;
+}
+
+.dash-summary-value.has-due { color: #fda4af; }
+
+.dash-body {
+    padding: 0 clamp(1.25rem, 4vw, 2.25rem) clamp(1.25rem, 4vw, 2.25rem);
+    border-top: 1px solid var(--glass-border);
+    padding-top: 1.5rem;
+}
+
+.dash-footer { text-align: center; margin-top: 1.25rem; }
+
 .dash-main {
     display: flex;
     align-items: center;
@@ -235,19 +284,7 @@ h2 { font-size: 1.4rem; margin-bottom: 1.25rem; font-weight: 600; }
     font-size: 0.85rem;
 }
 
-.cat-progress-details { margin-top: 1.25rem; }
-
-.cat-progress-details summary {
-    cursor: pointer;
-    color: var(--text-muted);
-    font-size: 0.9rem;
-    padding: 0.4rem 0;
-    user-select: none;
-}
-
-.cat-progress-details summary:hover { color: var(--text-light); }
-
-.cat-progress-list { display: grid; gap: 0.7rem; margin-top: 0.75rem; }
+.cat-progress-list { display: grid; gap: 0.7rem; margin-top: 1.25rem; }
 
 .cat-progress-head {
     display: flex;
@@ -943,4 +980,11 @@ kbd {
         transition-duration: 0.001ms !important;
     }
     .blob { animation: none; }
+}
+
+.dash-hint {
+    text-align: center;
+    font-size: 0.78rem;
+    color: var(--text-muted);
+    margin: -0.35rem 0 0.25rem;
 }

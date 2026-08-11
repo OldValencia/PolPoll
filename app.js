@@ -97,7 +97,11 @@ function migrateLegacy() {
 }
 
 function blankCard() {
-    return { ef: 2.5, reps: 0, interval: 0, due: 0, lapses: 0, correct: 0, wrong: 0, seen: 0, last: 0 };
+    return {
+        ef: 2.5, reps: 0, interval: 0, due: 0, lapses: 0,
+        correct: 0, wrong: 0, seen: 0, last: 0,
+        promotedOn: 0            // day-stamp of the last interval advance
+    };
 }
 
 function saveState() {
@@ -114,27 +118,44 @@ function startOfDay(ts) {
     return d.getTime();
 }
 
-/** quality: 0 = blank, 3 = shaky, 5 = solid (SM-2 scale). */
+/**
+ * quality: 0 = blank, 3 = shaky, 5 = solid (SM-2 scale).
+ *
+ * A card may only be promoted once per calendar day. Grinding the same question
+ * over and over is good practice, but compounding the interval on every pass is
+ * not: six correct answers in one sitting used to push a card 192 days out, so a
+ * single evening of cramming would hide the material until long after the exam.
+ * Extra same-day reviews still count towards accuracy, and getting one wrong
+ * still resets it - they just cannot inflate the schedule.
+ */
 function recordReview(id, quality) {
     const card = state.cards[id] || blankCard();
+    const today = startOfDay(Date.now());
+
     card.seen++;
     card.last = Date.now();
 
     if (quality >= 3) {
         card.correct++;
-        if (card.reps === 0) card.interval = 1;
-        else if (card.reps === 1) card.interval = 3;
-        else card.interval = Math.max(1, Math.round(card.interval * card.ef));
-        card.reps++;
+        if (card.promotedOn !== today) {
+            if (card.reps === 0) card.interval = 1;
+            else if (card.reps === 1) card.interval = 3;
+            else card.interval = Math.max(1, Math.round(card.interval * card.ef));
+            card.reps++;
+            card.promotedOn = today;
+            card.ef = Math.max(1.3, card.ef + (0.1 - (5 - quality) * (0.08 + (5 - quality) * 0.02)));
+        }
     } else {
         card.wrong++;
         card.lapses++;
         card.reps = 0;
         card.interval = 0;               // due again today
+        // Relearning it later the same day should count, so re-arm the promotion.
+        card.promotedOn = 0;
+        card.ef = Math.max(1.3, card.ef + (0.1 - (5 - quality) * (0.08 + (5 - quality) * 0.02)));
     }
 
-    card.ef = Math.max(1.3, card.ef + (0.1 - (5 - quality) * (0.08 + (5 - quality) * 0.02)));
-    card.due = startOfDay(Date.now()) + card.interval * DAY_MS;
+    card.due = today + card.interval * DAY_MS;
 
     state.cards[id] = card;
     saveState();
@@ -470,7 +491,9 @@ function cacheDom() {
     const ids = {
         catContainer: 'categories-container', catAll: 'cat-all', catNone: 'cat-none',
         startBtn: 'start-btn', dailyBtn: 'daily-btn', dailyCount: 'daily-count',
-        readerBtn: 'reader-btn', dbCount: 'db-count',
+        readerBtn: 'reader-btn', resetBtn: 'reset-progress', dbCount: 'db-count',
+        dashSummaryValue: 'dash-summary-value',
+        dailyLabel: 'daily-label', dailyHint: 'daily-hint',
         numQuestions: 'num-questions', modeSelect: 'test-mode', modeHint: 'mode-hint',
         sprintToggle: 'sprint-toggle', sprintWrap: 'sprint-wrap',
         ttsToggle: 'tts-toggle',
@@ -519,9 +542,8 @@ function switchScreen(name) {
 /* -------------------------------------------------------------- dashboard */
 
 function renderDashboard() {
-    // The dashboard panel is intentionally absent from the start screen. Spaced
-    // repetition still runs underneath: `priority()` orders every training set
-    // by what is overdue. This stays a no-op unless the panel is put back.
+    // The panel lives inside a collapsed <details>, so this also has to keep the
+    // summary line meaningful while it is shut.
     if (!UI.ringProgress) return;
 
     const total = DB.length;
@@ -545,9 +567,27 @@ function renderDashboard() {
     UI.dashLearning.textContent = counts.learning + counts.hard;
     UI.dashStreak.textContent = (state.meta && state.meta.streak) || 0;
 
+    // The daily set is overdue reviews PLUS an allowance of unseen cards, so the
+    // label has to say which. Calling 12 brand-new questions a "powtórka" while
+    // the tile above reads "Do powtórki dziś: 0" is just a contradiction.
+    const freshInQueue = dailyQueue.length - dueCount;
     UI.dailyCount.textContent = dailyQueue.length;
+    UI.dailyLabel.textContent = dueCount ? 'Powtórka dnia' : 'Nauka dnia';
+    UI.dailyHint.textContent = dailyQueue.length
+        ? [
+            dueCount ? `${dueCount} ${plural(dueCount, 'powtórka', 'powtórki', 'powtórek')}` : null,
+            freshInQueue ? `${freshInQueue} ${plural(freshInQueue, 'nowe', 'nowe', 'nowych')}` : null
+          ].filter(Boolean).join(' + ')
+        : 'Na dziś nic nie zaplanowano — wszystko powtórzone.';
+
     UI.dailyBtn.disabled = dailyQueue.length === 0;
     UI.dailyBtn.classList.toggle('is-disabled', dailyQueue.length === 0);
+
+    // Collapsed summary: lead with what needs doing today, fall back to progress.
+    UI.dashSummaryValue.textContent = dueCount
+        ? `${dueCount} do powtórki · ${percent}% opanowane`
+        : `${percent}% opanowane · ${counts.new} nowych`;
+    UI.dashSummaryValue.classList.toggle('has-due', dueCount > 0);
 
     // Per-category bars
     const byCategory = {};
@@ -1414,6 +1454,18 @@ function bindEvents() {
     });
     UI.readerReveal.addEventListener('change', event => {
         readerState.reveal = event.target.checked; renderReader();
+    });
+
+    UI.resetBtn.addEventListener('click', () => {
+        if (!window.confirm('Na pewno wyzerować cały postęp nauki? Tej operacji nie można cofnąć.')) return;
+        // Wipe what was learned, but keep the chosen settings - this button
+        // resets progress, not preferences.
+        const prefs = state.meta && state.meta.prefs;
+        state = { cards: {}, meta: prefs ? { prefs } : {} };
+        Store.remove(CONFIG.legacyKey);
+        saveState();
+        renderDashboard();
+        toast('Postęp wyzerowany.');
     });
 
     // Checking the toggle is itself a user gesture - the ideal moment to unlock
