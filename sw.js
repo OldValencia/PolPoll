@@ -1,6 +1,6 @@
 /* PolPoll service worker - the whole app is static, so it can run fully offline.
    Bump CACHE_VERSION whenever the shell or the question base changes. */
-const CACHE_VERSION = 'polpoll-v2-10';
+const CACHE_VERSION = 'polpoll-v2-12';
 
 const SHELL = [
     './',
@@ -8,6 +8,7 @@ const SHELL = [
     './style.css',
     './app.js',
     './questions.js',
+    './timeline.js',
     './manifest.webmanifest',
     './assets/icon.svg',
     './assets/icon-192.png',

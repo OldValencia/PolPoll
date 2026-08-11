@@ -988,3 +988,183 @@ kbd {
     color: var(--text-muted);
     margin: -0.35rem 0 0.25rem;
 }
+
+/* Study screen ----------------------------------------------------------- */
+
+.study-controls { display: grid; gap: 0.9rem; }
+
+.study-tabs { display: flex; gap: 0.5rem; }
+
+.study-tab {
+    flex: 1;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid var(--glass-border);
+    padding: 0.7rem 0.5rem;
+    font-size: 0.92rem;
+}
+
+.study-tab:hover { background: rgba(255, 255, 255, 0.1); }
+
+.study-tab.is-active {
+    background: rgba(225, 29, 72, 0.18);
+    border-color: var(--primary-red);
+    color: #fff;
+}
+
+.study-meta {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    font-size: 0.8rem;
+    flex-wrap: wrap;
+}
+
+.study-body { display: grid; gap: 0.6rem; }
+
+/* One anchor plus everything hanging off it. */
+.tl-anchor {
+    position: relative;
+    background: var(--glass-bg);
+    border: 1px solid var(--glass-border);
+    border-radius: 18px;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    padding: 0.4rem 0.5rem 0.5rem;
+    margin-bottom: 0.6rem;
+}
+
+.tl-children {
+    position: relative;
+    margin-left: 1.4rem;
+    padding-left: 1rem;
+    border-left: 2px solid rgba(225, 29, 72, 0.28);
+}
+
+.tl-node > summary {
+    display: flex;
+    align-items: center;
+    gap: 0.7rem;
+    padding: 0.6rem 0.7rem;
+    cursor: pointer;
+    list-style: none;
+    border-radius: 10px;
+    transition: background 0.15s;
+}
+
+.tl-node > summary::-webkit-details-marker { display: none; }
+.tl-node > summary:hover { background: rgba(255, 255, 255, 0.05); }
+
+.tl-year {
+    font-variant-numeric: tabular-nums;
+    font-weight: 700;
+    font-size: 0.95rem;
+    color: var(--text-muted);
+    min-width: 3.4em;
+    flex-shrink: 0;
+}
+
+.tl-node.is-anchor > summary { padding: 0.8rem 0.7rem; }
+.tl-node.is-anchor .tl-year { font-size: 1.45rem; color: #fda4af; }
+
+.tl-title { flex: 1; font-size: 0.98rem; }
+.tl-node.is-anchor .tl-title { font-size: 1.1rem; font-weight: 600; }
+
+/* The whole point: the meaning stays masked until you ask for it. */
+.tl-node:not([open]) .tl-real { display: none; }
+.tl-node[open] .tl-mask { display: none; }
+.tl-mask { color: rgba(255, 255, 255, 0.22); letter-spacing: 0.08em; }
+
+.tl-badge {
+    flex-shrink: 0;
+    font-size: 0.72rem;
+    color: var(--text-muted);
+    background: rgba(255, 255, 255, 0.06);
+    border: 1px solid var(--glass-border);
+    padding: 0.15rem 0.55rem;
+    border-radius: 999px;
+    white-space: nowrap;
+}
+
+.tl-node.is-anchor .tl-badge {
+    color: #fda4af;
+    background: rgba(225, 29, 72, 0.15);
+    border-color: rgba(225, 29, 72, 0.3);
+}
+
+.tl-body { padding: 0 0.7rem 0.8rem 0.7rem; }
+.tl-note { font-size: 0.92rem; line-height: 1.55; color: #d4d4d8; margin-bottom: 0.6rem; }
+
+.tl-hook {
+    font-size: 0.85rem;
+    line-height: 1.5;
+    color: #fcd34d;
+    background: rgba(245, 158, 11, 0.1);
+    border: 1px solid rgba(245, 158, 11, 0.25);
+    border-radius: 10px;
+    padding: 0.55rem 0.75rem;
+    margin-bottom: 0.6rem;
+}
+
+.tl-questions { margin-top: 0.75rem; }
+
+.tl-questions-label {
+    display: block;
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    letter-spacing: 0.07em;
+    color: var(--text-muted);
+    margin-bottom: 0.4rem;
+}
+
+.tl-q {
+    border-left: 2px solid var(--glass-border);
+    padding-left: 0.7rem;
+    margin-bottom: 0.4rem;
+}
+
+.tl-q > summary {
+    cursor: pointer;
+    font-size: 0.88rem;
+    list-style: none;
+    padding: 0.2rem 0;
+    color: var(--text-light);
+}
+
+.tl-q > summary::-webkit-details-marker { display: none; }
+.tl-q > summary:hover { color: #fda4af; }
+.tl-q[open] > summary { color: #fda4af; }
+.tl-q p { font-size: 0.88rem; line-height: 1.55; color: var(--text-muted); padding: 0.25rem 0 0.4rem; }
+
+.topic-block {
+    background: var(--glass-bg);
+    border: 1px solid var(--glass-border);
+    border-radius: 16px;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    overflow: hidden;
+}
+
+.topic-block > summary {
+    display: flex;
+    align-items: center;
+    gap: 0.7rem;
+    padding: 0.95rem 1.1rem;
+    cursor: pointer;
+    list-style: none;
+    font-weight: 600;
+}
+
+.topic-block > summary::-webkit-details-marker { display: none; }
+.topic-block > summary:hover { background: rgba(255, 255, 255, 0.04); }
+.topic-body { padding: 0 1.1rem 1rem; }
+
+@media (max-width: 620px) {
+    .tl-children { margin-left: 0.5rem; padding-left: 0.7rem; }
+    .tl-badge { display: none; }
+    .tl-node.is-anchor .tl-badge { display: inline; }
+}
+
+/* Background events sit a shade quieter than the ones that get asked about. */
+.tl-node.is-extra .tl-year { opacity: 0.55; font-weight: 400; }
+.tl-node.is-extra .tl-title { opacity: 0.8; }

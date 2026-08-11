@@ -487,6 +487,7 @@ function cacheDom() {
     screens.quiz = document.getElementById('quiz-screen');
     screens.result = document.getElementById('result-screen');
     screens.reader = document.getElementById('reader-screen');
+    screens.study  = document.getElementById('study-screen');
 
     const ids = {
         catContainer: 'categories-container', catAll: 'cat-all', catNone: 'cat-none',
@@ -524,11 +525,15 @@ function cacheDom() {
         restartBtn: 'restart-btn', retryMistakesBtn: 'retry-mistakes-btn',
         confetti: 'confetti',
 
+        studyBtn: 'study-btn', studyBack: 'study-back', studyBody: 'study-body',
+        studyHint: 'study-hint', studyRevealAll: 'study-reveal-all',
+        studyCoreOnly: 'study-core-only', studyCoreWrap: 'study-core-wrap',
         readerBack: 'reader-back', readerSearch: 'reader-search',
         readerCategory: 'reader-category', readerStatus: 'reader-status',
         readerReveal: 'reader-reveal', readerCount: 'reader-count', readerList: 'reader-list'
     };
     Object.keys(ids).forEach(key => { UI[key] = document.getElementById(ids[key]); });
+    UI.studyTabs = Array.from(document.querySelectorAll('.study-tab'));
     UI.gradeBtns = Array.from(document.querySelectorAll('.grade-btn'));
     UI.tfBtns = Array.from(document.querySelectorAll('.tf-btn'));
 }
@@ -1199,6 +1204,143 @@ function retryMistakes() {
     startSession(shuffle(again), session.mode, { sprint: false });
 }
 
+/* ---------------------------------------------------------------- study */
+
+const TIMELINE = (typeof dateTimeline !== 'undefined' && Array.isArray(dateTimeline))
+    ? dateTimeline
+    : [];
+
+/** Short lead-ins so each topic block starts with a reason to care. */
+const TOPIC_INTROS = {
+    'Historia Polski': 'Szkielet: 966 - 1410 - 1569 - 1795 - 1918 - 1939 - 1989. Resztę wieszaj na tych siedmiu.',
+    'Geografia': 'Sąsiedzi, rzeki, góry, miasta. Pytania z tego działu padają prawie zawsze.',
+    'Znani Polacy': 'Nobliści, papież, kompozytorzy, naukowcy. Warto znać po jednym zdaniu o każdym.',
+    'Święta i Tradycje': 'Daty świąt i zwyczaje. Tu konsul lubi dopytywać o szczegóły z domu.',
+    'Państwo i Symbole': 'Godło, flaga, hymn, ustrój. Najbardziej przewidywalny dział.',
+    'Pochodzenie i Rodzina': 'To pytania o Ciebie. Nie ma tu dobrych odpowiedzi - są Twoje.',
+    'Legendy, Kuchnia i Ludzie': 'Lżejszy dział, ale pytany chętnie - zwłaszcza legendy i potrawy.'
+};
+
+let studyTab = 'timeline';
+let studyCoreOnly = false;
+
+function openStudy() {
+    switchScreen('study');
+    renderStudy();
+}
+
+function renderStudy() {
+    UI.studyBody.innerHTML = studyTab === 'timeline' ? timelineHtml() : topicsHtml();
+    if (studyTab === 'timeline') {
+        const all = TIMELINE.reduce((n, a) => n + a.events.length, 0);
+        const core = TIMELINE.reduce((n, a) => n + a.events.filter(e => e.core).length, 0);
+        UI.studyHint.textContent = studyCoreOnly
+            ? `${core} kluczowych dat. Powiedz na głos, zanim odsłonisz.`
+            : `${all} dat, w tym ${core} kluczowych. Powiedz na głos, zanim odsłonisz.`;
+    } else {
+        UI.studyHint.textContent = 'Kliknij pytanie, aby zobaczyć odpowiedź. Najpierw odpowiedz sam.';
+    }
+    UI.studyCoreWrap.classList.toggle('hidden', studyTab !== 'timeline');
+    Array.from(UI.studyTabs).forEach(tab => {
+        tab.classList.toggle('is-active', tab.dataset.tab === studyTab);
+    });
+}
+
+/** "34 lata po", "2 lata przed" - the offset is what makes a date derivable. */
+function offsetLabel(year, anchorYear) {
+    const diff = year - anchorYear;
+    if (diff === 0) return '';
+    const n = Math.abs(diff);
+    const word = plural(n, 'rok', 'lata', 'lat');
+    return `${n} ${word} ${diff < 0 ? 'przed' : 'po'}`;
+}
+
+/** A node hides its meaning until opened; the year and the role stay visible. */
+function nodeHtml(options) {
+    const questions = DB.filter(q => (q.numbers || []).includes(String(options.year)));
+    const questionsHtml = questions.length ? `
+        <div class="tl-questions">
+            <span class="tl-questions-label">Pytania z bazy</span>
+            ${questions.map(q => `
+                <details class="tl-q">
+                    <summary>${escapeHtml(q.question)}</summary>
+                    <p>${escapeHtml(q.answer)}</p>
+                </details>`).join('')}
+        </div>` : '';
+
+    return `
+        <details class="tl-node ${options.anchor ? 'is-anchor' : ''} ${options.extra ? 'is-extra' : ''}">
+            <summary>
+                <span class="tl-year">${options.year}</span>
+                <span class="tl-title">
+                    <span class="tl-mask" aria-hidden="true">• • • • • • • • •</span>
+                    <span class="tl-real">${escapeHtml(options.title)}</span>
+                </span>
+                ${options.badge ? `<span class="tl-badge">${escapeHtml(options.badge)}</span>` : ''}
+            </summary>
+            <div class="tl-body">
+                ${options.note ? `<p class="tl-note">${escapeHtml(options.note)}</p>` : ''}
+                ${(options.hooks || []).map(h => `<p class="tl-hook">★ ${escapeHtml(h)}</p>`).join('')}
+                ${questionsHtml}
+            </div>
+        </details>`;
+}
+
+function timelineHtml() {
+    if (!TIMELINE.length) return '<p class="reader-empty">Brak osi czasu - uruchom sources/build_db.py.</p>';
+
+    return TIMELINE.map(anchor => `
+        <section class="tl-anchor">
+            ${nodeHtml({
+                year: anchor.year,
+                title: anchor.title,
+                note: anchor.note,
+                hooks: anchor.hooks,
+                badge: anchor.role,
+                anchor: true
+            })}
+            <div class="tl-children">
+                ${anchor.events
+                    .filter(event => !studyCoreOnly || event.core)
+                    .map(event => nodeHtml({
+                        year: event.year,
+                        title: event.title,
+                        note: event.note,
+                        badge: offsetLabel(event.year, anchor.year),
+                        extra: !event.core
+                    })).join('')}
+            </div>
+        </section>`).join('');
+}
+
+function topicsHtml() {
+    const byCategory = {};
+    DB.forEach(q => { (byCategory[q.category] || (byCategory[q.category] = [])).push(q); });
+
+    return Object.keys(byCategory).map(name => `
+        <details class="topic-block">
+            <summary>
+                <span>${escapeHtml(name)}</span>
+                <span class="cat-count">${byCategory[name].length}</span>
+            </summary>
+            <div class="topic-body">
+                ${TOPIC_INTROS[name] ? `<p class="tl-hook">★ ${escapeHtml(TOPIC_INTROS[name])}</p>` : ''}
+                ${byCategory[name].map(q => `
+                    <details class="tl-q">
+                        <summary>${escapeHtml(q.question)}</summary>
+                        <p>${escapeHtml(q.answer)}</p>
+                    </details>`).join('')}
+            </div>
+        </details>`).join('');
+}
+
+function toggleRevealAll() {
+    const nodes = UI.studyBody.querySelectorAll('details');
+    const anyClosed = Array.from(nodes).some(d => !d.open);
+    nodes.forEach(d => { d.open = anyClosed; });
+    UI.studyRevealAll.textContent = anyClosed ? 'Ukryj wszystko' : 'Odsłoń wszystko';
+}
+
 /* --------------------------------------------------------------- reader */
 
 const readerState = { search: '', category: 'all', status: 'all', reveal: false };
@@ -1335,6 +1477,11 @@ function handleModeChange() {
 
 function handleKeydown(event) {
     if (screens.quiz.classList.contains('active')) return quizKeys(event);
+    if (screens.study.classList.contains('active') && event.key === 'Escape') {
+        renderDashboard();
+        switchScreen('start');
+        return;
+    }
     if (screens.reader.classList.contains('active') && event.key === 'Escape') {
         renderDashboard();
         switchScreen('start');
@@ -1440,6 +1587,19 @@ function bindEvents() {
     });
     UI.retryMistakesBtn.addEventListener('click', retryMistakes);
 
+    UI.studyBtn.addEventListener('click', openStudy);
+    UI.studyBack.addEventListener('click', () => { renderDashboard(); switchScreen('start'); });
+    UI.studyRevealAll.addEventListener('click', toggleRevealAll);
+    UI.studyCoreOnly.addEventListener('change', () => {
+        studyCoreOnly = UI.studyCoreOnly.checked;
+        UI.studyRevealAll.textContent = 'Odsłoń wszystko';
+        renderStudy();
+    });
+    UI.studyTabs.forEach(tab => tab.addEventListener('click', () => {
+        studyTab = tab.dataset.tab;
+        UI.studyRevealAll.textContent = 'Odsłoń wszystko';
+        renderStudy();
+    }));
     UI.readerBtn.addEventListener('click', openReader);
     UI.readerBack.addEventListener('click', () => { renderDashboard(); switchScreen('start'); });
     UI.readerSearch.addEventListener('input', event => {

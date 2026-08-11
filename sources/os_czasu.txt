@@ -1,0 +1,151 @@
+# Oś czasu do nauki dat.
+# Format:
+#   ## rok | tytuł | rola kotwicy
+#   opis kotwicy (jedna linia)
+#   ! podpowiedź do zapamiętania (opcjonalnie, może być kilka)
+#   - rok | tytuł | opis      <- wydarzenie KLUCZOWE (pytają o nie realnie)
+#   ~ rok | tytuł | opis      <- wydarzenie DODATKOWE (dla pełności obrazu)
+# Odstęp od kotwicy ("2 lata przed") liczy aplikacja - nie wpisuj go ręcznie.
+# Wydarzenia trzymamy chronologicznie w epoce swojej kotwicy.
+
+## 966 | Chrzest Polski | Początki państwa
+Mieszko I przyjmuje chrzest. Od tej daty liczy się istnienie państwa polskiego w chrześcijańskiej Europie.
+! Tysiąclecie chrztu Polski obchodzono w 1966 r. - te same trzy cyfry, tysiąc lat później.
+! Pierwsza epoka to Piastowie: od Mieszka I (966) do zjednoczenia przez Łokietka (1320).
+~ 965 | Ślub Mieszka I z Dobrawą | Czeska księżniczka; małżeństwo przygotowało grunt pod chrzest rok później.
+- 966 | Chrzest Polski | Mieszko I przyjmuje chrzest z Czech, omijając zależność od cesarstwa niemieckiego.
+~ 968 | Pierwsze biskupstwo w Poznaniu | Biskup Jordan, początek organizacji kościelnej w Polsce.
+~ 972 | Bitwa pod Cedynią | Mieszko I pokonuje margrabiego Hodona, pierwsze znane zwycięstwo polskiego oręża.
+~ 991 | Dagome iudex | Mieszko oddaje państwo pod opiekę papieża - najstarszy opis granic Polski.
+~ 992 | Śmierć Mieszka I | Władzę przejmuje jego syn Bolesław Chrobry.
+- 997 | Męczeństwo św. Wojciecha | Zginął podczas misji wśród Prusów. Jego grób w Gnieźnie stał się powodem zjazdu w 1000 r.
+- 1000 | Zjazd gnieźnieński | Cesarz Otton III przybywa do grobu św. Wojciecha. Powstaje pierwsza polska metropolia kościelna.
+- 1025 | Koronacja Bolesława Chrobrego | Pierwszy koronowany król Polski; koronacja odbyła się w roku jego śmierci.
+~ 1039 | Kazimierz Odnowiciel przenosi stolicę do Krakowa | Gniezno zniszczone przez najazd czeski; Kraków stolicą na następne 500 lat.
+~ 1076 | Koronacja Bolesława Śmiałego | Odnowienie królestwa po okresie kryzysu.
+~ 1079 | Zabójstwo biskupa Stanisława | Konflikt króla z biskupem krakowskim; św. Stanisław to jeden z patronów Polski.
+~ 1109 | Obrona Głogowa i bitwa na Psim Polu | Bolesław Krzywousty odpiera najazd cesarza Henryka V.
+- 1138 | Testament Bolesława Krzywoustego | Podział państwa między synów. Początek rozbicia dzielnicowego na prawie 200 lat.
+- 1226 | Konrad Mazowiecki sprowadza Krzyżaków | Zaprosił zakon do walki z Prusami. Z pomocnika wyrósł najgroźniejszy wróg.
+- 1241 | Najazd Mongołów i bitwa pod Legnicą | Ginie Henryk Pobożny; Mongołowie pustoszą południe Polski.
+- 1320 | Koronacja Władysława Łokietka | Koniec rozbicia dzielnicowego, państwo znów zjednoczone.
+
+## 1410 | Bitwa pod Grunwaldem | Szczyt potęgi
+15 lipca. Wojska polsko-litewskie pod wodzą Władysława Jagiełły rozbijają zakon krzyżacki. Jedna z największych bitew średniowiecznej Europy.
+! Łańcuch przyczyn i skutków: 1226 sprowadzenie Krzyżaków - 1410 Grunwald - 1466 odzyskanie Pomorza - 1525 hołd pruski.
+! Kazimierz Wielki: 1333-1370. "Zastał Polskę drewnianą, a zostawił murowaną".
+- 1333 | Początek panowania Kazimierza Wielkiego | Ostatni król z dynastii Piastów, wielki budowniczy i reformator.
+~ 1343 | Pokój kaliski | Kazimierz Wielki kończy spór z Krzyżakami, odzyskuje Kujawy.
+- 1364 | Akademia Krakowska | Kazimierz Wielki zakłada pierwszy polski uniwersytet, dziś Uniwersytet Jagielloński.
+- 1370 | Śmierć Kazimierza Wielkiego | Koniec dynastii Piastów na polskim tronie.
+~ 1384 | Koronacja Jadwigi | Dziesięcioletnia Jadwiga zostaje "królem" Polski; później święta patronka.
+- 1385 | Unia w Krewie | Umowa Polski z Litwą: Jagiełło przyjmuje chrzest i rękę Jadwigi. Początek dynastii Jagiellonów.
+~ 1386 | Chrzest i koronacja Władysława Jagiełły | Litwa przyjmuje chrześcijaństwo, Jagiełło zostaje królem Polski.
+- 1410 | Bitwa pod Grunwaldem | Największe zwycięstwo nad zakonem krzyżackim; dowodził Władysław Jagiełło.
+~ 1411 | Pierwszy pokój toruński | Kończy wojnę z Krzyżakami, ale bez wielkich zdobyczy terytorialnych.
+- 1444 | Bitwa pod Warną | Ginie młody król Władysław III, odtąd zwany Warneńczykiem.
+~ 1454 | Początek wojny trzynastoletniej | Wojna z Krzyżakami o Pomorze, trwa do 1466 r.
+- 1466 | Drugi pokój toruński | Pomorze Gdańskie z Malborkiem wraca do Polski; Prusy Zakonne lennem.
+- 1473 | Narodziny Mikołaja Kopernika | Urodzony w Toruniu; twórca teorii heliocentrycznej.
+~ 1493 | Pierwszy sejm walny w Piotrkowie | Początek polskiego parlamentaryzmu dwuizbowego.
+
+## 1569 | Unia Lubelska | Rzeczpospolita Obojga Narodów
+Polska i Litwa łączą się w jedno państwo ze wspólnym sejmem i wspólnym królem. Powstaje jedno z największych państw ówczesnej Europy.
+! Cały wiek XVI to Złoty Wiek - unia wypada dokładnie w jego drugiej połowie.
+! Po 1573 r. króla wybierano w wolnej elekcji - to odróżnia Polskę od reszty Europy.
+~ 1505 | Konstytucja Nihil novi | "Nic o nas bez nas" - król nie może stanowić prawa bez zgody sejmu.
+- 1525 | Hołd pruski | Albrecht Hohenzollern klęka przed Zygmuntem I Starym na rynku w Krakowie.
+- 1543 | Dzieło Kopernika | "O obrotach sfer niebieskich" ukazuje się w roku śmierci astronoma.
+- 1569 | Unia Lubelska | Powstaje Rzeczpospolita Obojga Narodów - jedno państwo Polski i Litwy.
+- 1572 | Śmierć Zygmunta II Augusta | Koniec dynastii Jagiellonów; początek królów elekcyjnych.
+- 1573 | Konfederacja warszawska i pierwsza wolna elekcja | Gwarancja tolerancji religijnej; królem wybrany Henryk Walezy.
+- 1596 | Przeniesienie stolicy do Warszawy | Zygmunt III Waza przenosi dwór z Krakowa; Warszawa stolicą do dziś.
+~ 1605 | Bitwa pod Kircholmem | Husaria Chodkiewicza rozbija czterokrotnie liczniejszych Szwedów.
+~ 1610 | Bitwa pod Kłuszynem | Polacy zajmują Moskwę - jedyny taki epizod w historii.
+~ 1648 | Powstanie Chmielnickiego | Wielkie powstanie kozackie, początek upadku Rzeczypospolitej.
+- 1655 | Potop szwedzki | Najazd Szwecji trwa do 1660 r. Obrona Jasnej Góry pod wodzą przeora Augustyna Kordeckiego.
+~ 1656 | Śluby lwowskie Jana Kazimierza | Król ogłasza Matkę Bożą Królową Polski.
+- 1683 | Odsiecz wiedeńska | Jan III Sobieski rozbija Turków pod Wiedniem i ratuje Europę.
+
+## 1795 | III rozbiór Polski | Koniec państwa
+Rosja, Prusy i Austria dzielą resztę Rzeczypospolitej. Polska znika z mapy Europy na 123 lata.
+! 1795 + 123 lata zaborów = 1918. Znasz jedną datę - wyliczasz drugą.
+! Trzy daty tego bloku są nieparzyste i idą co dwa lata: 1791 Konstytucja, 1793 II rozbiór, 1795 III rozbiór.
+! Powstania: 1794 Kościuszko, 1830 listopadowe, 1863 styczniowe. Co mniej więcej 33 lata.
+~ 1764 | Koronacja Stanisława Augusta Poniatowskiego | Ostatni król Polski, mecenas kultury i oświaty.
+- 1772 | I rozbiór Polski | Pierwszy podział ziem Rzeczypospolitej między Rosję, Prusy i Austrię.
+~ 1773 | Komisja Edukacji Narodowej | Pierwsze na świecie ministerstwo oświaty.
+- 1791 | Konstytucja 3 Maja | Pierwsza konstytucja w Europie, druga na świecie. Próba ratowania państwa.
+- 1793 | II rozbiór Polski | Odpowiedź sąsiadów na Konstytucję 3 Maja, zaledwie dwa lata po niej.
+- 1794 | Insurekcja kościuszkowska | Powstanie pod wodzą Tadeusza Kościuszki; bitwa pod Racławicami z kosynierami.
+- 1795 | III rozbiór Polski | Polska znika z mapy Europy na 123 lata.
+- 1797 | Mazurek Dąbrowskiego | Józef Wybicki pisze go we Włoszech dla Legionów. Hymn powstaje, gdy państwa już nie ma.
+~ 1807 | Księstwo Warszawskie | Namiastka państwa utworzona przez Napoleona; przetrwała do 1815 r.
+~ 1815 | Kongres wiedeński | Nowy podział ziem polskich; powstaje Królestwo Polskie zależne od Rosji.
+- 1830 | Powstanie listopadowe | Wybucha 29 listopada w Warszawie, przeciw Rosji.
+~ 1846 | Powstanie krakowskie i rabacja galicyjska | Nieudany zryw, tragicznie zakończony wystąpieniem chłopów.
+~ 1848 | Wiosna Ludów | Polacy walczą o wolność w wielu krajach Europy.
+- 1863 | Powstanie styczniowe | Wybucha 22 stycznia, największe polskie powstanie narodowe; ostatni dyktator Romuald Traugutt.
+~ 1864 | Uwłaszczenie chłopów | Reforma w Królestwie Polskim po upadku powstania styczniowego.
+
+## 1918 | Odzyskanie niepodległości | Odrodzenie
+11 listopada. Po 123 latach zaborów Polska wraca na mapę Europy. Józef Piłsudski obejmuje władzę.
+! 1918 to koniec I wojny światowej - tej daty nie zapomnisz, a od niej wyliczysz 1795.
+! Od niepodległości do wybuchu wojny mija 21 lat: 1918-1939. Cała II Rzeczpospolita to jedno pokolenie.
+- 1903 | Nobel dla Marii Skłodowskiej-Curie | Nagroda z fizyki; w 1911 r. otrzyma drugą, z chemii.
+- 1905 | Nobel dla Henryka Sienkiewicza | Pierwszy polski noblista z literatury.
+- 1911 | Drugi Nobel dla Skłodowskiej-Curie | Z chemii; jedyna kobieta z Noblami w dwóch dziedzinach nauki.
+- 1914 | Wybuch I wojny światowej | Zaborcy stają po przeciwnych stronach - szansa dla sprawy polskiej.
+- 1918 | Odzyskanie niepodległości | 11 listopada, po 123 latach zaborów.
+- 1918 | Powstanie wielkopolskie | Wybucha 27 grudnia w Poznaniu; jedyne w pełni zwycięskie polskie powstanie.
+~ 1919 | Powstania śląskie | Trzy zrywy w latach 1919, 1920 i 1921 o przyłączenie Górnego Śląska do Polski.
+- 1920 | Bitwa Warszawska | "Cud nad Wisłą", 15 sierpnia. Zatrzymanie ofensywy bolszewickiej.
+~ 1921 | Konstytucja marcowa i pokój ryski | Ustrój II RP i granica wschodnia po wojnie z bolszewikami.
+~ 1922 | Gabriel Narutowicz pierwszym prezydentem | Zamordowany kilka dni po zaprzysiężeniu.
+- 1924 | Nobel dla Władysława Reymonta | Za powieść "Chłopi".
+~ 1926 | Przewrót majowy | Piłsudski przejmuje władzę siłą; początek rządów sanacji.
+- 1932 | Złamanie szyfru Enigmy | Marian Rejewski, Jerzy Różycki i Henryk Zygalski.
+~ 1935 | Konstytucja kwietniowa i śmierć Piłsudskiego | Marszałek umiera 12 maja, pochowany na Wawelu.
+
+## 1939 | Wybuch II wojny światowej | Katastrofa
+1 września Niemcy atakują Polskę - zaczyna się II wojna światowa. 17 września od wschodu wkracza ZSRR.
+! Kolejność jest kluczowa: 23 sierpnia pakt Ribbentrop-Mołotow, 1 września Niemcy, 17 września ZSRR.
+! Powstania w Warszawie to dwie różne daty: 1943 w getcie, 1944 Powstanie Warszawskie.
+- 1939 | Pakt Ribbentrop-Mołotow | 23 sierpnia. Tajny podział Polski między III Rzeszę i ZSRR.
+- 1939 | Atak Niemiec na Polskę | 1 września, Westerplatte. Początek II wojny światowej.
+- 1939 | Agresja ZSRR na Polskę | 17 września, cios w plecy walczącej Polsce.
+- 1940 | Zbrodnia katyńska | NKWD morduje wiosną blisko 22 tysiące polskich oficerów i policjantów.
+~ 1940 | Pierwszy transport do Auschwitz | 14 czerwca, 728 polskich więźniów politycznych z Tarnowa.
+~ 1942 | Powstanie "Żegoty" | Rada Pomocy Żydom, jedyna taka instytucja państwowa w okupowanej Europie.
+- 1943 | Powstanie w getcie warszawskim | Wybucha 19 kwietnia, pierwsze powstanie miejskie w okupowanej Europie.
+- 1943 | Śmierć gen. Władysława Sikorskiego | 4 lipca, katastrofa lotnicza w Gibraltarze.
+- 1944 | Powstanie Warszawskie | Wybucha 1 sierpnia i trwa 63 dni.
+~ 1945 | Konferencja jałtańska | Luty. Wielka Trójka przesądza o podziale Europy; Polska w strefie ZSRR.
+- 1945 | Koniec II wojny światowej | 8 maja. Polska traci ziemie wschodnie i suwerenność.
+
+## 1989 | Upadek komunizmu | Wolność
+Obrady Okrągłego Stołu i pierwsze częściowo wolne wybory 4 czerwca. Tadeusz Mazowiecki zostaje pierwszym niekomunistycznym premierem.
+! Najłatwiejszy blok, bo każda data jest skutkiem poprzedniej: 1978 papież - 1980 Solidarność - 1981 stan wojenny - 1989 wolność.
+! Nobliści powojenni: 1980 Miłosz, 1983 Wałęsa (pokojowy), 1996 Szymborska, 2018 Tokarczuk.
+! Wejście na Zachód: 1999 NATO, 2004 Unia Europejska - pięć lat różnicy.
+~ 1947 | Sfałszowane wybory | Komuniści przejmują pełnię władzy; początek okresu PRL.
+- 1956 | Poznański Czerwiec | Pierwszy masowy protest robotniczy w PRL, krwawo stłumiony.
+~ 1966 | Milenium chrztu Polski | Tysiąclecie chrztu; władze komunistyczne organizują konkurencyjne obchody.
+~ 1968 | Marzec '68 | Protesty studenckie i antysemicka kampania władz; emigracja tysięcy Polaków.
+- 1970 | Grudzień '70 | Masakra robotników na Wybrzeżu; upamiętnia ją pomnik Trzech Krzyży w Gdańsku.
+- 1978 | Karol Wojtyła papieżem | 16 października. Pierwszy polski papież, Jan Paweł II.
+- 1979 | Pierwsza pielgrzymka Jana Pawła II | "Niech zstąpi Duch Twój i odnowi oblicze ziemi, tej ziemi".
+- 1980 | Powstanie "Solidarności" | Strajki w Stoczni Gdańskiej, porozumienia sierpniowe, na czele Lech Wałęsa.
+- 1980 | Nobel dla Czesława Miłosza | Nagroda z literatury dla poety na emigracji.
+- 1981 | Stan wojenny | Wprowadzony 13 grudnia przez gen. Wojciecha Jaruzelskiego.
+- 1983 | Pokojowy Nobel dla Lecha Wałęsy | Nagroda dla przywódcy "Solidarności".
+- 1984 | Zabójstwo ks. Jerzego Popiełuszki | Kapelan "Solidarności" zamordowany przez Służbę Bezpieczeństwa; dziś błogosławiony.
+- 1989 | Okrągły Stół i wybory 4 czerwca | Upadek komunizmu; Tadeusz Mazowiecki pierwszym niekomunistycznym premierem.
+- 1990 | Lech Wałęsa prezydentem | Pierwszy prezydent wybrany w wyborach powszechnych po 1989 r.
+- 1996 | Nobel dla Wisławy Szymborskiej | Nagroda z literatury.
+- 1997 | Konstytucja RP | Uchwalona 2 kwietnia, obowiązuje do dziś.
+- 1999 | Wstąpienie do NATO | Polska wchodzi do sojuszu północnoatlantyckiego.
+- 2004 | Wstąpienie do Unii Europejskiej | 1 maja, razem z dziewięcioma innymi państwami.
+- 2005 | Śmierć Jana Pawła II | 2 kwietnia. Żałoba narodowa w całej Polsce.
+- 2010 | Katastrofa smoleńska | 10 kwietnia. Ginie prezydent Lech Kaczyński i 95 innych osób.
+- 2018 | Nobel dla Olgi Tokarczuk | Nagroda z literatury za rok 2018.

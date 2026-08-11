@@ -136,6 +136,15 @@
                 </div>
 
                 <button id="start-btn" class="primary-btn big-btn">Rozpocznij trening</button>
+            </div>
+
+            <!-- Study, as opposed to testing: nothing here is graded -->
+            <div class="glass-panel">
+                <h2>Nauka</h2>
+                <p class="mode-hint">
+                    Bez oceniania i bez punktów. Odsłaniasz po kolei, mówisz na głos, idziesz dalej.
+                </p>
+                <button id="study-btn" class="primary-btn big-btn">🕰️ Oś czasu - nauka dat i historii</button>
                 <button id="reader-btn" class="secondary-btn">📖 Czytelnia - przeglądaj wszystkie pytania</button>
             </div>
 
@@ -250,6 +259,31 @@
             </div>
         </div>
 
+        <!-- ============ STUDY SCREEN (Oś czasu) ============ -->
+        <div id="study-screen" class="screen">
+            <div class="reader-head">
+                <button id="study-back" class="icon-btn" aria-label="Wróć">←</button>
+                <h2>Nauka</h2>
+            </div>
+
+            <div class="glass-panel study-controls">
+                <div class="study-tabs" role="tablist">
+                    <button class="study-tab is-active" data-tab="timeline" role="tab">🕰️ Oś czasu</button>
+                    <button class="study-tab" data-tab="topics" role="tab">📚 Tematy</button>
+                </div>
+                <div class="study-meta">
+                    <label class="switch-label inline" id="study-core-wrap">
+                        <input type="checkbox" id="study-core-only">
+                        <span>Tylko kluczowe daty</span>
+                    </label>
+                    <button type="button" class="link-btn" id="study-reveal-all">Odsłoń wszystko</button>
+                </div>
+                <p class="muted" id="study-hint" style="font-size:0.8rem"></p>
+            </div>
+
+            <div id="study-body" class="study-body"></div>
+        </div>
+
         <!-- ============ READER SCREEN (Czytelnia) ============ -->
         <div id="reader-screen" class="screen">
             <div class="reader-head">
@@ -288,6 +322,7 @@
     <div id="toast" class="toast" role="status" aria-live="polite"></div>
 
     <script src="questions.js"></script>
+    <script src="timeline.js"></script>
     <script src="app.js"></script>
 </body>
 </html>
