@@ -1279,6 +1279,7 @@ function nodeHtml(options) {
                 ${options.badge ? `<span class="tl-badge">${escapeHtml(options.badge)}</span>` : ''}
             </summary>
             <div class="tl-body">
+                ${options.say ? `<p class="tl-say"><span>Wymowa</span>${escapeHtml(options.say)}</p>` : ''}
                 ${options.note ? `<p class="tl-note">${escapeHtml(options.note)}</p>` : ''}
                 ${(options.hooks || []).map(h => `<p class="tl-hook">★ ${escapeHtml(h)}</p>`).join('')}
                 ${questionsHtml}
@@ -1293,6 +1294,7 @@ function timelineHtml() {
         <section class="tl-anchor">
             ${nodeHtml({
                 year: anchor.year,
+                say: anchor.say,
                 title: anchor.title,
                 note: anchor.note,
                 hooks: anchor.hooks,
@@ -1304,6 +1306,7 @@ function timelineHtml() {
                     .filter(event => !studyCoreOnly || event.core)
                     .map(event => nodeHtml({
                         year: event.year,
+                        say: event.say,
                         title: event.title,
                         note: event.note,
                         badge: offsetLabel(event.year, anchor.year),

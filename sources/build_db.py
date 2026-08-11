@@ -200,6 +200,63 @@ def parse_file(path, category):
     return questions
 
 
+# --- spoken form of a year -------------------------------------------------
+# Knowing the digits is not the same as being able to say them. In Polish only
+# the tens and units of a year become ordinals, and after "w" they take the
+# locative - "w tysiąc dziewięćset trzydziestym dziewiątym roku". Learners
+# routinely decline the whole thing, so every date carries its spoken form.
+
+CARD_HUNDREDS = {1: "sto", 2: "dwieście", 3: "trzysta", 4: "czterysta", 5: "pięćset",
+                 6: "sześćset", 7: "siedemset", 8: "osiemset", 9: "dziewięćset"}
+ORD_HUNDREDS = {1: "setny", 2: "dwusetny", 3: "trzechsetny", 4: "czterechsetny",
+                5: "pięćsetny", 6: "sześćsetny", 7: "siedemsetny", 8: "osiemsetny",
+                9: "dziewięćsetny"}
+ORD_UNITS = {1: "pierwszy", 2: "drugi", 3: "trzeci", 4: "czwarty", 5: "piąty",
+             6: "szósty", 7: "siódmy", 8: "ósmy", 9: "dziewiąty"}
+ORD_TEENS = {10: "dziesiąty", 11: "jedenasty", 12: "dwunasty", 13: "trzynasty",
+             14: "czternasty", 15: "piętnasty", 16: "szesnasty", 17: "siedemnasty",
+             18: "osiemnasty", 19: "dziewiętnasty"}
+ORD_TENS = {2: "dwudziesty", 3: "trzydziesty", 4: "czterdziesty", 5: "pięćdziesiąty",
+            6: "sześćdziesiąty", 7: "siedemdziesiąty", 8: "osiemdziesiąty",
+            9: "dziewięćdziesiąty"}
+CARD_THOUSANDS = {1: "tysiąc", 2: "dwa tysiące"}
+ORD_THOUSANDS = {1: "tysięczny", 2: "dwutysięczny"}
+
+
+def to_locative(word):
+    """Masculine ordinal in the locative: -y -> -ym, -i -> -im."""
+    return word[:-1] + ("im" if word.endswith("i") else "ym")
+
+
+def year_spoken(year):
+    """Returns the phrase you actually say: 'w tysiąc czterysta dziesiątym roku'."""
+    thousands, rest = divmod(year, 1000)
+    hundreds, rest2 = divmod(rest, 100)
+    tens, units = divmod(rest2, 10)
+
+    parts = []          # (word, is_ordinal)
+    if thousands:
+        parts.append((CARD_THOUSANDS.get(thousands, str(thousands)), False))
+    if hundreds:
+        parts.append((CARD_HUNDREDS[hundreds], False))
+
+    if rest2:
+        if 10 <= rest2 <= 19:
+            parts.append((ORD_TEENS[rest2], True))
+        else:
+            if tens:
+                parts.append((ORD_TENS[tens], True))
+            if units:
+                parts.append((ORD_UNITS[units], True))
+    elif hundreds:
+        parts[-1] = (ORD_HUNDREDS[hundreds], True)          # 1300 -> trzechsetny
+    elif thousands:
+        parts[-1] = (ORD_THOUSANDS.get(thousands, ""), True)  # 1000 -> tysięczny
+
+    words = [to_locative(w) if is_ord else w for w, is_ord in parts]
+    return "w %s roku" % " ".join(words)
+
+
 TIMELINE_SOURCE = os.path.join(SOURCE_DIR, "os_czasu.txt")
 TIMELINE_OUTPUT = os.path.join(os.path.dirname(SOURCE_DIR), "timeline.js")
 
@@ -224,6 +281,7 @@ def build_timeline():
                 parts = [p.strip() for p in stripped[2:].split("|")]
                 current = {
                     "year": int(parts[0]),
+                    "say": year_spoken(int(parts[0])),
                     "title": parts[1] if len(parts) > 1 else "",
                     "role": parts[2] if len(parts) > 2 else "",
                     "note": "",
@@ -242,6 +300,7 @@ def build_timeline():
                 parts = [p.strip() for p in stripped[1:].split("|")]
                 current["events"].append({
                     "year": int(parts[0]),
+                    "say": year_spoken(int(parts[0])),
                     "title": parts[1] if len(parts) > 1 else "",
                     "note": parts[2] if len(parts) > 2 else "",
                     "core": stripped[0] == "-",

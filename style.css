@@ -1168,3 +1168,24 @@ kbd {
 /* Background events sit a shade quieter than the ones that get asked about. */
 .tl-node.is-extra .tl-year { opacity: 0.55; font-weight: 400; }
 .tl-node.is-extra .tl-title { opacity: 0.8; }
+
+/* Spoken form of the year: knowing the digits is not the same as saying them. */
+.tl-say {
+    font-size: 0.95rem;
+    line-height: 1.5;
+    color: #7dd3fc;
+    background: rgba(56, 189, 248, 0.08);
+    border: 1px solid rgba(56, 189, 248, 0.22);
+    border-radius: 10px;
+    padding: 0.5rem 0.75rem;
+    margin-bottom: 0.6rem;
+}
+
+.tl-say span {
+    display: block;
+    font-size: 0.66rem;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--text-muted);
+    margin-bottom: 0.15rem;
+}

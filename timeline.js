@@ -3,6 +3,7 @@
 const dateTimeline = [
   {
     "year": 966,
+    "say": "w dziewięćset sześćdziesiątym szóstym roku",
     "title": "Chrzest Polski",
     "role": "Początki państwa",
     "note": "Mieszko I przyjmuje chrzest. Od tej daty liczy się istnienie państwa polskiego w chrześcijańskiej Europie.",
@@ -13,102 +14,119 @@ const dateTimeline = [
     "events": [
       {
         "year": 965,
+        "say": "w dziewięćset sześćdziesiątym piątym roku",
         "title": "Ślub Mieszka I z Dobrawą",
         "note": "Czeska księżniczka; małżeństwo przygotowało grunt pod chrzest rok później.",
         "core": false
       },
       {
         "year": 966,
+        "say": "w dziewięćset sześćdziesiątym szóstym roku",
         "title": "Chrzest Polski",
         "note": "Mieszko I przyjmuje chrzest z Czech, omijając zależność od cesarstwa niemieckiego.",
         "core": true
       },
       {
         "year": 968,
+        "say": "w dziewięćset sześćdziesiątym ósmym roku",
         "title": "Pierwsze biskupstwo w Poznaniu",
         "note": "Biskup Jordan, początek organizacji kościelnej w Polsce.",
         "core": false
       },
       {
         "year": 972,
+        "say": "w dziewięćset siedemdziesiątym drugim roku",
         "title": "Bitwa pod Cedynią",
         "note": "Mieszko I pokonuje margrabiego Hodona, pierwsze znane zwycięstwo polskiego oręża.",
         "core": false
       },
       {
         "year": 991,
+        "say": "w dziewięćset dziewięćdziesiątym pierwszym roku",
         "title": "Dagome iudex",
         "note": "Mieszko oddaje państwo pod opiekę papieża - najstarszy opis granic Polski.",
         "core": false
       },
       {
         "year": 992,
+        "say": "w dziewięćset dziewięćdziesiątym drugim roku",
         "title": "Śmierć Mieszka I",
         "note": "Władzę przejmuje jego syn Bolesław Chrobry.",
         "core": false
       },
       {
         "year": 997,
+        "say": "w dziewięćset dziewięćdziesiątym siódmym roku",
         "title": "Męczeństwo św. Wojciecha",
         "note": "Zginął podczas misji wśród Prusów. Jego grób w Gnieźnie stał się powodem zjazdu w 1000 r.",
         "core": true
       },
       {
         "year": 1000,
+        "say": "w tysięcznym roku",
         "title": "Zjazd gnieźnieński",
         "note": "Cesarz Otton III przybywa do grobu św. Wojciecha. Powstaje pierwsza polska metropolia kościelna.",
         "core": true
       },
       {
         "year": 1025,
+        "say": "w tysiąc dwudziestym piątym roku",
         "title": "Koronacja Bolesława Chrobrego",
         "note": "Pierwszy koronowany król Polski; koronacja odbyła się w roku jego śmierci.",
         "core": true
       },
       {
         "year": 1039,
+        "say": "w tysiąc trzydziestym dziewiątym roku",
         "title": "Kazimierz Odnowiciel przenosi stolicę do Krakowa",
         "note": "Gniezno zniszczone przez najazd czeski; Kraków stolicą na następne 500 lat.",
         "core": false
       },
       {
         "year": 1076,
+        "say": "w tysiąc siedemdziesiątym szóstym roku",
         "title": "Koronacja Bolesława Śmiałego",
         "note": "Odnowienie królestwa po okresie kryzysu.",
         "core": false
       },
       {
         "year": 1079,
+        "say": "w tysiąc siedemdziesiątym dziewiątym roku",
         "title": "Zabójstwo biskupa Stanisława",
         "note": "Konflikt króla z biskupem krakowskim; św. Stanisław to jeden z patronów Polski.",
         "core": false
       },
       {
         "year": 1109,
+        "say": "w tysiąc sto dziewiątym roku",
         "title": "Obrona Głogowa i bitwa na Psim Polu",
         "note": "Bolesław Krzywousty odpiera najazd cesarza Henryka V.",
         "core": false
       },
       {
         "year": 1138,
+        "say": "w tysiąc sto trzydziestym ósmym roku",
         "title": "Testament Bolesława Krzywoustego",
         "note": "Podział państwa między synów. Początek rozbicia dzielnicowego na prawie 200 lat.",
         "core": true
       },
       {
         "year": 1226,
+        "say": "w tysiąc dwieście dwudziestym szóstym roku",
         "title": "Konrad Mazowiecki sprowadza Krzyżaków",
         "note": "Zaprosił zakon do walki z Prusami. Z pomocnika wyrósł najgroźniejszy wróg.",
         "core": true
       },
       {
         "year": 1241,
+        "say": "w tysiąc dwieście czterdziestym pierwszym roku",
         "title": "Najazd Mongołów i bitwa pod Legnicą",
         "note": "Ginie Henryk Pobożny; Mongołowie pustoszą południe Polski.",
         "core": true
       },
       {
         "year": 1320,
+        "say": "w tysiąc trzysta dwudziestym roku",
         "title": "Koronacja Władysława Łokietka",
         "note": "Koniec rozbicia dzielnicowego, państwo znów zjednoczone.",
         "core": true
@@ -117,6 +135,7 @@ const dateTimeline = [
   },
   {
     "year": 1410,
+    "say": "w tysiąc czterysta dziesiątym roku",
     "title": "Bitwa pod Grunwaldem",
     "role": "Szczyt potęgi",
     "note": "15 lipca. Wojska polsko-litewskie pod wodzą Władysława Jagiełły rozbijają zakon krzyżacki. Jedna z największych bitew średniowiecznej Europy.",
@@ -127,84 +146,98 @@ const dateTimeline = [
     "events": [
       {
         "year": 1333,
+        "say": "w tysiąc trzysta trzydziestym trzecim roku",
         "title": "Początek panowania Kazimierza Wielkiego",
         "note": "Ostatni król z dynastii Piastów, wielki budowniczy i reformator.",
         "core": true
       },
       {
         "year": 1343,
+        "say": "w tysiąc trzysta czterdziestym trzecim roku",
         "title": "Pokój kaliski",
         "note": "Kazimierz Wielki kończy spór z Krzyżakami, odzyskuje Kujawy.",
         "core": false
       },
       {
         "year": 1364,
+        "say": "w tysiąc trzysta sześćdziesiątym czwartym roku",
         "title": "Akademia Krakowska",
         "note": "Kazimierz Wielki zakłada pierwszy polski uniwersytet, dziś Uniwersytet Jagielloński.",
         "core": true
       },
       {
         "year": 1370,
+        "say": "w tysiąc trzysta siedemdziesiątym roku",
         "title": "Śmierć Kazimierza Wielkiego",
         "note": "Koniec dynastii Piastów na polskim tronie.",
         "core": true
       },
       {
         "year": 1384,
+        "say": "w tysiąc trzysta osiemdziesiątym czwartym roku",
         "title": "Koronacja Jadwigi",
         "note": "Dziesięcioletnia Jadwiga zostaje \"królem\" Polski; później święta patronka.",
         "core": false
       },
       {
         "year": 1385,
+        "say": "w tysiąc trzysta osiemdziesiątym piątym roku",
         "title": "Unia w Krewie",
         "note": "Umowa Polski z Litwą: Jagiełło przyjmuje chrzest i rękę Jadwigi. Początek dynastii Jagiellonów.",
         "core": true
       },
       {
         "year": 1386,
+        "say": "w tysiąc trzysta osiemdziesiątym szóstym roku",
         "title": "Chrzest i koronacja Władysława Jagiełły",
         "note": "Litwa przyjmuje chrześcijaństwo, Jagiełło zostaje królem Polski.",
         "core": false
       },
       {
         "year": 1410,
+        "say": "w tysiąc czterysta dziesiątym roku",
         "title": "Bitwa pod Grunwaldem",
         "note": "Największe zwycięstwo nad zakonem krzyżackim; dowodził Władysław Jagiełło.",
         "core": true
       },
       {
         "year": 1411,
+        "say": "w tysiąc czterysta jedenastym roku",
         "title": "Pierwszy pokój toruński",
         "note": "Kończy wojnę z Krzyżakami, ale bez wielkich zdobyczy terytorialnych.",
         "core": false
       },
       {
         "year": 1444,
+        "say": "w tysiąc czterysta czterdziestym czwartym roku",
         "title": "Bitwa pod Warną",
         "note": "Ginie młody król Władysław III, odtąd zwany Warneńczykiem.",
         "core": true
       },
       {
         "year": 1454,
+        "say": "w tysiąc czterysta pięćdziesiątym czwartym roku",
         "title": "Początek wojny trzynastoletniej",
         "note": "Wojna z Krzyżakami o Pomorze, trwa do 1466 r.",
         "core": false
       },
       {
         "year": 1466,
+        "say": "w tysiąc czterysta sześćdziesiątym szóstym roku",
         "title": "Drugi pokój toruński",
         "note": "Pomorze Gdańskie z Malborkiem wraca do Polski; Prusy Zakonne lennem.",
         "core": true
       },
       {
         "year": 1473,
+        "say": "w tysiąc czterysta siedemdziesiątym trzecim roku",
         "title": "Narodziny Mikołaja Kopernika",
         "note": "Urodzony w Toruniu; twórca teorii heliocentrycznej.",
         "core": true
       },
       {
         "year": 1493,
+        "say": "w tysiąc czterysta dziewięćdziesiątym trzecim roku",
         "title": "Pierwszy sejm walny w Piotrkowie",
         "note": "Początek polskiego parlamentaryzmu dwuizbowego.",
         "core": false
@@ -213,6 +246,7 @@ const dateTimeline = [
   },
   {
     "year": 1569,
+    "say": "w tysiąc pięćset sześćdziesiątym dziewiątym roku",
     "title": "Unia Lubelska",
     "role": "Rzeczpospolita Obojga Narodów",
     "note": "Polska i Litwa łączą się w jedno państwo ze wspólnym sejmem i wspólnym królem. Powstaje jedno z największych państw ówczesnej Europy.",
@@ -223,78 +257,91 @@ const dateTimeline = [
     "events": [
       {
         "year": 1505,
+        "say": "w tysiąc pięćset piątym roku",
         "title": "Konstytucja Nihil novi",
         "note": "\"Nic o nas bez nas\" - król nie może stanowić prawa bez zgody sejmu.",
         "core": false
       },
       {
         "year": 1525,
+        "say": "w tysiąc pięćset dwudziestym piątym roku",
         "title": "Hołd pruski",
         "note": "Albrecht Hohenzollern klęka przed Zygmuntem I Starym na rynku w Krakowie.",
         "core": true
       },
       {
         "year": 1543,
+        "say": "w tysiąc pięćset czterdziestym trzecim roku",
         "title": "Dzieło Kopernika",
         "note": "\"O obrotach sfer niebieskich\" ukazuje się w roku śmierci astronoma.",
         "core": true
       },
       {
         "year": 1569,
+        "say": "w tysiąc pięćset sześćdziesiątym dziewiątym roku",
         "title": "Unia Lubelska",
         "note": "Powstaje Rzeczpospolita Obojga Narodów - jedno państwo Polski i Litwy.",
         "core": true
       },
       {
         "year": 1572,
+        "say": "w tysiąc pięćset siedemdziesiątym drugim roku",
         "title": "Śmierć Zygmunta II Augusta",
         "note": "Koniec dynastii Jagiellonów; początek królów elekcyjnych.",
         "core": true
       },
       {
         "year": 1573,
+        "say": "w tysiąc pięćset siedemdziesiątym trzecim roku",
         "title": "Konfederacja warszawska i pierwsza wolna elekcja",
         "note": "Gwarancja tolerancji religijnej; królem wybrany Henryk Walezy.",
         "core": true
       },
       {
         "year": 1596,
+        "say": "w tysiąc pięćset dziewięćdziesiątym szóstym roku",
         "title": "Przeniesienie stolicy do Warszawy",
         "note": "Zygmunt III Waza przenosi dwór z Krakowa; Warszawa stolicą do dziś.",
         "core": true
       },
       {
         "year": 1605,
+        "say": "w tysiąc sześćset piątym roku",
         "title": "Bitwa pod Kircholmem",
         "note": "Husaria Chodkiewicza rozbija czterokrotnie liczniejszych Szwedów.",
         "core": false
       },
       {
         "year": 1610,
+        "say": "w tysiąc sześćset dziesiątym roku",
         "title": "Bitwa pod Kłuszynem",
         "note": "Polacy zajmują Moskwę - jedyny taki epizod w historii.",
         "core": false
       },
       {
         "year": 1648,
+        "say": "w tysiąc sześćset czterdziestym ósmym roku",
         "title": "Powstanie Chmielnickiego",
         "note": "Wielkie powstanie kozackie, początek upadku Rzeczypospolitej.",
         "core": false
       },
       {
         "year": 1655,
+        "say": "w tysiąc sześćset pięćdziesiątym piątym roku",
         "title": "Potop szwedzki",
         "note": "Najazd Szwecji trwa do 1660 r. Obrona Jasnej Góry pod wodzą przeora Augustyna Kordeckiego.",
         "core": true
       },
       {
         "year": 1656,
+        "say": "w tysiąc sześćset pięćdziesiątym szóstym roku",
         "title": "Śluby lwowskie Jana Kazimierza",
         "note": "Król ogłasza Matkę Bożą Królową Polski.",
         "core": false
       },
       {
         "year": 1683,
+        "say": "w tysiąc sześćset osiemdziesiątym trzecim roku",
         "title": "Odsiecz wiedeńska",
         "note": "Jan III Sobieski rozbija Turków pod Wiedniem i ratuje Europę.",
         "core": true
@@ -303,6 +350,7 @@ const dateTimeline = [
   },
   {
     "year": 1795,
+    "say": "w tysiąc siedemset dziewięćdziesiątym piątym roku",
     "title": "III rozbiór Polski",
     "role": "Koniec państwa",
     "note": "Rosja, Prusy i Austria dzielą resztę Rzeczypospolitej. Polska znika z mapy Europy na 123 lata.",
@@ -314,90 +362,105 @@ const dateTimeline = [
     "events": [
       {
         "year": 1764,
+        "say": "w tysiąc siedemset sześćdziesiątym czwartym roku",
         "title": "Koronacja Stanisława Augusta Poniatowskiego",
         "note": "Ostatni król Polski, mecenas kultury i oświaty.",
         "core": false
       },
       {
         "year": 1772,
+        "say": "w tysiąc siedemset siedemdziesiątym drugim roku",
         "title": "I rozbiór Polski",
         "note": "Pierwszy podział ziem Rzeczypospolitej między Rosję, Prusy i Austrię.",
         "core": true
       },
       {
         "year": 1773,
+        "say": "w tysiąc siedemset siedemdziesiątym trzecim roku",
         "title": "Komisja Edukacji Narodowej",
         "note": "Pierwsze na świecie ministerstwo oświaty.",
         "core": false
       },
       {
         "year": 1791,
+        "say": "w tysiąc siedemset dziewięćdziesiątym pierwszym roku",
         "title": "Konstytucja 3 Maja",
         "note": "Pierwsza konstytucja w Europie, druga na świecie. Próba ratowania państwa.",
         "core": true
       },
       {
         "year": 1793,
+        "say": "w tysiąc siedemset dziewięćdziesiątym trzecim roku",
         "title": "II rozbiór Polski",
         "note": "Odpowiedź sąsiadów na Konstytucję 3 Maja, zaledwie dwa lata po niej.",
         "core": true
       },
       {
         "year": 1794,
+        "say": "w tysiąc siedemset dziewięćdziesiątym czwartym roku",
         "title": "Insurekcja kościuszkowska",
         "note": "Powstanie pod wodzą Tadeusza Kościuszki; bitwa pod Racławicami z kosynierami.",
         "core": true
       },
       {
         "year": 1795,
+        "say": "w tysiąc siedemset dziewięćdziesiątym piątym roku",
         "title": "III rozbiór Polski",
         "note": "Polska znika z mapy Europy na 123 lata.",
         "core": true
       },
       {
         "year": 1797,
+        "say": "w tysiąc siedemset dziewięćdziesiątym siódmym roku",
         "title": "Mazurek Dąbrowskiego",
         "note": "Józef Wybicki pisze go we Włoszech dla Legionów. Hymn powstaje, gdy państwa już nie ma.",
         "core": true
       },
       {
         "year": 1807,
+        "say": "w tysiąc osiemset siódmym roku",
         "title": "Księstwo Warszawskie",
         "note": "Namiastka państwa utworzona przez Napoleona; przetrwała do 1815 r.",
         "core": false
       },
       {
         "year": 1815,
+        "say": "w tysiąc osiemset piętnastym roku",
         "title": "Kongres wiedeński",
         "note": "Nowy podział ziem polskich; powstaje Królestwo Polskie zależne od Rosji.",
         "core": false
       },
       {
         "year": 1830,
+        "say": "w tysiąc osiemset trzydziestym roku",
         "title": "Powstanie listopadowe",
         "note": "Wybucha 29 listopada w Warszawie, przeciw Rosji.",
         "core": true
       },
       {
         "year": 1846,
+        "say": "w tysiąc osiemset czterdziestym szóstym roku",
         "title": "Powstanie krakowskie i rabacja galicyjska",
         "note": "Nieudany zryw, tragicznie zakończony wystąpieniem chłopów.",
         "core": false
       },
       {
         "year": 1848,
+        "say": "w tysiąc osiemset czterdziestym ósmym roku",
         "title": "Wiosna Ludów",
         "note": "Polacy walczą o wolność w wielu krajach Europy.",
         "core": false
       },
       {
         "year": 1863,
+        "say": "w tysiąc osiemset sześćdziesiątym trzecim roku",
         "title": "Powstanie styczniowe",
         "note": "Wybucha 22 stycznia, największe polskie powstanie narodowe; ostatni dyktator Romuald Traugutt.",
         "core": true
       },
       {
         "year": 1864,
+        "say": "w tysiąc osiemset sześćdziesiątym czwartym roku",
         "title": "Uwłaszczenie chłopów",
         "note": "Reforma w Królestwie Polskim po upadku powstania styczniowego.",
         "core": false
@@ -406,6 +469,7 @@ const dateTimeline = [
   },
   {
     "year": 1918,
+    "say": "w tysiąc dziewięćset osiemnastym roku",
     "title": "Odzyskanie niepodległości",
     "role": "Odrodzenie",
     "note": "11 listopada. Po 123 latach zaborów Polska wraca na mapę Europy. Józef Piłsudski obejmuje władzę.",
@@ -416,84 +480,98 @@ const dateTimeline = [
     "events": [
       {
         "year": 1903,
+        "say": "w tysiąc dziewięćset trzecim roku",
         "title": "Nobel dla Marii Skłodowskiej-Curie",
         "note": "Nagroda z fizyki; w 1911 r. otrzyma drugą, z chemii.",
         "core": true
       },
       {
         "year": 1905,
+        "say": "w tysiąc dziewięćset piątym roku",
         "title": "Nobel dla Henryka Sienkiewicza",
         "note": "Pierwszy polski noblista z literatury.",
         "core": true
       },
       {
         "year": 1911,
+        "say": "w tysiąc dziewięćset jedenastym roku",
         "title": "Drugi Nobel dla Skłodowskiej-Curie",
         "note": "Z chemii; jedyna kobieta z Noblami w dwóch dziedzinach nauki.",
         "core": true
       },
       {
         "year": 1914,
+        "say": "w tysiąc dziewięćset czternastym roku",
         "title": "Wybuch I wojny światowej",
         "note": "Zaborcy stają po przeciwnych stronach - szansa dla sprawy polskiej.",
         "core": true
       },
       {
         "year": 1918,
+        "say": "w tysiąc dziewięćset osiemnastym roku",
         "title": "Odzyskanie niepodległości",
         "note": "11 listopada, po 123 latach zaborów.",
         "core": true
       },
       {
         "year": 1918,
+        "say": "w tysiąc dziewięćset osiemnastym roku",
         "title": "Powstanie wielkopolskie",
         "note": "Wybucha 27 grudnia w Poznaniu; jedyne w pełni zwycięskie polskie powstanie.",
         "core": true
       },
       {
         "year": 1919,
+        "say": "w tysiąc dziewięćset dziewiętnastym roku",
         "title": "Powstania śląskie",
         "note": "Trzy zrywy w latach 1919, 1920 i 1921 o przyłączenie Górnego Śląska do Polski.",
         "core": false
       },
       {
         "year": 1920,
+        "say": "w tysiąc dziewięćset dwudziestym roku",
         "title": "Bitwa Warszawska",
         "note": "\"Cud nad Wisłą\", 15 sierpnia. Zatrzymanie ofensywy bolszewickiej.",
         "core": true
       },
       {
         "year": 1921,
+        "say": "w tysiąc dziewięćset dwudziestym pierwszym roku",
         "title": "Konstytucja marcowa i pokój ryski",
         "note": "Ustrój II RP i granica wschodnia po wojnie z bolszewikami.",
         "core": false
       },
       {
         "year": 1922,
+        "say": "w tysiąc dziewięćset dwudziestym drugim roku",
         "title": "Gabriel Narutowicz pierwszym prezydentem",
         "note": "Zamordowany kilka dni po zaprzysiężeniu.",
         "core": false
       },
       {
         "year": 1924,
+        "say": "w tysiąc dziewięćset dwudziestym czwartym roku",
         "title": "Nobel dla Władysława Reymonta",
         "note": "Za powieść \"Chłopi\".",
         "core": true
       },
       {
         "year": 1926,
+        "say": "w tysiąc dziewięćset dwudziestym szóstym roku",
         "title": "Przewrót majowy",
         "note": "Piłsudski przejmuje władzę siłą; początek rządów sanacji.",
         "core": false
       },
       {
         "year": 1932,
+        "say": "w tysiąc dziewięćset trzydziestym drugim roku",
         "title": "Złamanie szyfru Enigmy",
         "note": "Marian Rejewski, Jerzy Różycki i Henryk Zygalski.",
         "core": true
       },
       {
         "year": 1935,
+        "say": "w tysiąc dziewięćset trzydziestym piątym roku",
         "title": "Konstytucja kwietniowa i śmierć Piłsudskiego",
         "note": "Marszałek umiera 12 maja, pochowany na Wawelu.",
         "core": false
@@ -502,6 +580,7 @@ const dateTimeline = [
   },
   {
     "year": 1939,
+    "say": "w tysiąc dziewięćset trzydziestym dziewiątym roku",
     "title": "Wybuch II wojny światowej",
     "role": "Katastrofa",
     "note": "1 września Niemcy atakują Polskę - zaczyna się II wojna światowa. 17 września od wschodu wkracza ZSRR.",
@@ -512,66 +591,77 @@ const dateTimeline = [
     "events": [
       {
         "year": 1939,
+        "say": "w tysiąc dziewięćset trzydziestym dziewiątym roku",
         "title": "Pakt Ribbentrop-Mołotow",
         "note": "23 sierpnia. Tajny podział Polski między III Rzeszę i ZSRR.",
         "core": true
       },
       {
         "year": 1939,
+        "say": "w tysiąc dziewięćset trzydziestym dziewiątym roku",
         "title": "Atak Niemiec na Polskę",
         "note": "1 września, Westerplatte. Początek II wojny światowej.",
         "core": true
       },
       {
         "year": 1939,
+        "say": "w tysiąc dziewięćset trzydziestym dziewiątym roku",
         "title": "Agresja ZSRR na Polskę",
         "note": "17 września, cios w plecy walczącej Polsce.",
         "core": true
       },
       {
         "year": 1940,
+        "say": "w tysiąc dziewięćset czterdziestym roku",
         "title": "Zbrodnia katyńska",
         "note": "NKWD morduje wiosną blisko 22 tysiące polskich oficerów i policjantów.",
         "core": true
       },
       {
         "year": 1940,
+        "say": "w tysiąc dziewięćset czterdziestym roku",
         "title": "Pierwszy transport do Auschwitz",
         "note": "14 czerwca, 728 polskich więźniów politycznych z Tarnowa.",
         "core": false
       },
       {
         "year": 1942,
+        "say": "w tysiąc dziewięćset czterdziestym drugim roku",
         "title": "Powstanie \"Żegoty\"",
         "note": "Rada Pomocy Żydom, jedyna taka instytucja państwowa w okupowanej Europie.",
         "core": false
       },
       {
         "year": 1943,
+        "say": "w tysiąc dziewięćset czterdziestym trzecim roku",
         "title": "Powstanie w getcie warszawskim",
         "note": "Wybucha 19 kwietnia, pierwsze powstanie miejskie w okupowanej Europie.",
         "core": true
       },
       {
         "year": 1943,
+        "say": "w tysiąc dziewięćset czterdziestym trzecim roku",
         "title": "Śmierć gen. Władysława Sikorskiego",
         "note": "4 lipca, katastrofa lotnicza w Gibraltarze.",
         "core": true
       },
       {
         "year": 1944,
+        "say": "w tysiąc dziewięćset czterdziestym czwartym roku",
         "title": "Powstanie Warszawskie",
         "note": "Wybucha 1 sierpnia i trwa 63 dni.",
         "core": true
       },
       {
         "year": 1945,
+        "say": "w tysiąc dziewięćset czterdziestym piątym roku",
         "title": "Konferencja jałtańska",
         "note": "Luty. Wielka Trójka przesądza o podziale Europy; Polska w strefie ZSRR.",
         "core": false
       },
       {
         "year": 1945,
+        "say": "w tysiąc dziewięćset czterdziestym piątym roku",
         "title": "Koniec II wojny światowej",
         "note": "8 maja. Polska traci ziemie wschodnie i suwerenność.",
         "core": true
@@ -580,6 +670,7 @@ const dateTimeline = [
   },
   {
     "year": 1989,
+    "say": "w tysiąc dziewięćset osiemdziesiątym dziewiątym roku",
     "title": "Upadek komunizmu",
     "role": "Wolność",
     "note": "Obrady Okrągłego Stołu i pierwsze częściowo wolne wybory 4 czerwca. Tadeusz Mazowiecki zostaje pierwszym niekomunistycznym premierem.",
@@ -591,126 +682,147 @@ const dateTimeline = [
     "events": [
       {
         "year": 1947,
+        "say": "w tysiąc dziewięćset czterdziestym siódmym roku",
         "title": "Sfałszowane wybory",
         "note": "Komuniści przejmują pełnię władzy; początek okresu PRL.",
         "core": false
       },
       {
         "year": 1956,
+        "say": "w tysiąc dziewięćset pięćdziesiątym szóstym roku",
         "title": "Poznański Czerwiec",
         "note": "Pierwszy masowy protest robotniczy w PRL, krwawo stłumiony.",
         "core": true
       },
       {
         "year": 1966,
+        "say": "w tysiąc dziewięćset sześćdziesiątym szóstym roku",
         "title": "Milenium chrztu Polski",
         "note": "Tysiąclecie chrztu; władze komunistyczne organizują konkurencyjne obchody.",
         "core": false
       },
       {
         "year": 1968,
+        "say": "w tysiąc dziewięćset sześćdziesiątym ósmym roku",
         "title": "Marzec '68",
         "note": "Protesty studenckie i antysemicka kampania władz; emigracja tysięcy Polaków.",
         "core": false
       },
       {
         "year": 1970,
+        "say": "w tysiąc dziewięćset siedemdziesiątym roku",
         "title": "Grudzień '70",
         "note": "Masakra robotników na Wybrzeżu; upamiętnia ją pomnik Trzech Krzyży w Gdańsku.",
         "core": true
       },
       {
         "year": 1978,
+        "say": "w tysiąc dziewięćset siedemdziesiątym ósmym roku",
         "title": "Karol Wojtyła papieżem",
         "note": "16 października. Pierwszy polski papież, Jan Paweł II.",
         "core": true
       },
       {
         "year": 1979,
+        "say": "w tysiąc dziewięćset siedemdziesiątym dziewiątym roku",
         "title": "Pierwsza pielgrzymka Jana Pawła II",
         "note": "\"Niech zstąpi Duch Twój i odnowi oblicze ziemi, tej ziemi\".",
         "core": true
       },
       {
         "year": 1980,
+        "say": "w tysiąc dziewięćset osiemdziesiątym roku",
         "title": "Powstanie \"Solidarności\"",
         "note": "Strajki w Stoczni Gdańskiej, porozumienia sierpniowe, na czele Lech Wałęsa.",
         "core": true
       },
       {
         "year": 1980,
+        "say": "w tysiąc dziewięćset osiemdziesiątym roku",
         "title": "Nobel dla Czesława Miłosza",
         "note": "Nagroda z literatury dla poety na emigracji.",
         "core": true
       },
       {
         "year": 1981,
+        "say": "w tysiąc dziewięćset osiemdziesiątym pierwszym roku",
         "title": "Stan wojenny",
         "note": "Wprowadzony 13 grudnia przez gen. Wojciecha Jaruzelskiego.",
         "core": true
       },
       {
         "year": 1983,
+        "say": "w tysiąc dziewięćset osiemdziesiątym trzecim roku",
         "title": "Pokojowy Nobel dla Lecha Wałęsy",
         "note": "Nagroda dla przywódcy \"Solidarności\".",
         "core": true
       },
       {
         "year": 1984,
+        "say": "w tysiąc dziewięćset osiemdziesiątym czwartym roku",
         "title": "Zabójstwo ks. Jerzego Popiełuszki",
         "note": "Kapelan \"Solidarności\" zamordowany przez Służbę Bezpieczeństwa; dziś błogosławiony.",
         "core": true
       },
       {
         "year": 1989,
+        "say": "w tysiąc dziewięćset osiemdziesiątym dziewiątym roku",
         "title": "Okrągły Stół i wybory 4 czerwca",
         "note": "Upadek komunizmu; Tadeusz Mazowiecki pierwszym niekomunistycznym premierem.",
         "core": true
       },
       {
         "year": 1990,
+        "say": "w tysiąc dziewięćset dziewięćdziesiątym roku",
         "title": "Lech Wałęsa prezydentem",
         "note": "Pierwszy prezydent wybrany w wyborach powszechnych po 1989 r.",
         "core": true
       },
       {
         "year": 1996,
+        "say": "w tysiąc dziewięćset dziewięćdziesiątym szóstym roku",
         "title": "Nobel dla Wisławy Szymborskiej",
         "note": "Nagroda z literatury.",
         "core": true
       },
       {
         "year": 1997,
+        "say": "w tysiąc dziewięćset dziewięćdziesiątym siódmym roku",
         "title": "Konstytucja RP",
         "note": "Uchwalona 2 kwietnia, obowiązuje do dziś.",
         "core": true
       },
       {
         "year": 1999,
+        "say": "w tysiąc dziewięćset dziewięćdziesiątym dziewiątym roku",
         "title": "Wstąpienie do NATO",
         "note": "Polska wchodzi do sojuszu północnoatlantyckiego.",
         "core": true
       },
       {
         "year": 2004,
+        "say": "w dwa tysiące czwartym roku",
         "title": "Wstąpienie do Unii Europejskiej",
         "note": "1 maja, razem z dziewięcioma innymi państwami.",
         "core": true
       },
       {
         "year": 2005,
+        "say": "w dwa tysiące piątym roku",
         "title": "Śmierć Jana Pawła II",
         "note": "2 kwietnia. Żałoba narodowa w całej Polsce.",
         "core": true
       },
       {
         "year": 2010,
+        "say": "w dwa tysiące dziesiątym roku",
         "title": "Katastrofa smoleńska",
         "note": "10 kwietnia. Ginie prezydent Lech Kaczyński i 95 innych osób.",
         "core": true
       },
       {
         "year": 2018,
+        "say": "w dwa tysiące osiemnastym roku",
         "title": "Nobel dla Olgi Tokarczuk",
         "note": "Nagroda z literatury za rok 2018.",
         "core": true
