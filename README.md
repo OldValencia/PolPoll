@@ -5,7 +5,7 @@
 **A trainer for the Karta Polaka and permanent-residence interviews**
 **Trener do rozmowy na Kartę Polaka i kartę stałego pobytu**
 
-392 questions · 105 dates on a timeline · spaced repetition · works offline
+392 questions · 100+ dates on a timeline · spaced repetition · works offline
 
 [**▶ Open the app / Otwórz aplikację**](https://oldvalencia.github.io/PolPoll/)
 
@@ -46,7 +46,7 @@ Nothing to install, no account, no payment.
 | 👆 **Swipe** | One-handed: tap to flip the card, swipe sideways to grade it |
 | ⏱️ **Sprint** | A modifier: 60 seconds, every mistake costs 2 |
 | 📅 **Test dat** | The timeline dates on their own, block by block, in both directions |
-| 🕰️ **Oś czasu** (study) | 105 dates on seven anchors, meanings masked until you ask. Nothing is graded |
+| 🕰️ **Oś czasu** (study) | The dates on seven anchors, meanings masked until you ask. Nothing is graded |
 | 📖 **Czytelnia** (reader) | Every question in one searchable, filterable list |
 
 ### How it teaches
@@ -199,7 +199,7 @@ Nic nie trzeba instalować, nie ma kont ani opłat.
 | 👆 **Swipe** | Jedną ręką: dotknij, aby odwrócić kartę, przeciągnij w bok, aby ocenić |
 | ⏱️ **Sprint** | Modyfikator: 60 sekund, każdy błąd kosztuje 2 |
 | 📅 **Test dat** | Same daty z osi czasu, blok po bloku, w obie strony |
-| 🕰️ **Oś czasu** (nauka) | 105 dat na siedmiu kotwicach, znaczenia zakryte do kliknięcia. Nic nie jest oceniane |
+| 🕰️ **Oś czasu** (nauka) | Daty na siedmiu kotwicach, znaczenia zakryte do kliknięcia. Nic nie jest oceniane |
 | 📖 **Czytelnia** | Wszystkie pytania na jednej liście z wyszukiwarką i filtrami |
 
 ### Jak uczy

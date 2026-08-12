@@ -98,13 +98,6 @@ const dateTimeline = [
         "core": false
       },
       {
-        "year": 1109,
-        "say": "w tysiąc sto dziewiątym roku",
-        "title": "Obrona Głogowa i bitwa na Psim Polu",
-        "note": "Bolesław Krzywousty odpiera najazd cesarza Henryka V.",
-        "core": false
-      },
-      {
         "year": 1138,
         "say": "w tysiąc sto trzydziestym ósmym roku",
         "title": "Testament Bolesława Krzywoustego",
