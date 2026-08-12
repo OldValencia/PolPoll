@@ -1,6 +1,6 @@
 /* PolPoll service worker - the whole app is static, so it can run fully offline.
    Bump CACHE_VERSION whenever the shell or the question base changes. */
-const CACHE_VERSION = 'polpoll-v3-2';
+const CACHE_VERSION = 'polpoll-v3-6';
 
 const SHELL = [
     './',

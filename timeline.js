@@ -9,7 +9,8 @@ const dateTimeline = [
     "note": "Mieszko I przyjmuje chrzest. Od tej daty liczy się istnienie państwa polskiego w chrześcijańskiej Europie.",
     "hooks": [
       "Tysiąclecie chrztu Polski obchodzono w 1966 r. - te same trzy cyfry, tysiąc lat później.",
-      "Pierwsza epoka to Piastowie: od Mieszka I (966) do zjednoczenia przez Łokietka (1320)."
+      "Pierwsza epoka to Piastowie: od Mieszka I (966) do zjednoczenia przez Łokietka (1320).",
+      "Uwaga na trzech Bolesławów: Chrobry (1025, pierwszy król), Śmiały (1076, zabił biskupa Stanisława), Krzywousty (1138, podzielił państwo między synów)."
     ],
     "events": [
       {
@@ -107,7 +108,7 @@ const dateTimeline = [
         "year": 1138,
         "say": "w tysiąc sto trzydziestym ósmym roku",
         "title": "Testament Bolesława Krzywoustego",
-        "note": "Podział państwa między synów. Początek rozbicia dzielnicowego na prawie 200 lat.",
+        "note": "Bolesław III Krzywousty dzieli państwo między swoich synów i wprowadza zasadę senioratu: najstarszy z rodu miał rządzić w Krakowie. Zasada szybko upadła i zaczęło się rozbicie dzielnicowe na prawie 200 lat.",
         "core": true
       },
       {

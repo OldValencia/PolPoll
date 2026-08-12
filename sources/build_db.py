@@ -5,12 +5,10 @@ Builds questions.js from the plain-text source files.
 Design notes:
   * every question gets a STABLE id (sha1 of the normalised question text) so the
     user's spaced-repetition progress survives a rebuild;
-  * keywords are few and meaningful. The old version emitted up to 25 tokens per
-    answer (including stop words), which made the typing check unpassable;
   * numbers are kept separate from words: on the exam the date IS the answer, so
     the checker treats them as mandatory and compares them exactly;
   * `short` holds a one-sentence form of the answer, used as an option in the
-    quiz / true-false modes;
+    quiz mode;
   * duplicates are collapsed by id.
 """
 import os
@@ -45,33 +43,6 @@ CATEGORIES = {
 # and must never be offered as a wrong option in the quiz modes.
 PERSONAL_CATEGORIES = {"Pochodzenie i Rodzina"}
 
-# Real Polish stop list. The old script leaked these in because of an operator
-# precedence bug (`A and B and C or len>=4 or isdigit`).
-STOP_WORDS = {
-    "a", "aby", "albo", "ale", "ani", "az", "aż", "bardzo", "bez", "bo", "być",
-    "byl", "byla", "byli", "bylo", "był", "była", "byli", "było", "były",
-    "chociaż", "ci", "co", "coś", "czy", "czyli", "dla", "do", "dwa", "dwie",
-    "gdy", "gdyż", "gdzie", "go", "i", "ich", "ile", "im", "inne", "inny",
-    "iż", "ja", "jak", "jako", "je", "jednak", "jednym", "jego", "jej", "jest",
-    "jeszcze", "już", "kiedy", "kto", "która", "które", "którego", "której",
-    "który", "których", "lat", "lata", "latach", "lub", "ma", "mają", "mamy",
-    "mi", "miał", "mnie", "moze", "może", "można", "na", "nad", "nam", "nas",
-    "nawet", "nic", "nich", "nie", "niego", "niej", "nim", "no", "o", "od",
-    "oraz", "on", "ona", "one", "oni", "ono", "po", "pod", "podczas", "ponad",
-    "poniewaz", "ponieważ", "poza", "przed", "przez", "przy", "raz", "razem",
-    "roku", "rok", "roku", "r", "sa", "są", "się", "so", "swoje", "swój",
-    "ta", "tak", "takze", "także", "tam", "te", "tego", "tej", "temu", "ten",
-    "teraz", "też", "to", "tu", "tych", "tylko", "tym", "u", "w", "we", "wiele",
-    "wielu", "więc", "wszystko", "wtedy", "z", "za", "ze", "zeby", "żeby",
-    "znajduje", "jednym", "czym", "kim", "warto", "np", "itd", "m", "in",
-}
-
-# Words that look like proper nouns but are really titles - not distinctive.
-TITLE_WORDS = {"król", "królowa", "książę", "święty", "święta", "prezydent",
-               "papież", "generał", "marszałek", "premier", "biskup", "car"}
-
-ROMAN = re.compile(r"^(?:[IVXLC]{2,})$")
-
 
 def normalise_question(text):
     """Key used for the stable id - insensitive to case, punctuation, spacing."""
@@ -84,13 +55,6 @@ def make_id(question):
     return hashlib.sha1(normalise_question(question).encode("utf-8")).hexdigest()[:8]
 
 
-def tokenise(text):
-    """Split into words. Hyphens become spaces so 'Bielsko-Biala' yields both
-    halves - the old version glued them into one unmatchable token."""
-    text = text.replace("-", " ").replace("–", " ").replace("—", " ")
-    return re.findall(r"[\w]+", text, flags=re.UNICODE)
-
-
 def extract_numbers(answer):
     """Years and counts. These are the facts the exam actually tests."""
     numbers = []
@@ -98,40 +62,6 @@ def extract_numbers(answer):
         if match not in numbers:
             numbers.append(match)
     return numbers[:5]
-
-
-def extract_words(answer):
-    """Distinctive words, preferring proper nouns."""
-    # A word is a candidate proper noun if it is capitalised and does not open a
-    # sentence. Split on sentence boundaries so we know which position is first.
-    proper, ordinary = [], []
-    for sentence in re.split(r"(?<=[.!?])\s+", answer):
-        tokens = tokenise(sentence)
-        for index, token in enumerate(tokens):
-            lowered = token.lower()
-            if lowered in STOP_WORDS or lowered in TITLE_WORDS:
-                continue
-            if token.isdigit():
-                continue
-            if ROMAN.match(token):
-                if lowered not in proper:
-                    proper.append(lowered)
-                continue
-            if len(token) < 4:
-                continue
-            is_proper = token[0].isupper() and index > 0
-            bucket = proper if is_proper else ordinary
-            if lowered not in proper and lowered not in ordinary:
-                bucket.append(lowered)
-
-    # Proper nouns first, then the longest ordinary words as a fallback.
-    ordinary.sort(key=len, reverse=True)
-    keywords = proper[:4]
-    for word in ordinary:
-        if len(keywords) >= 4:
-            break
-        keywords.append(word)
-    return keywords
 
 
 def first_sentence(answer):
@@ -182,10 +112,8 @@ def parse_file(path, category):
             continue
 
         kind = classify(question, answer, extract_numbers(answer), category)
-        # Personal answers are worked examples to adapt, so nothing in them is a
-        # required keyword - the app self-grades these instead.
+        # Personal answers are worked examples to adapt, not facts to check.
         numbers = [] if kind == "personal" else extract_numbers(answer)
-        keywords = [] if kind == "personal" else extract_words(answer)
 
         questions.append({
             "id": make_id(question),
@@ -195,7 +123,6 @@ def parse_file(path, category):
             "short": first_sentence(answer),
             "type": kind,
             "numbers": numbers,
-            "keywords": keywords,
         })
     return questions
 
@@ -357,17 +284,13 @@ def main():
     with open(OUTPUT_FILE, "w", encoding="utf-8") as handle:
         handle.write("%sconst questionsDatabase = %s;\n" % (header, body))
 
-    empty = [q for q in questions
-             if not q["keywords"] and not q["numbers"] and q["type"] != "personal"]
     print("Wrote %d questions to %s" % (len(questions), OUTPUT_FILE))
     print("  collapsed duplicates: %d" % len(duplicates))
     for text in duplicates:
         print("    - %s" % text)
-    print("  avg keywords: %.1f" % (sum(len(q["keywords"]) for q in questions) / len(questions)))
-    print("  avg numbers:  %.1f" % (sum(len(q["numbers"]) for q in questions) / len(questions)))
-    print("  no signal at all: %d" % len(empty))
-    for q in empty:
-        print("    - %s" % q["question"])
+    print("  avg numbers per question: %.1f"
+          % (sum(len(q["numbers"]) for q in questions) / len(questions)))
+
     types = {}
     for q in questions:
         types[q["type"]] = types.get(q["type"], 0) + 1

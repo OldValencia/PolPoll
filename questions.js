@@ -10,9 +10,6 @@ const questionsDatabase = [
     "type": "date",
     "numbers": [
       "966"
-    ],
-    "keywords": [
-      "mieszko"
     ]
   },
   {
@@ -24,10 +21,6 @@ const questionsDatabase = [
     "type": "person",
     "numbers": [
       "1025"
-    ],
-    "keywords": [
-      "chrobry",
-      "bolesław"
     ]
   },
   {
@@ -37,10 +30,7 @@ const questionsDatabase = [
     "answer": "Gniezno.",
     "short": "Gniezno.",
     "type": "place",
-    "numbers": [],
-    "keywords": [
-      "gniezno"
-    ]
+    "numbers": []
   },
   {
     "id": "7d53f16c",
@@ -51,8 +41,7 @@ const questionsDatabase = [
     "type": "date",
     "numbers": [
       "1000"
-    ],
-    "keywords": []
+    ]
   },
   {
     "id": "5909e737",
@@ -63,10 +52,6 @@ const questionsDatabase = [
     "type": "person",
     "numbers": [
       "1226"
-    ],
-    "keywords": [
-      "konrad",
-      "mazowiecki"
     ]
   },
   {
@@ -78,10 +63,6 @@ const questionsDatabase = [
     "type": "person",
     "numbers": [
       "1364"
-    ],
-    "keywords": [
-      "kazimierz",
-      "wielki"
     ]
   },
   {
@@ -91,11 +72,7 @@ const questionsDatabase = [
     "answer": "O Kazimierzu Wielkim.",
     "short": "O Kazimierzu Wielkim.",
     "type": "text",
-    "numbers": [],
-    "keywords": [
-      "kazimierzu",
-      "wielkim"
-    ]
+    "numbers": []
   },
   {
     "id": "717c4060",
@@ -107,12 +84,6 @@ const questionsDatabase = [
     "numbers": [
       "15",
       "1410"
-    ],
-    "keywords": [
-      "władysław",
-      "jagiełło",
-      "dowodził",
-      "lipca"
     ]
   },
   {
@@ -124,12 +95,6 @@ const questionsDatabase = [
     "type": "text",
     "numbers": [
       "1385"
-    ],
-    "keywords": [
-      "polską",
-      "litwą",
-      "jagiellonów",
-      "polsce"
     ]
   },
   {
@@ -141,12 +106,6 @@ const questionsDatabase = [
     "type": "text",
     "numbers": [
       "1569"
-    ],
-    "keywords": [
-      "polskę",
-      "litwę",
-      "rzeczpospolitą",
-      "obojga"
     ]
   },
   {
@@ -156,13 +115,7 @@ const questionsDatabase = [
     "answer": "Ciężka jazda polska, znana ze skrzydeł na plecach, odnosiła wielkie zwycięstwa w XVI-XVII wieku.",
     "short": "Ciężka jazda polska, znana ze skrzydeł na plecach, odnosiła wielkie zwycięstwa w XVI-XVII wieku.",
     "type": "person",
-    "numbers": [],
-    "keywords": [
-      "xvi",
-      "xvii",
-      "zwycięstwa",
-      "skrzydeł"
-    ]
+    "numbers": []
   },
   {
     "id": "95ab6586",
@@ -174,11 +127,6 @@ const questionsDatabase = [
     "numbers": [
       "1655",
       "1660"
-    ],
-    "keywords": [
-      "szwecji",
-      "polskę",
-      "najazd"
     ]
   },
   {
@@ -188,12 +136,7 @@ const questionsDatabase = [
     "answer": "Przeor Augustyn Kordecki.",
     "short": "Przeor Augustyn Kordecki.",
     "type": "person",
-    "numbers": [],
-    "keywords": [
-      "augustyn",
-      "kordecki",
-      "przeor"
-    ]
+    "numbers": []
   },
   {
     "id": "4c8dbe79",
@@ -204,12 +147,6 @@ const questionsDatabase = [
     "type": "person",
     "numbers": [
       "1683"
-    ],
-    "keywords": [
-      "iii",
-      "sobieski",
-      "turków",
-      "pokonał"
     ]
   },
   {
@@ -222,9 +159,6 @@ const questionsDatabase = [
     "numbers": [
       "3",
       "1791"
-    ],
-    "keywords": [
-      "maja"
     ]
   },
   {
@@ -238,8 +172,7 @@ const questionsDatabase = [
       "1772",
       "1793",
       "1795"
-    ],
-    "keywords": []
+    ]
   },
   {
     "id": "6f5948d9",
@@ -248,12 +181,7 @@ const questionsDatabase = [
     "answer": "Rosja, Prusy i Austria.",
     "short": "Rosja, Prusy i Austria.",
     "type": "text",
-    "numbers": [],
-    "keywords": [
-      "prusy",
-      "austria",
-      "rosja"
-    ]
+    "numbers": []
   },
   {
     "id": "8a3f46c9",
@@ -262,13 +190,7 @@ const questionsDatabase = [
     "answer": "Tadeusz Kościuszko (Insurekcja kościuszkowska).",
     "short": "Tadeusz Kościuszko (Insurekcja kościuszkowska).",
     "type": "person",
-    "numbers": [],
-    "keywords": [
-      "kościuszko",
-      "insurekcja",
-      "kościuszkowska",
-      "tadeusz"
-    ]
+    "numbers": []
   },
   {
     "id": "33027a87",
@@ -280,9 +202,6 @@ const questionsDatabase = [
     "numbers": [
       "29",
       "1830"
-    ],
-    "keywords": [
-      "listopada"
     ]
   },
   {
@@ -295,9 +214,6 @@ const questionsDatabase = [
     "numbers": [
       "22",
       "1863"
-    ],
-    "keywords": [
-      "stycznia"
     ]
   },
   {
@@ -310,9 +226,6 @@ const questionsDatabase = [
     "numbers": [
       "11",
       "1918"
-    ],
-    "keywords": [
-      "listopada"
     ]
   },
   {
@@ -322,11 +235,7 @@ const questionsDatabase = [
     "answer": "Józef Piłsudski.",
     "short": "Józef Piłsudski.",
     "type": "person",
-    "numbers": [],
-    "keywords": [
-      "piłsudski",
-      "józef"
-    ]
+    "numbers": []
   },
   {
     "id": "8213a05d",
@@ -337,12 +246,6 @@ const questionsDatabase = [
     "type": "text",
     "numbers": [
       "1920"
-    ],
-    "keywords": [
-      "warszawska",
-      "polacy",
-      "armię",
-      "czerwoną"
     ]
   },
   {
@@ -355,9 +258,6 @@ const questionsDatabase = [
     "numbers": [
       "1",
       "1939"
-    ],
-    "keywords": [
-      "września"
     ]
   },
   {
@@ -370,9 +270,6 @@ const questionsDatabase = [
     "numbers": [
       "17",
       "1939"
-    ],
-    "keywords": [
-      "września"
     ]
   },
   {
@@ -385,12 +282,6 @@ const questionsDatabase = [
     "numbers": [
       "1940",
       "22"
-    ],
-    "keywords": [
-      "nkwd",
-      "zamordowanie",
-      "policjantów",
-      "sowieckie"
     ]
   },
   {
@@ -403,9 +294,6 @@ const questionsDatabase = [
     "numbers": [
       "19",
       "1943"
-    ],
-    "keywords": [
-      "kwietnia"
     ]
   },
   {
@@ -419,10 +307,6 @@ const questionsDatabase = [
       "1",
       "1944",
       "63"
-    ],
-    "keywords": [
-      "sierpnia",
-      "trwało"
     ]
   },
   {
@@ -434,12 +318,6 @@ const questionsDatabase = [
     "type": "person",
     "numbers": [
       "1943"
-    ],
-    "keywords": [
-      "naczelny",
-      "wódz",
-      "ii",
-      "gibraltarze"
     ]
   },
   {
@@ -449,13 +327,7 @@ const questionsDatabase = [
     "answer": "Największa podziemna armia w okupowanej Europie podczas II wojny światowej.",
     "short": "Największa podziemna armia w okupowanej Europie podczas II wojny światowej.",
     "type": "text",
-    "numbers": [],
-    "keywords": [
-      "europie",
-      "ii",
-      "największa",
-      "okupowanej"
-    ]
+    "numbers": []
   },
   {
     "id": "5a7e18a6",
@@ -466,12 +338,6 @@ const questionsDatabase = [
     "type": "date",
     "numbers": [
       "1980"
-    ],
-    "keywords": [
-      "lech",
-      "wałęsa",
-      "powstała",
-      "stanął"
     ]
   },
   {
@@ -484,11 +350,6 @@ const questionsDatabase = [
     "numbers": [
       "13",
       "1981"
-    ],
-    "keywords": [
-      "jaruzelskiego",
-      "wojciecha",
-      "grudnia"
     ]
   },
   {
@@ -500,12 +361,6 @@ const questionsDatabase = [
     "type": "text",
     "numbers": [
       "1989"
-    ],
-    "keywords": [
-      "solidarnością",
-      "komunistyczną",
-      "doprowadziły",
-      "negocjacje"
     ]
   },
   {
@@ -518,9 +373,6 @@ const questionsDatabase = [
     "numbers": [
       "4",
       "1989"
-    ],
-    "keywords": [
-      "czerwca"
     ]
   },
   {
@@ -532,8 +384,7 @@ const questionsDatabase = [
     "type": "date",
     "numbers": [
       "1999"
-    ],
-    "keywords": []
+    ]
   },
   {
     "id": "3b4a7ee5",
@@ -545,9 +396,6 @@ const questionsDatabase = [
     "numbers": [
       "1",
       "2004"
-    ],
-    "keywords": [
-      "maja"
     ]
   },
   {
@@ -559,12 +407,6 @@ const questionsDatabase = [
     "type": "text",
     "numbers": [
       "95"
-    ],
-    "keywords": [
-      "smoleńsku",
-      "lech",
-      "kaczyński",
-      "prezydenckiego"
     ]
   },
   {
@@ -574,13 +416,7 @@ const questionsDatabase = [
     "answer": "Członkowie powojennego podziemia niepodległościowego, którzy walczyli z narzuconą władzą komunistyczną.",
     "short": "Członkowie powojennego podziemia niepodległościowego, którzy walczyli z narzuconą władzą komunistyczną.",
     "type": "person",
-    "numbers": [],
-    "keywords": [
-      "niepodległościowego",
-      "komunistyczną",
-      "powojennego",
-      "członkowie"
-    ]
+    "numbers": []
   },
   {
     "id": "6bde2877",
@@ -589,12 +425,7 @@ const questionsDatabase = [
     "answer": "Stanisław August Poniatowski.",
     "short": "Stanisław August Poniatowski.",
     "type": "person",
-    "numbers": [],
-    "keywords": [
-      "august",
-      "poniatowski",
-      "stanisław"
-    ]
+    "numbers": []
   },
   {
     "id": "5d161113",
@@ -603,13 +434,7 @@ const questionsDatabase = [
     "answer": "W XVI wieku (za panowania ostatnich Jagiellonów).",
     "short": "W XVI wieku (za panowania ostatnich Jagiellonów).",
     "type": "text",
-    "numbers": [],
-    "keywords": [
-      "xvi",
-      "jagiellonów",
-      "panowania",
-      "ostatnich"
-    ]
+    "numbers": []
   },
   {
     "id": "36a60ff9",
@@ -620,12 +445,6 @@ const questionsDatabase = [
     "type": "text",
     "numbers": [
       "1525"
-    ],
-    "keywords": [
-      "zygmuntowi",
-      "staremu",
-      "albrechta",
-      "hohenzollerna"
     ]
   },
   {
@@ -635,12 +454,7 @@ const questionsDatabase = [
     "answer": "Władysław III Warneńczyk.",
     "short": "Władysław III Warneńczyk.",
     "type": "text",
-    "numbers": [],
-    "keywords": [
-      "iii",
-      "warneńczyk",
-      "władysław"
-    ]
+    "numbers": []
   },
   {
     "id": "d991e261",
@@ -649,13 +463,7 @@ const questionsDatabase = [
     "answer": "Wybitny polski dowódca wojskowy z czasów potopu szwedzkiego (wspomniany w Hymnie Polski).",
     "short": "Wybitny polski dowódca wojskowy z czasów potopu szwedzkiego (wspomniany w Hymnie Polski).",
     "type": "person",
-    "numbers": [],
-    "keywords": [
-      "hymnie",
-      "szwedzkiego",
-      "wspomniany",
-      "wojskowy"
-    ]
+    "numbers": []
   },
   {
     "id": "f37b1c37",
@@ -664,13 +472,7 @@ const questionsDatabase = [
     "answer": "Ostatni dyktator Powstania Styczniowego.",
     "short": "Ostatni dyktator Powstania Styczniowego.",
     "type": "person",
-    "numbers": [],
-    "keywords": [
-      "powstania",
-      "styczniowego",
-      "dyktator",
-      "ostatni"
-    ]
+    "numbers": []
   },
   {
     "id": "fb726531",
@@ -681,12 +483,6 @@ const questionsDatabase = [
     "type": "person",
     "numbers": [
       "1918"
-    ],
-    "keywords": [
-      "niepodległościowy",
-      "zagranicznych",
-      "kompozytor",
-      "pianista"
     ]
   },
   {
@@ -698,12 +494,6 @@ const questionsDatabase = [
     "type": "person",
     "numbers": [
       "1797"
-    ],
-    "keywords": [
-      "wybicki",
-      "reggio",
-      "emilia",
-      "włoszech"
     ]
   },
   {
@@ -715,12 +505,6 @@ const questionsDatabase = [
     "type": "text",
     "numbers": [
       "1920"
-    ],
-    "keywords": [
-      "wilno",
-      "ii",
-      "wydarzenie",
-      "granicach"
     ]
   },
   {
@@ -730,11 +514,7 @@ const questionsDatabase = [
     "answer": "Lech Wałęsa.",
     "short": "Lech Wałęsa.",
     "type": "person",
-    "numbers": [],
-    "keywords": [
-      "wałęsa",
-      "lech"
-    ]
+    "numbers": []
   },
   {
     "id": "ad76dabf",
@@ -743,13 +523,7 @@ const questionsDatabase = [
     "answer": "Warszawa (od końca XVI wieku).",
     "short": "Warszawa (od końca XVI wieku).",
     "type": "place",
-    "numbers": [],
-    "keywords": [
-      "xvi",
-      "warszawa",
-      "końca",
-      "wieku"
-    ]
+    "numbers": []
   },
   {
     "id": "bc445f6a",
@@ -758,13 +532,7 @@ const questionsDatabase = [
     "answer": "Kraków, Warszawa, Toruń, Bydgoszcz, Gdańsk.",
     "short": "Kraków, Warszawa, Toruń, Bydgoszcz, Gdańsk.",
     "type": "text",
-    "numbers": [],
-    "keywords": [
-      "warszawa",
-      "toruń",
-      "bydgoszcz",
-      "gdańsk"
-    ]
+    "numbers": []
   },
   {
     "id": "0c8af4f8",
@@ -773,13 +541,7 @@ const questionsDatabase = [
     "answer": "Niemcy (zachód), Czechy i Słowacja (południe), Ukraina, Białoruś, Litwa (wschód), Rosja/Obwód Królewiecki (północ).",
     "short": "Niemcy (zachód), Czechy i Słowacja (południe), Ukraina, Białoruś, Litwa (wschód), Rosja/Obwód Królewiecki (północ).",
     "type": "text",
-    "numbers": [],
-    "keywords": [
-      "czechy",
-      "słowacja",
-      "ukraina",
-      "białoruś"
-    ]
+    "numbers": []
   },
   {
     "id": "6d77fd9e",
@@ -788,11 +550,7 @@ const questionsDatabase = [
     "answer": "Morze Bałtyckie.",
     "short": "Morze Bałtyckie.",
     "type": "text",
-    "numbers": [],
-    "keywords": [
-      "bałtyckie",
-      "morze"
-    ]
+    "numbers": []
   },
   {
     "id": "4e87fecd",
@@ -801,13 +559,7 @@ const questionsDatabase = [
     "answer": "Karpaty (Tatry, Pieniny, Bieszczady, Beskidy), Sudety, Góry Świętokrzyskie.",
     "short": "Karpaty (Tatry, Pieniny, Bieszczady, Beskidy), Sudety, Góry Świętokrzyskie.",
     "type": "text",
-    "numbers": [],
-    "keywords": [
-      "tatry",
-      "pieniny",
-      "bieszczady",
-      "beskidy"
-    ]
+    "numbers": []
   },
   {
     "id": "f60120c2",
@@ -818,10 +570,6 @@ const questionsDatabase = [
     "type": "text",
     "numbers": [
       "2499"
-    ],
-    "keywords": [
-      "tatrach",
-      "rysy"
     ]
   },
   {
@@ -831,13 +579,7 @@ const questionsDatabase = [
     "answer": "Na pograniczu Wyżyny Śląskiej i Olkuskiej, niedaleko Olkusza. Jest to największy w Polsce obszar ruchomych piasków, powstały sztucznie - od XIII wieku wycinano tu lasy na potrzeby kopalń srebra i ołowiu.",
     "short": "Na pograniczu Wyżyny Śląskiej i Olkuskiej, niedaleko Olkusza.",
     "type": "place",
-    "numbers": [],
-    "keywords": [
-      "wyżyny",
-      "śląskiej",
-      "olkuskiej",
-      "olkusza"
-    ]
+    "numbers": []
   },
   {
     "id": "07054d64",
@@ -846,13 +588,7 @@ const questionsDatabase = [
     "answer": "Warszawa, Kraków, Łódź, Wrocław, Poznań.",
     "short": "Warszawa, Kraków, Łódź, Wrocław, Poznań.",
     "type": "list",
-    "numbers": [],
-    "keywords": [
-      "kraków",
-      "łódź",
-      "wrocław",
-      "poznań"
-    ]
+    "numbers": []
   },
   {
     "id": "55c5eb87",
@@ -863,9 +599,6 @@ const questionsDatabase = [
     "type": "place",
     "numbers": [
       "16"
-    ],
-    "keywords": [
-      "województw"
     ]
   },
   {
@@ -875,11 +608,7 @@ const questionsDatabase = [
     "answer": "W województwie mazowieckim.",
     "short": "W województwie mazowieckim.",
     "type": "place",
-    "numbers": [],
-    "keywords": [
-      "województwie",
-      "mazowieckim"
-    ]
+    "numbers": []
   },
   {
     "id": "725f0758",
@@ -888,11 +617,7 @@ const questionsDatabase = [
     "answer": "W województwie małopolskim.",
     "short": "W województwie małopolskim.",
     "type": "place",
-    "numbers": [],
-    "keywords": [
-      "województwie",
-      "małopolskim"
-    ]
+    "numbers": []
   },
   {
     "id": "c1d8d51f",
@@ -901,11 +626,7 @@ const questionsDatabase = [
     "answer": "W województwie pomorskim.",
     "short": "W województwie pomorskim.",
     "type": "place",
-    "numbers": [],
-    "keywords": [
-      "województwie",
-      "pomorskim"
-    ]
+    "numbers": []
   },
   {
     "id": "bc8a9497",
@@ -914,10 +635,7 @@ const questionsDatabase = [
     "answer": "Toruń.",
     "short": "Toruń.",
     "type": "place",
-    "numbers": [],
-    "keywords": [
-      "toruń"
-    ]
+    "numbers": []
   },
   {
     "id": "78519531",
@@ -926,13 +644,7 @@ const questionsDatabase = [
     "answer": "Ze słynną, zabytkową kopalnią soli, wpisaną na listę UNESCO.",
     "short": "Ze słynną, zabytkową kopalnią soli, wpisaną na listę UNESCO.",
     "type": "text",
-    "numbers": [],
-    "keywords": [
-      "unesco",
-      "zabytkową",
-      "kopalnią",
-      "wpisaną"
-    ]
+    "numbers": []
   },
   {
     "id": "287f5377",
@@ -941,13 +653,7 @@ const questionsDatabase = [
     "answer": "Pradawny las na wschodzie Polski, królestwo żubra, obiekt z listy UNESCO.",
     "short": "Pradawny las na wschodzie Polski, królestwo żubra, obiekt z listy UNESCO.",
     "type": "text",
-    "numbers": [],
-    "keywords": [
-      "polski",
-      "unesco",
-      "wschodzie",
-      "królestwo"
-    ]
+    "numbers": []
   },
   {
     "id": "6c2ea0aa",
@@ -956,13 +662,7 @@ const questionsDatabase = [
     "answer": "Gdańsk, Gdynia, Szczecin, Świnoujście.",
     "short": "Gdańsk, Gdynia, Szczecin, Świnoujście.",
     "type": "text",
-    "numbers": [],
-    "keywords": [
-      "gdynia",
-      "szczecin",
-      "świnoujście",
-      "gdańsk"
-    ]
+    "numbers": []
   },
   {
     "id": "03408f81",
@@ -971,13 +671,7 @@ const questionsDatabase = [
     "answer": "Na Górnym Śląsku (Katowice i okolice).",
     "short": "Na Górnym Śląsku (Katowice i okolice).",
     "type": "place",
-    "numbers": [],
-    "keywords": [
-      "górnym",
-      "śląsku",
-      "katowice",
-      "okolice"
-    ]
+    "numbers": []
   },
   {
     "id": "8207c8f4",
@@ -986,13 +680,7 @@ const questionsDatabase = [
     "answer": "Kraina tysiąca jezior w północno-wschodniej Polsce.",
     "short": "Kraina tysiąca jezior w północno-wschodniej Polsce.",
     "type": "text",
-    "numbers": [],
-    "keywords": [
-      "polsce",
-      "wschodniej",
-      "północno",
-      "tysiąca"
-    ]
+    "numbers": []
   },
   {
     "id": "c955e7fa",
@@ -1001,11 +689,7 @@ const questionsDatabase = [
     "answer": "Śniardwy (na Mazurach).",
     "short": "Śniardwy (na Mazurach).",
     "type": "text",
-    "numbers": [],
-    "keywords": [
-      "mazurach",
-      "śniardwy"
-    ]
+    "numbers": []
   },
   {
     "id": "6b579741",
@@ -1014,10 +698,7 @@ const questionsDatabase = [
     "answer": "Hańcza.",
     "short": "Hańcza.",
     "type": "text",
-    "numbers": [],
-    "keywords": [
-      "hańcza"
-    ]
+    "numbers": []
   },
   {
     "id": "b2e9303f",
@@ -1026,13 +707,7 @@ const questionsDatabase = [
     "answer": "Wzgórze w Krakowie, na którym znajduje się Zamek Królewski i Katedra – dawna siedziba królów Polski.",
     "short": "Wzgórze w Krakowie, na którym znajduje się Zamek Królewski i Katedra – dawna siedziba królów Polski.",
     "type": "text",
-    "numbers": [],
-    "keywords": [
-      "krakowie",
-      "zamek",
-      "królewski",
-      "katedra"
-    ]
+    "numbers": []
   },
   {
     "id": "abbe7aee",
@@ -1041,13 +716,7 @@ const questionsDatabase = [
     "answer": "W Smoczej Jamie u stóp wzgórza Wawel w Krakowie.",
     "short": "W Smoczej Jamie u stóp wzgórza Wawel w Krakowie.",
     "type": "place",
-    "numbers": [],
-    "keywords": [
-      "smoczej",
-      "jamie",
-      "wawel",
-      "krakowie"
-    ]
+    "numbers": []
   },
   {
     "id": "01235c63",
@@ -1056,10 +725,7 @@ const questionsDatabase = [
     "answer": "Warszawy.",
     "short": "Warszawy.",
     "type": "text",
-    "numbers": [],
-    "keywords": [
-      "warszawy"
-    ]
+    "numbers": []
   },
   {
     "id": "40ecb00f",
@@ -1068,10 +734,7 @@ const questionsDatabase = [
     "answer": "Warta.",
     "short": "Warta.",
     "type": "place",
-    "numbers": [],
-    "keywords": [
-      "warta"
-    ]
+    "numbers": []
   },
   {
     "id": "b698a809",
@@ -1080,10 +743,7 @@ const questionsDatabase = [
     "answer": "Odra.",
     "short": "Odra.",
     "type": "place",
-    "numbers": [],
-    "keywords": [
-      "odra"
-    ]
+    "numbers": []
   },
   {
     "id": "00b661f4",
@@ -1092,13 +752,7 @@ const questionsDatabase = [
     "answer": "Najmniejszy park narodowy w Polsce, znany z dolin wapiennych i Maczugi Herkulesa, leży niedaleko Krakowa.",
     "short": "Najmniejszy park narodowy w Polsce, znany z dolin wapiennych i Maczugi Herkulesa, leży niedaleko Krakowa.",
     "type": "text",
-    "numbers": [],
-    "keywords": [
-      "polsce",
-      "maczugi",
-      "herkulesa",
-      "krakowa"
-    ]
+    "numbers": []
   },
   {
     "id": "2324e43c",
@@ -1107,13 +761,7 @@ const questionsDatabase = [
     "answer": "Park nad morzem słynący z ruchomych wydm.",
     "short": "Park nad morzem słynący z ruchomych wydm.",
     "type": "text",
-    "numbers": [],
-    "keywords": [
-      "ruchomych",
-      "słynący",
-      "morzem",
-      "park"
-    ]
+    "numbers": []
   },
   {
     "id": "43d5aab4",
@@ -1122,13 +770,7 @@ const questionsDatabase = [
     "answer": "Nazywane jest 'zimową stolicą Polski', leży u stóp Tatr, słynie ze skoków narciarskich, Krupówek i góralskiego folkloru.",
     "short": "Nazywane jest 'zimową stolicą Polski', leży u stóp Tatr, słynie ze skoków narciarskich, Krupówek i góralskiego folkloru.",
     "type": "text",
-    "numbers": [],
-    "keywords": [
-      "polski",
-      "tatr",
-      "krupówek",
-      "narciarskich"
-    ]
+    "numbers": []
   },
   {
     "id": "c5bb8284",
@@ -1137,13 +779,7 @@ const questionsDatabase = [
     "answer": "Popularne szczyty turystyczne w Tatrach, na które można wjechać kolejką.",
     "short": "Popularne szczyty turystyczne w Tatrach, na które można wjechać kolejką.",
     "type": "text",
-    "numbers": [],
-    "keywords": [
-      "tatrach",
-      "turystyczne",
-      "popularne",
-      "szczyty"
-    ]
+    "numbers": []
   },
   {
     "id": "85089334",
@@ -1152,13 +788,7 @@ const questionsDatabase = [
     "answer": "Zabytkowy budynek handlowy na Rynku Głównym w Krakowie.",
     "short": "Zabytkowy budynek handlowy na Rynku Głównym w Krakowie.",
     "type": "text",
-    "numbers": [],
-    "keywords": [
-      "rynku",
-      "głównym",
-      "krakowie",
-      "zabytkowy"
-    ]
+    "numbers": []
   },
   {
     "id": "539233f0",
@@ -1167,13 +797,7 @@ const questionsDatabase = [
     "answer": "W Częstochowie (najważniejsze sanktuarium maryjne w Polsce z obrazem Matki Boskiej Częstochowskiej).",
     "short": "W Częstochowie (najważniejsze sanktuarium maryjne w Polsce z obrazem Matki Boskiej Częstochowskiej).",
     "type": "place",
-    "numbers": [],
-    "keywords": [
-      "częstochowie",
-      "polsce",
-      "matki",
-      "boskiej"
-    ]
+    "numbers": []
   },
   {
     "id": "7f49bccd",
@@ -1182,13 +806,7 @@ const questionsDatabase = [
     "answer": "W Malborku (jest to największy zamek krzyżacki w Europie, z cegły).",
     "short": "W Malborku (jest to największy zamek krzyżacki w Europie, z cegły).",
     "type": "text",
-    "numbers": [],
-    "keywords": [
-      "malborku",
-      "europie",
-      "największy",
-      "krzyżacki"
-    ]
+    "numbers": []
   },
   {
     "id": "a69a7f25",
@@ -1199,12 +817,6 @@ const questionsDatabase = [
     "type": "text",
     "numbers": [
       "2700"
-    ],
-    "keywords": [
-      "zrekonstruowana",
-      "archeologiczne",
-      "stanowisko",
-      "pomorskie"
     ]
   },
   {
@@ -1214,10 +826,7 @@ const questionsDatabase = [
     "answer": "Żubr.",
     "short": "Żubr.",
     "type": "text",
-    "numbers": [],
-    "keywords": [
-      "żubr"
-    ]
+    "numbers": []
   },
   {
     "id": "2a365f30",
@@ -1226,13 +835,7 @@ const questionsDatabase = [
     "answer": "Aglomeracja trzech połączonych ze sobą miast nad Zatoką Gdańską: Gdańsk, Sopot, Gdynia.",
     "short": "Aglomeracja trzech połączonych ze sobą miast nad Zatoką Gdańską: Gdańsk, Sopot, Gdynia.",
     "type": "text",
-    "numbers": [],
-    "keywords": [
-      "zatoką",
-      "gdańską",
-      "gdańsk",
-      "sopot"
-    ]
+    "numbers": []
   },
   {
     "id": "b9f96bdb",
@@ -1241,10 +844,7 @@ const questionsDatabase = [
     "answer": "W Opolu.",
     "short": "W Opolu.",
     "type": "text",
-    "numbers": [],
-    "keywords": [
-      "opolu"
-    ]
+    "numbers": []
   },
   {
     "id": "526b9955",
@@ -1253,10 +853,7 @@ const questionsDatabase = [
     "answer": "W Sopocie.",
     "short": "W Sopocie.",
     "type": "text",
-    "numbers": [],
-    "keywords": [
-      "sopocie"
-    ]
+    "numbers": []
   },
   {
     "id": "58370b2c",
@@ -1265,10 +862,7 @@ const questionsDatabase = [
     "answer": "Z Torunia.",
     "short": "Z Torunia.",
     "type": "text",
-    "numbers": [],
-    "keywords": [
-      "torunia"
-    ]
+    "numbers": []
   },
   {
     "id": "fb2ef089",
@@ -1277,13 +871,7 @@ const questionsDatabase = [
     "answer": "Z Pomorzem (Mają własny język i tradycje).",
     "short": "Z Pomorzem (Mają własny język i tradycje).",
     "type": "place",
-    "numbers": [],
-    "keywords": [
-      "pomorzem",
-      "tradycje",
-      "własny",
-      "język"
-    ]
+    "numbers": []
   },
   {
     "id": "37fda646",
@@ -1292,13 +880,7 @@ const questionsDatabase = [
     "answer": "Na placu Zamkowym przy Starym Mieście, przed zamkiem stoi Kolumna Zygmunta.",
     "short": "Na placu Zamkowym przy Starym Mieście, przed zamkiem stoi Kolumna Zygmunta.",
     "type": "place",
-    "numbers": [],
-    "keywords": [
-      "zamkowym",
-      "starym",
-      "mieście",
-      "kolumna"
-    ]
+    "numbers": []
   },
   {
     "id": "f16c1ae5",
@@ -1309,12 +891,6 @@ const questionsDatabase = [
     "type": "text",
     "numbers": [
       "1970"
-    ],
-    "keywords": [
-      "komunistycznym",
-      "robotniczych",
-      "strajków",
-      "grudzień"
     ]
   },
   {
@@ -1324,13 +900,7 @@ const questionsDatabase = [
     "answer": "Z pięknej, ręcznie zdobionej ceramiki (Ceramika Bolesławiecka).",
     "short": "Z pięknej, ręcznie zdobionej ceramiki (Ceramika Bolesławiecka).",
     "type": "text",
-    "numbers": [],
-    "keywords": [
-      "ceramika",
-      "bolesławiecka",
-      "zdobionej",
-      "ceramiki"
-    ]
+    "numbers": []
   },
   {
     "id": "8f328989",
@@ -1339,13 +909,7 @@ const questionsDatabase = [
     "answer": "Największe jezioro w Tatrach, bardzo popularne wśród turystów.",
     "short": "Największe jezioro w Tatrach, bardzo popularne wśród turystów.",
     "type": "text",
-    "numbers": [],
-    "keywords": [
-      "tatrach",
-      "największe",
-      "popularne",
-      "turystów"
-    ]
+    "numbers": []
   },
   {
     "id": "623dece1",
@@ -1354,13 +918,7 @@ const questionsDatabase = [
     "answer": "Astronom, wstrzymał Słońce, ruszył Ziemię (teoria heliocentryczna).",
     "short": "Astronom, wstrzymał Słońce, ruszył Ziemię (teoria heliocentryczna).",
     "type": "person",
-    "numbers": [],
-    "keywords": [
-      "słońce",
-      "ziemię",
-      "heliocentryczna",
-      "wstrzymał"
-    ]
+    "numbers": []
   },
   {
     "id": "cfba8cf1",
@@ -1372,12 +930,6 @@ const questionsDatabase = [
     "numbers": [
       "1978",
       "2005"
-    ],
-    "keywords": [
-      "paweł",
-      "ii",
-      "karol",
-      "wojtyła"
     ]
   },
   {
@@ -1393,12 +945,6 @@ const questionsDatabase = [
       "1980",
       "1996",
       "2018"
-    ],
-    "keywords": [
-      "sienkiewicz",
-      "władysław",
-      "reymont",
-      "czesław"
     ]
   },
   {
@@ -1411,12 +957,6 @@ const questionsDatabase = [
     "numbers": [
       "1903",
       "1911"
-    ],
-    "keywords": [
-      "skłodowska",
-      "curie",
-      "fizyki",
-      "chemii"
     ]
   },
   {
@@ -1428,10 +968,6 @@ const questionsDatabase = [
     "type": "person",
     "numbers": [
       "1983"
-    ],
-    "keywords": [
-      "wałęsa",
-      "lech"
     ]
   },
   {
@@ -1441,13 +977,7 @@ const questionsDatabase = [
     "answer": "Genialnym polskim pianistą i kompozytorem epoki romantyzmu.",
     "short": "Genialnym polskim pianistą i kompozytorem epoki romantyzmu.",
     "type": "person",
-    "numbers": [],
-    "keywords": [
-      "kompozytorem",
-      "romantyzmu",
-      "genialnym",
-      "pianistą"
-    ]
+    "numbers": []
   },
   {
     "id": "162d5031",
@@ -1456,13 +986,7 @@ const questionsDatabase = [
     "answer": "Największy polski poeta romantyzmu, autor \"Pana Tadeusza\", \"Dziadów\", \"Ballad i romansów\" oraz \"Konrada Wallenroda\". Uważany za wieszcza narodowego.",
     "short": "Największy polski poeta romantyzmu, autor \"Pana Tadeusza\", \"Dziadów\", \"Ballad i romansów\" oraz \"Konrada Wallenroda\".",
     "type": "person",
-    "numbers": [],
-    "keywords": [
-      "pana",
-      "tadeusza",
-      "dziadów",
-      "ballad"
-    ]
+    "numbers": []
   },
   {
     "id": "92e4c825",
@@ -1471,13 +995,7 @@ const questionsDatabase = [
     "answer": "Drugim z wielkich wieszczów romantycznych, autorem m.in. 'Kordiana' i 'Balladyny'.",
     "short": "Drugim z wielkich wieszczów romantycznych, autorem m.in. 'Kordiana' i 'Balladyny'.",
     "type": "person",
-    "numbers": [],
-    "keywords": [
-      "balladyny",
-      "romantycznych",
-      "wieszczów",
-      "wielkich"
-    ]
+    "numbers": []
   },
   {
     "id": "d1261ec7",
@@ -1488,12 +1006,6 @@ const questionsDatabase = [
     "type": "person",
     "numbers": [
       "3"
-    ],
-    "keywords": [
-      "bitwę",
-      "grunwaldem",
-      "hołd",
-      "konstytucję"
     ]
   },
   {
@@ -1503,13 +1015,7 @@ const questionsDatabase = [
     "answer": "Twórca polskiej opery narodowej, kompozytor \"Halki\" i \"Strasznego dworu\". Nazywany ojcem polskiej opery.",
     "short": "Twórca polskiej opery narodowej, kompozytor \"Halki\" i \"Strasznego dworu\".",
     "type": "person",
-    "numbers": [],
-    "keywords": [
-      "halki",
-      "strasznego",
-      "kompozytor",
-      "narodowej"
-    ]
+    "numbers": []
   },
   {
     "id": "840dcfbe",
@@ -1518,13 +1024,7 @@ const questionsDatabase = [
     "answer": "Wybitny polski reżyser, laureat Oscara, twórca filmów takich jak 'Katyń', 'Pan Tadeusz', 'Ziemia obiecana'.",
     "short": "Wybitny polski reżyser, laureat Oscara, twórca filmów takich jak 'Katyń', 'Pan Tadeusz', 'Ziemia obiecana'.",
     "type": "person",
-    "numbers": [],
-    "keywords": [
-      "oscara",
-      "katyń",
-      "tadeusz",
-      "ziemia"
-    ]
+    "numbers": []
   },
   {
     "id": "0a2993ca",
@@ -1533,13 +1033,7 @@ const questionsDatabase = [
     "answer": "Znany polsko-francuski reżyser filmowy (np. 'Pianista').",
     "short": "Znany polsko-francuski reżyser filmowy (np. 'Pianista').",
     "type": "person",
-    "numbers": [],
-    "keywords": [
-      "francuski",
-      "pianista",
-      "reżyser",
-      "filmowy"
-    ]
+    "numbers": []
   },
   {
     "id": "3f014b47",
@@ -1548,13 +1042,7 @@ const questionsDatabase = [
     "answer": "Słynny polski reżyser ('Dekalog', 'Trzy kolory').",
     "short": "Słynny polski reżyser ('Dekalog', 'Trzy kolory').",
     "type": "person",
-    "numbers": [],
-    "keywords": [
-      "dekalog",
-      "trzy",
-      "reżyser",
-      "słynny"
-    ]
+    "numbers": []
   },
   {
     "id": "12eac7c6",
@@ -1563,13 +1051,7 @@ const questionsDatabase = [
     "answer": "Roman Polański (Pianista), Paweł Pawlikowski (Ida), Zbigniew Rybczyński (Tango).",
     "short": "Roman Polański (Pianista), Paweł Pawlikowski (Ida), Zbigniew Rybczyński (Tango).",
     "type": "person",
-    "numbers": [],
-    "keywords": [
-      "polański",
-      "pianista",
-      "paweł",
-      "pawlikowski"
-    ]
+    "numbers": []
   },
   {
     "id": "504ba963",
@@ -1580,12 +1062,6 @@ const questionsDatabase = [
     "type": "person",
     "numbers": [
       "1854"
-    ],
-    "keywords": [
-      "podkarpaciu",
-      "bóbrce",
-      "aptekarzem",
-      "wynalazcą"
     ]
   },
   {
@@ -1595,13 +1071,7 @@ const questionsDatabase = [
     "answer": "Twórcą międzynarodowego języka Esperanto (pochodził z Białegostoku).",
     "short": "Twórcą międzynarodowego języka Esperanto (pochodził z Białegostoku).",
     "type": "person",
-    "numbers": [],
-    "keywords": [
-      "esperanto",
-      "białegostoku",
-      "międzynarodowego",
-      "pochodził"
-    ]
+    "numbers": []
   },
   {
     "id": "98cb4bb9",
@@ -1610,13 +1080,7 @@ const questionsDatabase = [
     "answer": "Polskim lekarzem żydowskiego pochodzenia, pedagogiem, autorem książek dla dzieci (np. 'Król Maciuś Pierwszy'). Zginął ze swoimi wychowankami w Treblince.",
     "short": "Polskim lekarzem żydowskiego pochodzenia, pedagogiem, autorem książek dla dzieci (np. 'Król Maciuś Pierwszy').",
     "type": "person",
-    "numbers": [],
-    "keywords": [
-      "maciuś",
-      "pierwszy",
-      "treblince",
-      "wychowankami"
-    ]
+    "numbers": []
   },
   {
     "id": "dbddccfc",
@@ -1627,12 +1091,6 @@ const questionsDatabase = [
     "type": "person",
     "numbers": [
       "1794"
-    ],
-    "keywords": [
-      "polski",
-      "stanów",
-      "zjednoczonych",
-      "bohaterem"
     ]
   },
   {
@@ -1642,13 +1100,7 @@ const questionsDatabase = [
     "answer": "Bohaterem walk o niepodległość Polski i USA, nazywany ojcem amerykańskiej kawalerii.",
     "short": "Bohaterem walk o niepodległość Polski i USA, nazywany ojcem amerykańskiej kawalerii.",
     "type": "person",
-    "numbers": [],
-    "keywords": [
-      "polski",
-      "niepodległość",
-      "amerykańskiej",
-      "bohaterem"
-    ]
+    "numbers": []
   },
   {
     "id": "c7f78319",
@@ -1657,13 +1109,7 @@ const questionsDatabase = [
     "answer": "Jeden z najlepszych na świecie piłkarzy, wieloletni kapitan reprezentacji Polski.",
     "short": "Jeden z najlepszych na świecie piłkarzy, wieloletni kapitan reprezentacji Polski.",
     "type": "person",
-    "numbers": [],
-    "keywords": [
-      "polski",
-      "reprezentacji",
-      "najlepszych",
-      "wieloletni"
-    ]
+    "numbers": []
   },
   {
     "id": "6d5d6d61",
@@ -1672,13 +1118,7 @@ const questionsDatabase = [
     "answer": "Znakomita polska tenisistka, wielokrotna mistrzyni turniejów wielkoszlemowych (m.in. Roland Garros).",
     "short": "Znakomita polska tenisistka, wielokrotna mistrzyni turniejów wielkoszlemowych (m.in. Roland Garros).",
     "type": "person",
-    "numbers": [],
-    "keywords": [
-      "garros",
-      "wielkoszlemowych",
-      "wielokrotna",
-      "tenisistka"
-    ]
+    "numbers": []
   },
   {
     "id": "35918f2b",
@@ -1687,13 +1127,7 @@ const questionsDatabase = [
     "answer": "Wybitnym polskim skoczkiem narciarskim, wielokrotnym mistrzem świata.",
     "short": "Wybitnym polskim skoczkiem narciarskim, wielokrotnym mistrzem świata.",
     "type": "person",
-    "numbers": [],
-    "keywords": [
-      "wielokrotnym",
-      "narciarskim",
-      "skoczkiem",
-      "wybitnym"
-    ]
+    "numbers": []
   },
   {
     "id": "c303e12c",
@@ -1702,13 +1136,7 @@ const questionsDatabase = [
     "answer": "Znakomity polski skoczek narciarski, trzykrotny mistrz olimpijski.",
     "short": "Znakomity polski skoczek narciarski, trzykrotny mistrz olimpijski.",
     "type": "person",
-    "numbers": [],
-    "keywords": [
-      "narciarski",
-      "trzykrotny",
-      "olimpijski",
-      "znakomity"
-    ]
+    "numbers": []
   },
   {
     "id": "27bc956a",
@@ -1717,13 +1145,7 @@ const questionsDatabase = [
     "answer": "Najbardziej znany polski pisarz science fiction, autor \"Solaris\", \"Cyberiady\" i \"Bajek robotów\". Jego książki tłumaczono na kilkadziesiąt języków.",
     "short": "Najbardziej znany polski pisarz science fiction, autor \"Solaris\", \"Cyberiady\" i \"Bajek robotów\".",
     "type": "person",
-    "numbers": [],
-    "keywords": [
-      "solaris",
-      "cyberiady",
-      "bajek",
-      "kilkadziesiąt"
-    ]
+    "numbers": []
   },
   {
     "id": "a806f674",
@@ -1732,13 +1154,7 @@ const questionsDatabase = [
     "answer": "Słynnym polskim reportażystą i podróżnikiem.",
     "short": "Słynnym polskim reportażystą i podróżnikiem.",
     "type": "person",
-    "numbers": [],
-    "keywords": [
-      "reportażystą",
-      "podróżnikiem",
-      "słynnym",
-      "polskim"
-    ]
+    "numbers": []
   },
   {
     "id": "2519735f",
@@ -1749,12 +1165,6 @@ const questionsDatabase = [
     "type": "person",
     "numbers": [
       "1683"
-    ],
-    "keywords": [
-      "polski",
-      "turków",
-      "wiedniem",
-      "pokonał"
     ]
   },
   {
@@ -1764,11 +1174,7 @@ const questionsDatabase = [
     "answer": "Bolesław Prus.",
     "short": "Bolesław Prus.",
     "type": "person",
-    "numbers": [],
-    "keywords": [
-      "prus",
-      "bolesław"
-    ]
+    "numbers": []
   },
   {
     "id": "4799a033",
@@ -1777,11 +1183,7 @@ const questionsDatabase = [
     "answer": "Henryk Sienkiewicz.",
     "short": "Henryk Sienkiewicz.",
     "type": "person",
-    "numbers": [],
-    "keywords": [
-      "sienkiewicz",
-      "henryk"
-    ]
+    "numbers": []
   },
   {
     "id": "5e9094c3",
@@ -1790,13 +1192,7 @@ const questionsDatabase = [
     "answer": "Twórcą Wielkiej Orkiestry Świątecznej Pomocy (WOŚP).",
     "short": "Twórcą Wielkiej Orkiestry Świątecznej Pomocy (WOŚP).",
     "type": "person",
-    "numbers": [],
-    "keywords": [
-      "wielkiej",
-      "orkiestry",
-      "świątecznej",
-      "pomocy"
-    ]
+    "numbers": []
   },
   {
     "id": "22d947a2",
@@ -1807,12 +1203,6 @@ const questionsDatabase = [
     "type": "person",
     "numbers": [
       "2500"
-    ],
-    "keywords": [
-      "ii",
-      "sprawiedliwej",
-      "narodów",
-      "świata"
     ]
   },
   {
@@ -1822,13 +1212,7 @@ const questionsDatabase = [
     "answer": "Franciszkaninem, który w obozie Auschwitz oddał życie za współwięźnia. Ogłoszony świętym.",
     "short": "Franciszkaninem, który w obozie Auschwitz oddał życie za współwięźnia.",
     "type": "person",
-    "numbers": [],
-    "keywords": [
-      "auschwitz",
-      "franciszkaninem",
-      "współwięźnia",
-      "ogłoszony"
-    ]
+    "numbers": []
   },
   {
     "id": "1e07e710",
@@ -1837,13 +1221,7 @@ const questionsDatabase = [
     "answer": "Oficer Armii Krajowej, który dobrowolnie dał się uwięzić w Auschwitz, aby zebrać dowody zbrodni i zorganizować ruch oporu. Po wojnie skazany na śmierć przez władze komunistyczne.",
     "short": "Oficer Armii Krajowej, który dobrowolnie dał się uwięzić w Auschwitz, aby zebrać dowody zbrodni i zorganizować ruch oporu.",
     "type": "person",
-    "numbers": [],
-    "keywords": [
-      "armii",
-      "krajowej",
-      "auschwitz",
-      "komunistyczne"
-    ]
+    "numbers": []
   },
   {
     "id": "fd35bcf5",
@@ -1855,12 +1233,6 @@ const questionsDatabase = [
     "numbers": [
       "1978",
       "1986"
-    ],
-    "keywords": [
-      "rutkiewicz",
-      "europejka",
-      "mount",
-      "everest"
     ]
   },
   {
@@ -1872,12 +1244,6 @@ const questionsDatabase = [
     "type": "person",
     "numbers": [
       "80"
-    ],
-    "keywords": [
-      "pzpn",
-      "piłkarzem",
-      "prezesem",
-      "słynnym"
     ]
   },
   {
@@ -1890,12 +1256,6 @@ const questionsDatabase = [
     "numbers": [
       "11",
       "3"
-    ],
-    "keywords": [
-      "święto",
-      "niepodległości",
-      "maja",
-      "konstytucji"
     ]
   },
   {
@@ -1907,9 +1267,6 @@ const questionsDatabase = [
     "type": "date",
     "numbers": [
       "2"
-    ],
-    "keywords": [
-      "maja"
     ]
   },
   {
@@ -1921,12 +1278,6 @@ const questionsDatabase = [
     "type": "text",
     "numbers": [
       "15"
-    ],
-    "keywords": [
-      "bitwy",
-      "warszawskiej",
-      "sierpnia",
-      "rocznicę"
     ]
   },
   {
@@ -1938,12 +1289,6 @@ const questionsDatabase = [
     "type": "date",
     "numbers": [
       "1"
-    ],
-    "keywords": [
-      "odwiedzają",
-      "listopada",
-      "cmentarze",
-      "zmarłych"
     ]
   },
   {
@@ -1956,12 +1301,6 @@ const questionsDatabase = [
     "numbers": [
       "24",
       "12"
-    ],
-    "keywords": [
-      "boże",
-      "narodzenie",
-      "poprzedzający",
-      "bezmięsnych"
     ]
   },
   {
@@ -1971,13 +1310,7 @@ const questionsDatabase = [
     "answer": "Cienki płatek chlebowy, którym Polacy dzielą się podczas Wigilii na znak zgody, przebaczenia i miłości.",
     "short": "Cienki płatek chlebowy, którym Polacy dzielą się podczas Wigilii na znak zgody, przebaczenia i miłości.",
     "type": "text",
-    "numbers": [],
-    "keywords": [
-      "polacy",
-      "wigilii",
-      "przebaczenia",
-      "chlebowy"
-    ]
+    "numbers": []
   },
   {
     "id": "35d1c8db",
@@ -1986,13 +1319,7 @@ const questionsDatabase = [
     "answer": "Karp, barszcz z uszkami, pierogi z kapustą i grzybami, kapusta z grochem, kutia, kompot z suszu, makowiec.",
     "short": "Karp, barszcz z uszkami, pierogi z kapustą i grzybami, kapusta z grochem, kutia, kompot z suszu, makowiec.",
     "type": "text",
-    "numbers": [],
-    "keywords": [
-      "grzybami",
-      "makowiec",
-      "barszcz",
-      "uszkami"
-    ]
+    "numbers": []
   },
   {
     "id": "a302b97a",
@@ -2004,12 +1331,6 @@ const questionsDatabase = [
     "numbers": [
       "24",
       "25"
-    ],
-    "keywords": [
-      "betlejem",
-      "upamiętniająca",
-      "odprawiana",
-      "uroczysta"
     ]
   },
   {
@@ -2019,13 +1340,7 @@ const questionsDatabase = [
     "answer": "Zaczyna się od Niedzieli Palmowej (palmy), w Wielką Sobotę święci się pokarmy (święconka), a w niedzielę je się świąteczne śniadanie. Poniedziałek to 'Lany Poniedziałek' (Śmigus-dyngus).",
     "short": "Zaczyna się od Niedzieli Palmowej (palmy), w Wielką Sobotę święci się pokarmy (święconka), a w niedzielę je się świąteczne śniadanie.",
     "type": "text",
-    "numbers": [],
-    "keywords": [
-      "niedzieli",
-      "palmowej",
-      "wielką",
-      "sobotę"
-    ]
+    "numbers": []
   },
   {
     "id": "c455ccbf",
@@ -2034,13 +1349,7 @@ const questionsDatabase = [
     "answer": "Zwyczaj Poniedziałku Wielkanocnego (lany poniedziałek), kiedy polewa się ludzi wodą. Ma to przynieść zdrowie i urodzaj.",
     "short": "Zwyczaj Poniedziałku Wielkanocnego (lany poniedziałek), kiedy polewa się ludzi wodą.",
     "type": "text",
-    "numbers": [],
-    "keywords": [
-      "poniedziałku",
-      "wielkanocnego",
-      "poniedziałek",
-      "przynieść"
-    ]
+    "numbers": []
   },
   {
     "id": "c41a2b77",
@@ -2049,13 +1358,7 @@ const questionsDatabase = [
     "answer": "Ostatni czwartek przed Wielkim Postem. Tego dnia Polacy jedzą pączki i faworki (chrust). Mówi się, że kto tego dnia nie zje pączka, temu się nie będzie wiodło.",
     "short": "Ostatni czwartek przed Wielkim Postem.",
     "type": "text",
-    "numbers": [],
-    "keywords": [
-      "wielkim",
-      "postem",
-      "polacy",
-      "czwartek"
-    ]
+    "numbers": []
   },
   {
     "id": "74cf51fd",
@@ -2067,12 +1370,6 @@ const questionsDatabase = [
     "numbers": [
       "29",
       "30"
-    ],
-    "keywords": [
-      "najbardziej",
-      "listopada",
-      "andrzeja",
-      "wieczór"
     ]
   },
   {
@@ -2084,12 +1381,6 @@ const questionsDatabase = [
     "type": "text",
     "numbers": [
       "6"
-    ],
-    "keywords": [
-      "tradycyjny",
-      "wręczania",
-      "prezentów",
-      "drobnych"
     ]
   },
   {
@@ -2101,9 +1392,6 @@ const questionsDatabase = [
     "type": "date",
     "numbers": [
       "26"
-    ],
-    "keywords": [
-      "maja"
     ]
   },
   {
@@ -2116,12 +1404,6 @@ const questionsDatabase = [
     "numbers": [
       "21",
       "22"
-    ],
-    "keywords": [
-      "dzień",
-      "babci",
-      "dziadka",
-      "stycznia"
     ]
   },
   {
@@ -2133,9 +1415,6 @@ const questionsDatabase = [
     "type": "date",
     "numbers": [
       "8"
-    ],
-    "keywords": [
-      "marca"
     ]
   },
   {
@@ -2147,12 +1426,6 @@ const questionsDatabase = [
     "type": "text",
     "numbers": [
       "60"
-    ],
-    "keywords": [
-      "wielkanocy",
-      "przypadające",
-      "kościelne",
-      "uroczyste"
     ]
   },
   {
@@ -2164,12 +1437,6 @@ const questionsDatabase = [
     "type": "date",
     "numbers": [
       "6"
-    ],
-    "keywords": [
-      "objawienie",
-      "pańskie",
-      "poświęconą",
-      "stycznia"
     ]
   },
   {
@@ -2181,12 +1448,6 @@ const questionsDatabase = [
     "type": "text",
     "numbers": [
       "21"
-    ],
-    "keywords": [
-      "pierwszy",
-      "dzień",
-      "wiosny",
-      "symbolizująca"
     ]
   },
   {
@@ -2196,13 +1457,7 @@ const questionsDatabase = [
     "answer": "Rosół, żurek (na zakwasie), barszcz czerwony, pomidorowa, ogórkowa, kapuśniak.",
     "short": "Rosół, żurek (na zakwasie), barszcz czerwony, pomidorowa, ogórkowa, kapuśniak.",
     "type": "text",
-    "numbers": [],
-    "keywords": [
-      "pomidorowa",
-      "kapuśniak",
-      "zakwasie",
-      "czerwony"
-    ]
+    "numbers": []
   },
   {
     "id": "a09d5dc7",
@@ -2211,10 +1466,7 @@ const questionsDatabase = [
     "answer": "Bigos.",
     "short": "Bigos.",
     "type": "text",
-    "numbers": [],
-    "keywords": [
-      "bigos"
-    ]
+    "numbers": []
   },
   {
     "id": "540c20f3",
@@ -2223,13 +1475,7 @@ const questionsDatabase = [
     "answer": "Kotlet schabowy z ziemniakami i mizerią, pierogi, gołąbki, placki ziemniaczane, kaszanka.",
     "short": "Kotlet schabowy z ziemniakami i mizerią, pierogi, gołąbki, placki ziemniaczane, kaszanka.",
     "type": "list",
-    "numbers": [],
-    "keywords": [
-      "ziemniaczane",
-      "ziemniakami",
-      "schabowy",
-      "kaszanka"
-    ]
+    "numbers": []
   },
   {
     "id": "0b85edab",
@@ -2238,13 +1484,7 @@ const questionsDatabase = [
     "answer": "Wędzony ser z mleka owczego, wyrabiany przez górali na Podhalu, w charakterystycznych zdobionych formach. Jest produktem chronionym w Unii Europejskiej.",
     "short": "Wędzony ser z mleka owczego, wyrabiany przez górali na Podhalu, w charakterystycznych zdobionych formach.",
     "type": "text",
-    "numbers": [],
-    "keywords": [
-      "podhalu",
-      "unii",
-      "europejskiej",
-      "charakterystycznych"
-    ]
+    "numbers": []
   },
   {
     "id": "1e1c89bb",
@@ -2253,13 +1493,7 @@ const questionsDatabase = [
     "answer": "Polonez, Mazur, Krakowiak, Oberek, Kujawiak.",
     "short": "Polonez, Mazur, Krakowiak, Oberek, Kujawiak.",
     "type": "text",
-    "numbers": [],
-    "keywords": [
-      "mazur",
-      "krakowiak",
-      "oberek",
-      "kujawiak"
-    ]
+    "numbers": []
   },
   {
     "id": "985583ac",
@@ -2268,10 +1502,7 @@ const questionsDatabase = [
     "answer": "Poloneza.",
     "short": "Poloneza.",
     "type": "text",
-    "numbers": [],
-    "keywords": [
-      "poloneza"
-    ]
+    "numbers": []
   },
   {
     "id": "5d62f764",
@@ -2280,13 +1511,7 @@ const questionsDatabase = [
     "answer": "Z Krakowa (postać w stroju tatarskim na sztucznym koniu).",
     "short": "Z Krakowa (postać w stroju tatarskim na sztucznym koniu).",
     "type": "text",
-    "numbers": [],
-    "keywords": [
-      "krakowa",
-      "tatarskim",
-      "sztucznym",
-      "postać"
-    ]
+    "numbers": []
   },
   {
     "id": "0468e159",
@@ -2295,11 +1520,7 @@ const questionsDatabase = [
     "answer": "Maki i chabry.",
     "short": "Maki i chabry.",
     "type": "text",
-    "numbers": [],
-    "keywords": [
-      "chabry",
-      "maki"
-    ]
+    "numbers": []
   },
   {
     "id": "73468a9c",
@@ -2308,13 +1529,7 @@ const questionsDatabase = [
     "answer": "Największa w Polsce zbiórka charytatywna (finał w styczniu) na sprzęt medyczny dla szpitali.",
     "short": "Największa w Polsce zbiórka charytatywna (finał w styczniu) na sprzęt medyczny dla szpitali.",
     "type": "text",
-    "numbers": [],
-    "keywords": [
-      "polsce",
-      "charytatywna",
-      "największa",
-      "styczniu"
-    ]
+    "numbers": []
   },
   {
     "id": "528f3e6f",
@@ -2323,13 +1538,7 @@ const questionsDatabase = [
     "answer": "Sanktuarium maryjne w Częstochowie z cudownym obrazem Czarnej Madonny. Cel wielu pieszych pielgrzymek w sierpniu.",
     "short": "Sanktuarium maryjne w Częstochowie z cudownym obrazem Czarnej Madonny.",
     "type": "place",
-    "numbers": [],
-    "keywords": [
-      "częstochowie",
-      "czarnej",
-      "madonny",
-      "sanktuarium"
-    ]
+    "numbers": []
   },
   {
     "id": "de2ead38",
@@ -2338,13 +1547,7 @@ const questionsDatabase = [
     "answer": "To najstarsza polska pieśń religijna. Rycerstwo polskie śpiewało ją m.in. przed bitwą pod Grunwaldem.",
     "short": "To najstarsza polska pieśń religijna.",
     "type": "text",
-    "numbers": [],
-    "keywords": [
-      "grunwaldem",
-      "najstarsza",
-      "religijna",
-      "rycerstwo"
-    ]
+    "numbers": []
   },
   {
     "id": "af845e2f",
@@ -2353,13 +1556,7 @@ const questionsDatabase = [
     "answer": "Uchwalaniem ustaw. Składa się z Sejmu i Senatu.",
     "short": "Uchwalaniem ustaw.",
     "type": "text",
-    "numbers": [],
-    "keywords": [
-      "sejmu",
-      "senatu",
-      "uchwalaniem",
-      "składa"
-    ]
+    "numbers": []
   },
   {
     "id": "75214147",
@@ -2368,13 +1565,7 @@ const questionsDatabase = [
     "answer": "Czuję się Polakiem, w moim domu kultywuje się polskie tradycje, chcę utrzymać więź z ojczyzną moich przodków, planuję związać swoją przyszłość z Polską.",
     "short": "Czuję się Polakiem, w moim domu kultywuje się polskie tradycje, chcę utrzymać więź z ojczyzną moich przodków, planuję związać swoją przyszłość z Polską.",
     "type": "text",
-    "numbers": [],
-    "keywords": [
-      "polakiem",
-      "polską",
-      "przyszłość",
-      "kultywuje"
-    ]
+    "numbers": []
   },
   {
     "id": "89a202c9",
@@ -2383,13 +1574,7 @@ const questionsDatabase = [
     "answer": "Dokument potwierdzający przynależność do Narodu Polskiego (nie daje on jednak polskiego obywatelstwa).",
     "short": "Dokument potwierdzający przynależność do Narodu Polskiego (nie daje on jednak polskiego obywatelstwa).",
     "type": "text",
-    "numbers": [],
-    "keywords": [
-      "narodu",
-      "polskiego",
-      "potwierdzający",
-      "przynależność"
-    ]
+    "numbers": []
   },
   {
     "id": "e7dd7678",
@@ -2400,12 +1585,6 @@ const questionsDatabase = [
     "type": "person",
     "numbers": [
       "3"
-    ],
-    "keywords": [
-      "pochodzenie",
-      "pradziadków",
-      "narodowości",
-      "najmniej"
     ]
   },
   {
@@ -2415,13 +1594,7 @@ const questionsDatabase = [
     "answer": "Konsul Rzeczypospolitej Polskiej właściwy dla miejsca zamieszkania wnioskodawcy, a w Polsce – wojewoda.",
     "short": "Konsul Rzeczypospolitej Polskiej właściwy dla miejsca zamieszkania wnioskodawcy, a w Polsce – wojewoda.",
     "type": "person",
-    "numbers": [],
-    "keywords": [
-      "rzeczypospolitej",
-      "polskiej",
-      "polsce",
-      "zamieszkania"
-    ]
+    "numbers": []
   },
   {
     "id": "8084e6fc",
@@ -2432,12 +1605,6 @@ const questionsDatabase = [
     "type": "text",
     "numbers": [
       "37"
-    ],
-    "keywords": [
-      "polsce",
-      "przypadkach",
-      "dodatkowych",
-      "państwowych"
     ]
   },
   {
@@ -2447,13 +1614,7 @@ const questionsDatabase = [
     "answer": "Przedstawiciel Rady Ministrów (rządu) w województwie. Szef administracji rządowej na szczeblu wojewódzkim.",
     "short": "Przedstawiciel Rady Ministrów (rządu) w województwie.",
     "type": "person",
-    "numbers": [],
-    "keywords": [
-      "rady",
-      "ministrów",
-      "przedstawiciel",
-      "administracji"
-    ]
+    "numbers": []
   },
   {
     "id": "55fa3047",
@@ -2462,13 +1623,7 @@ const questionsDatabase = [
     "answer": "Przewodniczący zarządu powiatu, szef administracji powiatowej.",
     "short": "Przewodniczący zarządu powiatu, szef administracji powiatowej.",
     "type": "person",
-    "numbers": [],
-    "keywords": [
-      "przewodniczący",
-      "administracji",
-      "powiatowej",
-      "zarządu"
-    ]
+    "numbers": []
   },
   {
     "id": "561b467c",
@@ -2477,13 +1632,7 @@ const questionsDatabase = [
     "answer": "Organ wykonawczy gminy miejskiej.",
     "short": "Organ wykonawczy gminy miejskiej.",
     "type": "person",
-    "numbers": [],
-    "keywords": [
-      "wykonawczy",
-      "miejskiej",
-      "organ",
-      "gminy"
-    ]
+    "numbers": []
   },
   {
     "id": "a9c6e93d",
@@ -2494,12 +1643,6 @@ const questionsDatabase = [
     "type": "text",
     "numbers": [
       "11"
-    ],
-    "keywords": [
-      "elektroniczny",
-      "system",
-      "ewidencji",
-      "ludności"
     ]
   },
   {
@@ -2509,13 +1652,7 @@ const questionsDatabase = [
     "answer": "Biel i czerwień (od góry: pas biały, od dołu: pas czerwony).",
     "short": "Biel i czerwień (od góry: pas biały, od dołu: pas czerwony).",
     "type": "text",
-    "numbers": [],
-    "keywords": [
-      "czerwień",
-      "czerwony",
-      "biały",
-      "biel"
-    ]
+    "numbers": []
   },
   {
     "id": "ff12747c",
@@ -2524,13 +1661,7 @@ const questionsDatabase = [
     "answer": "Kolory wywodzą się z herbu (Biały Orzeł na czerwonym tle). Formalnie uregulowano ją po I wojnie światowej.",
     "short": "Kolory wywodzą się z herbu (Biały Orzeł na czerwonym tle).",
     "type": "person",
-    "numbers": [],
-    "keywords": [
-      "biały",
-      "orzeł",
-      "uregulowano",
-      "czerwonym"
-    ]
+    "numbers": []
   },
   {
     "id": "150582b4",
@@ -2539,13 +1670,7 @@ const questionsDatabase = [
     "answer": "Biel symbolizuje czystość, lojalność i Orła Białego. Czerwień to krew przelana za ojczyznę oraz odwaga.",
     "short": "Biel symbolizuje czystość, lojalność i Orła Białego.",
     "type": "text",
-    "numbers": [],
-    "keywords": [
-      "orła",
-      "białego",
-      "symbolizuje",
-      "lojalność"
-    ]
+    "numbers": []
   },
   {
     "id": "02e9844f",
@@ -2554,13 +1679,7 @@ const questionsDatabase = [
     "answer": "Tak, złotą koronę, złoty dziób i złote szpony.",
     "short": "Tak, złotą koronę, złoty dziób i złote szpony.",
     "type": "text",
-    "numbers": [],
-    "keywords": [
-      "koronę",
-      "szpony",
-      "złotą",
-      "złoty"
-    ]
+    "numbers": []
   },
   {
     "id": "0798e0fe",
@@ -2569,13 +1688,7 @@ const questionsDatabase = [
     "answer": "Na budynkach urzędów państwowych, w sądach, w szkołach w każdej klasie, na monetach, pismach urzędowych.",
     "short": "Na budynkach urzędów państwowych, w sądach, w szkołach w każdej klasie, na monetach, pismach urzędowych.",
     "type": "place",
-    "numbers": [],
-    "keywords": [
-      "państwowych",
-      "urzędowych",
-      "budynkach",
-      "szkołach"
-    ]
+    "numbers": []
   },
   {
     "id": "1ba0fb4e",
@@ -2584,13 +1697,7 @@ const questionsDatabase = [
     "answer": "Polska uznaje zasadę wyłączności obywatelstwa. Oznacza to, że dla polskich władz obywatel polski jest traktowany wyłącznie jako obywatel Polski, nawet jeśli ma inne paszporty. Nie zakazuje się jednak posiadania drugiego obywatelstwa.",
     "short": "Polska uznaje zasadę wyłączności obywatelstwa.",
     "type": "text",
-    "numbers": [],
-    "keywords": [
-      "obywatelstwa",
-      "wyłączności",
-      "traktowany",
-      "posiadania"
-    ]
+    "numbers": []
   },
   {
     "id": "7278ced8",
@@ -2604,12 +1711,6 @@ const questionsDatabase = [
       "8",
       "4",
       "5"
-    ],
-    "keywords": [
-      "obowiązkowa",
-      "podstawowa",
-      "technikum",
-      "średnia"
     ]
   },
   {
@@ -2619,13 +1720,7 @@ const questionsDatabase = [
     "answer": "Egzamin dojrzałości zdawany na zakończenie szkoły średniej, niezbędny do podjęcia studiów wyższych.",
     "short": "Egzamin dojrzałości zdawany na zakończenie szkoły średniej, niezbędny do podjęcia studiów wyższych.",
     "type": "text",
-    "numbers": [],
-    "keywords": [
-      "dojrzałości",
-      "zakończenie",
-      "niezbędny",
-      "średniej"
-    ]
+    "numbers": []
   },
   {
     "id": "6834bc24",
@@ -2634,13 +1729,7 @@ const questionsDatabase = [
     "answer": "Prezes Rady Ministrów (Premier) oraz ministrowie.",
     "short": "Prezes Rady Ministrów (Premier) oraz ministrowie.",
     "type": "person",
-    "numbers": [],
-    "keywords": [
-      "rady",
-      "ministrów",
-      "ministrowie",
-      "prezes"
-    ]
+    "numbers": []
   },
   {
     "id": "94a59aed",
@@ -2649,13 +1738,7 @@ const questionsDatabase = [
     "answer": "Prezydent Rzeczypospolitej Polskiej, ale rząd musi uzyskać wotum zaufania (poparcie) w Sejmie.",
     "short": "Prezydent Rzeczypospolitej Polskiej, ale rząd musi uzyskać wotum zaufania (poparcie) w Sejmie.",
     "type": "person",
-    "numbers": [],
-    "keywords": [
-      "rzeczypospolitej",
-      "polskiej",
-      "sejmie",
-      "zaufania"
-    ]
+    "numbers": []
   },
   {
     "id": "a17353db",
@@ -2666,12 +1749,6 @@ const questionsDatabase = [
     "type": "text",
     "numbers": [
       "5"
-    ],
-    "keywords": [
-      "bezpośrednich",
-      "powszechnych",
-      "maksymalnie",
-      "sprawować"
     ]
   },
   {
@@ -2681,13 +1758,7 @@ const questionsDatabase = [
     "answer": "W Pałacu Prezydenckim przy Krakowskim Przedmieściu w Warszawie.",
     "short": "W Pałacu Prezydenckim przy Krakowskim Przedmieściu w Warszawie.",
     "type": "place",
-    "numbers": [],
-    "keywords": [
-      "pałacu",
-      "prezydenckim",
-      "krakowskim",
-      "przedmieściu"
-    ]
+    "numbers": []
   },
   {
     "id": "27f0e3a6",
@@ -2699,12 +1770,6 @@ const questionsDatabase = [
     "numbers": [
       "460",
       "100"
-    ],
-    "keywords": [
-      "senat",
-      "senatorów",
-      "posłów",
-      "sejm"
     ]
   },
   {
@@ -2714,12 +1779,7 @@ const questionsDatabase = [
     "answer": "Katolicyzm (Kościół Rzymskokatolicki).",
     "short": "Katolicyzm (Kościół Rzymskokatolicki).",
     "type": "text",
-    "numbers": [],
-    "keywords": [
-      "kościół",
-      "rzymskokatolicki",
-      "katolicyzm"
-    ]
+    "numbers": []
   },
   {
     "id": "017d26b9",
@@ -2728,13 +1788,7 @@ const questionsDatabase = [
     "answer": "Prawosławni, protestanci (głównie luteranie), wyznawcy judaizmu i islamu (np. polscy Tatarzy).",
     "short": "Prawosławni, protestanci (głównie luteranie), wyznawcy judaizmu i islamu (np. polscy Tatarzy).",
     "type": "text",
-    "numbers": [],
-    "keywords": [
-      "tatarzy",
-      "prawosławni",
-      "protestanci",
-      "luteranie"
-    ]
+    "numbers": []
   },
   {
     "id": "fe15e9b3",
@@ -2743,13 +1797,7 @@ const questionsDatabase = [
     "answer": "Organ stojący na straży wolności i praw człowieka i obywatela, zapisanych w Konstytucji.",
     "short": "Organ stojący na straży wolności i praw człowieka i obywatela, zapisanych w Konstytucji.",
     "type": "person",
-    "numbers": [],
-    "keywords": [
-      "konstytucji",
-      "zapisanych",
-      "człowieka",
-      "obywatela"
-    ]
+    "numbers": []
   },
   {
     "id": "654b3601",
@@ -2760,12 +1808,6 @@ const questionsDatabase = [
     "type": "text",
     "numbers": [
       "18"
-    ],
-    "keywords": [
-      "ukończenia",
-      "wyborcze",
-      "czynne",
-      "życia"
     ]
   },
   {
@@ -2777,12 +1819,6 @@ const questionsDatabase = [
     "type": "list",
     "numbers": [
       "2050"
-    ],
-    "keywords": [
-      "sprawiedliwość",
-      "platforma",
-      "obywatelska",
-      "polskie"
     ]
   },
   {
@@ -2792,13 +1828,7 @@ const questionsDatabase = [
     "answer": "Z Węgier (dynastia Andegawenów). Jest świętą Kościoła katolickiego.",
     "short": "Z Węgier (dynastia Andegawenów).",
     "type": "text",
-    "numbers": [],
-    "keywords": [
-      "węgier",
-      "andegawenów",
-      "kościoła",
-      "katolickiego"
-    ]
+    "numbers": []
   },
   {
     "id": "1ff9935f",
@@ -2807,13 +1837,7 @@ const questionsDatabase = [
     "answer": "Spotkania artystów i uczonych organizowane przez króla Stanisława Augusta Poniatowskiego na Zamku Królewskim w Warszawie.",
     "short": "Spotkania artystów i uczonych organizowane przez króla Stanisława Augusta Poniatowskiego na Zamku Królewskim w Warszawie.",
     "type": "text",
-    "numbers": [],
-    "keywords": [
-      "stanisława",
-      "augusta",
-      "poniatowskiego",
-      "zamku"
-    ]
+    "numbers": []
   },
   {
     "id": "f3c67ade",
@@ -2822,13 +1846,7 @@ const questionsDatabase = [
     "answer": "Pierwsza polska szkoła państwowa założona przez króla Stanisława Augusta (jej absolwentem był m.in. Tadeusz Kościuszko).",
     "short": "Pierwsza polska szkoła państwowa założona przez króla Stanisława Augusta (jej absolwentem był m.in. Tadeusz Kościuszko).",
     "type": "text",
-    "numbers": [],
-    "keywords": [
-      "stanisława",
-      "augusta",
-      "kościuszko",
-      "absolwentem"
-    ]
+    "numbers": []
   },
   {
     "id": "f96ac7aa",
@@ -2837,13 +1855,7 @@ const questionsDatabase = [
     "answer": "Piast Kołodziej (dynastia Piastów). Pierwszym historycznym władcą był Mieszko I z tej dynastii.",
     "short": "Piast Kołodziej (dynastia Piastów).",
     "type": "person",
-    "numbers": [],
-    "keywords": [
-      "kołodziej",
-      "piastów",
-      "mieszko",
-      "historycznym"
-    ]
+    "numbers": []
   },
   {
     "id": "2962b44e",
@@ -2852,13 +1864,7 @@ const questionsDatabase = [
     "answer": "To słynny wiersz Marii Konopnickiej ('Nie rzucim ziemi, skąd nasz ród...'), który stał się pieśnią patriotyczną, byłą konkurentką do miana hymnu narodowego.",
     "short": "To słynny wiersz Marii Konopnickiej ('Nie rzucim ziemi, skąd nasz ród...'), który stał się pieśnią patriotyczną, byłą konkurentką do miana hymnu narodowego.",
     "type": "text",
-    "numbers": [],
-    "keywords": [
-      "marii",
-      "konopnickiej",
-      "patriotyczną",
-      "konkurentką"
-    ]
+    "numbers": []
   },
   {
     "id": "18c390e0",
@@ -2867,13 +1873,7 @@ const questionsDatabase = [
     "answer": "Jest to część dawnych murów obronnych miasta Krakowa (największy i najlepiej zachowany tego typu zabytek w Europie).",
     "short": "Jest to część dawnych murów obronnych miasta Krakowa (największy i najlepiej zachowany tego typu zabytek w Europie).",
     "type": "text",
-    "numbers": [],
-    "keywords": [
-      "krakowa",
-      "europie",
-      "największy",
-      "obronnych"
-    ]
+    "numbers": []
   },
   {
     "id": "b7ebd51b",
@@ -2882,13 +1882,7 @@ const questionsDatabase = [
     "answer": "Legendarnego opiekuna i założycieli Warszawy (Wars i Sawa). Syrena z mieczem i tarczą ma bronić miasta.",
     "short": "Legendarnego opiekuna i założycieli Warszawy (Wars i Sawa).",
     "type": "text",
-    "numbers": [],
-    "keywords": [
-      "warszawy",
-      "wars",
-      "sawa",
-      "legendarnego"
-    ]
+    "numbers": []
   },
   {
     "id": "8f4623ad",
@@ -2897,13 +1891,7 @@ const questionsDatabase = [
     "answer": "W Krakowie to smok (Smok Wawelski). W Warszawie Syrenka.",
     "short": "W Krakowie to smok (Smok Wawelski).",
     "type": "text",
-    "numbers": [],
-    "keywords": [
-      "krakowie",
-      "wawelski",
-      "warszawie",
-      "syrenka"
-    ]
+    "numbers": []
   },
   {
     "id": "93095afc",
@@ -2912,13 +1900,7 @@ const questionsDatabase = [
     "answer": "Hejnał urywa się na pamiątkę trębacza, któremu strzała tatarska zabiła głos podczas gry na alarm, gdy Tatarzy napadli na Kraków w XIII wieku.",
     "short": "Hejnał urywa się na pamiątkę trębacza, któremu strzała tatarska zabiła głos podczas gry na alarm, gdy Tatarzy napadli na Kraków w XIII wieku.",
     "type": "text",
-    "numbers": [],
-    "keywords": [
-      "tatarzy",
-      "kraków",
-      "xiii",
-      "pamiątkę"
-    ]
+    "numbers": []
   },
   {
     "id": "b951c1b7",
@@ -2927,13 +1909,7 @@ const questionsDatabase = [
     "answer": "W tradycji katolickiej jest to święty biskup z Miry. W Polsce przynosi w nocy prezenty (do butów, pod poduszkę lub w skarpetach).",
     "short": "W tradycji katolickiej jest to święty biskup z Miry.",
     "type": "person",
-    "numbers": [],
-    "keywords": [
-      "miry",
-      "polsce",
-      "katolickiej",
-      "skarpetach"
-    ]
+    "numbers": []
   },
   {
     "id": "4a6d402f",
@@ -2942,13 +1918,7 @@ const questionsDatabase = [
     "answer": "To polski pisarz z epoki renesansu, znany z cytatu: 'A niechaj narodowie wżdy postronni znają, iż Polacy nie gęsi, iż swój język mają' (Ojciec literatury polskiej).",
     "short": "To polski pisarz z epoki renesansu, znany z cytatu: 'A niechaj narodowie wżdy postronni znają, iż Polacy nie gęsi, iż swój język mają' (Ojciec literatury polskiej).",
     "type": "text",
-    "numbers": [],
-    "keywords": [
-      "polacy",
-      "ojciec",
-      "literatury",
-      "renesansu"
-    ]
+    "numbers": []
   },
   {
     "id": "c3332547",
@@ -2957,13 +1927,7 @@ const questionsDatabase = [
     "answer": "Jan Kochanowski (m.in. 'Treny' po śmierci córki Urszulki).",
     "short": "Jan Kochanowski (m.in. 'Treny' po śmierci córki Urszulki).",
     "type": "person",
-    "numbers": [],
-    "keywords": [
-      "kochanowski",
-      "urszulki",
-      "śmierci",
-      "treny"
-    ]
+    "numbers": []
   },
   {
     "id": "efcd977e",
@@ -2972,13 +1936,7 @@ const questionsDatabase = [
     "answer": "Polskim politykiem, dziennikarzem, więźniem Auschwitz, żołnierzem AK, działaczem Żegoty, więźniem politycznym w PRL, ministrem spraw zagranicznych. Słynął z cytatu: 'Warto być przyzwoitym'.",
     "short": "Polskim politykiem, dziennikarzem, więźniem Auschwitz, żołnierzem AK, działaczem Żegoty, więźniem politycznym w PRL, ministrem spraw zagranicznych.",
     "type": "person",
-    "numbers": [],
-    "keywords": [
-      "auschwitz",
-      "żegoty",
-      "dziennikarzem",
-      "zagranicznych"
-    ]
+    "numbers": []
   },
   {
     "id": "84cbdf2b",
@@ -2987,13 +1945,7 @@ const questionsDatabase = [
     "answer": "Unikalne pasmo w Sudetach z płaskimi szczytami (np. Szczeliniec Wielki).",
     "short": "Unikalne pasmo w Sudetach z płaskimi szczytami (np. Szczeliniec Wielki).",
     "type": "place",
-    "numbers": [],
-    "keywords": [
-      "sudetach",
-      "wielki",
-      "szczeliniec",
-      "szczytami"
-    ]
+    "numbers": []
   },
   {
     "id": "0da313ec",
@@ -3002,13 +1954,7 @@ const questionsDatabase = [
     "answer": "Stary ludowy obrzęd przywoływania dusz zmarłych, odbywający się głównie w noc zaduszkową. Opisany szeroko przez A. Mickiewicza w dramacie 'Dziady'.",
     "short": "Stary ludowy obrzęd przywoływania dusz zmarłych, odbywający się głównie w noc zaduszkową.",
     "type": "text",
-    "numbers": [],
-    "keywords": [
-      "dziady",
-      "przywoływania",
-      "mickiewicza",
-      "odbywający"
-    ]
+    "numbers": []
   },
   {
     "id": "8465a2f4",
@@ -3017,13 +1963,7 @@ const questionsDatabase = [
     "answer": "Henryk Sienkiewicz (otrzymał za to literacką nagrodę Nobla). Tytuł po łacinie oznacza 'Dokąd idziesz?'.",
     "short": "Henryk Sienkiewicz (otrzymał za to literacką nagrodę Nobla).",
     "type": "person",
-    "numbers": [],
-    "keywords": [
-      "sienkiewicz",
-      "nobla",
-      "dokąd",
-      "literacką"
-    ]
+    "numbers": []
   },
   {
     "id": "0e6e86c5",
@@ -3032,12 +1972,7 @@ const questionsDatabase = [
     "answer": "Pałac w Wilanowie (w Warszawie).",
     "short": "Pałac w Wilanowie (w Warszawie).",
     "type": "text",
-    "numbers": [],
-    "keywords": [
-      "wilanowie",
-      "warszawie",
-      "pałac"
-    ]
+    "numbers": []
   },
   {
     "id": "bf7ef5fc",
@@ -3046,13 +1981,7 @@ const questionsDatabase = [
     "answer": "Zatrzymaniem ofensywy bolszewickiej i uratowaniem Europy przed inwazją komunizmu. Dużą rolę odegrał manewr znad Wieprza wymyślony przez Józefa Piłsudskiego i gen. Tadeusza Rozwadowskiego.",
     "short": "Zatrzymaniem ofensywy bolszewickiej i uratowaniem Europy przed inwazją komunizmu.",
     "type": "text",
-    "numbers": [],
-    "keywords": [
-      "europy",
-      "wieprza",
-      "józefa",
-      "piłsudskiego"
-    ]
+    "numbers": []
   },
   {
     "id": "873f660f",
@@ -3061,13 +1990,7 @@ const questionsDatabase = [
     "answer": "Polskim emisariuszem Polskiego Państwa Podziemnego, który przekazał zachodnim aliantom raporty o eksterminacji Żydów (Holokauście) w Polsce przez Niemców.",
     "short": "Polskim emisariuszem Polskiego Państwa Podziemnego, który przekazał zachodnim aliantom raporty o eksterminacji Żydów (Holokauście) w Polsce przez Niemców.",
     "type": "person",
-    "numbers": [],
-    "keywords": [
-      "polskiego",
-      "państwa",
-      "podziemnego",
-      "żydów"
-    ]
+    "numbers": []
   },
   {
     "id": "eded9d5e",
@@ -3079,12 +2002,6 @@ const questionsDatabase = [
     "numbers": [
       "2",
       "1997"
-    ],
-    "keywords": [
-      "rzeczypospolitej",
-      "polskiej",
-      "najwyższym",
-      "zasadniczą"
     ]
   },
   {
@@ -3094,13 +2011,7 @@ const questionsDatabase = [
     "answer": "Władza dzieli się na ustawodawczą (Sejm i Senat), wykonawczą (Prezydent i Rząd) oraz sądowniczą (Sądy i Trybunały).",
     "short": "Władza dzieli się na ustawodawczą (Sejm i Senat), wykonawczą (Prezydent i Rząd) oraz sądowniczą (Sądy i Trybunały).",
     "type": "text",
-    "numbers": [],
-    "keywords": [
-      "sejm",
-      "senat",
-      "rząd",
-      "sądy"
-    ]
+    "numbers": []
   },
   {
     "id": "81586d76",
@@ -3109,13 +2020,7 @@ const questionsDatabase = [
     "answer": "Tak, rozwody są legalne po orzeczeniu sądu.",
     "short": "Tak, rozwody są legalne po orzeczeniu sądu.",
     "type": "text",
-    "numbers": [],
-    "keywords": [
-      "orzeczeniu",
-      "rozwody",
-      "legalne",
-      "sądu"
-    ]
+    "numbers": []
   },
   {
     "id": "2203017a",
@@ -3126,9 +2031,6 @@ const questionsDatabase = [
     "type": "text",
     "numbers": [
       "18"
-    ],
-    "keywords": [
-      "wieku"
     ]
   },
   {
@@ -3140,11 +2042,6 @@ const questionsDatabase = [
     "type": "text",
     "numbers": [
       "100"
-    ],
-    "keywords": [
-      "dzieli",
-      "groszy",
-      "złoty"
     ]
   },
   {
@@ -3154,10 +2051,7 @@ const questionsDatabase = [
     "answer": "W Warszawie.",
     "short": "W Warszawie.",
     "type": "place",
-    "numbers": [],
-    "keywords": [
-      "warszawie"
-    ]
+    "numbers": []
   },
   {
     "id": "5272f321",
@@ -3168,10 +2062,6 @@ const questionsDatabase = [
     "type": "text",
     "numbers": [
       "8"
-    ],
-    "keywords": [
-      "obecnie",
-      "wynosi"
     ]
   },
   {
@@ -3183,12 +2073,6 @@ const questionsDatabase = [
     "type": "text",
     "numbers": [
       "50"
-    ],
-    "keywords": [
-      "polsce",
-      "zwyczajowa",
-      "małżeństwa",
-      "małżeńskim"
     ]
   },
   {
@@ -3200,12 +2084,6 @@ const questionsDatabase = [
     "type": "text",
     "numbers": [
       "24"
-    ],
-    "keywords": [
-      "bożego",
-      "narodzenia",
-      "wigilię",
-      "grudnia"
     ]
   },
   {
@@ -3215,13 +2093,7 @@ const questionsDatabase = [
     "answer": "Mazowieckie, Małopolskie, Wielkopolskie, Śląskie, Dolnośląskie, Pomorskie...",
     "short": "Mazowieckie, Małopolskie, Wielkopolskie, Śląskie, Dolnośląskie, Pomorskie...",
     "type": "place",
-    "numbers": [],
-    "keywords": [
-      "małopolskie",
-      "wielkopolskie",
-      "śląskie",
-      "dolnośląskie"
-    ]
+    "numbers": []
   },
   {
     "id": "e5e503a8",
@@ -3230,13 +2102,7 @@ const questionsDatabase = [
     "answer": "Wierzba (tzw. wierzba płacząca). W parku w Żelazowej Woli i przed pomnikiem Chopina w Łazienkach Królewskich jest to charakterystyczny element krajobrazu.",
     "short": "Wierzba (tzw. wierzba płacząca).",
     "type": "text",
-    "numbers": [],
-    "keywords": [
-      "żelazowej",
-      "woli",
-      "chopina",
-      "łazienkach"
-    ]
+    "numbers": []
   },
   {
     "id": "3a277840",
@@ -3247,12 +2113,6 @@ const questionsDatabase = [
     "type": "person",
     "numbers": [
       "1795"
-    ],
-    "keywords": [
-      "polski",
-      "szkoły",
-      "rycerskiej",
-      "iii"
     ]
   },
   {
@@ -3262,13 +2122,7 @@ const questionsDatabase = [
     "answer": "Biało-czerwonych (na koszulkach z godłem Polski).",
     "short": "Biało-czerwonych (na koszulkach z godłem Polski).",
     "type": "text",
-    "numbers": [],
-    "keywords": [
-      "polski",
-      "czerwonych",
-      "koszulkach",
-      "godłem"
-    ]
+    "numbers": []
   },
   {
     "id": "5ed068a2",
@@ -3277,13 +2131,7 @@ const questionsDatabase = [
     "answer": "W Warszawie, Gdańsku, Wrocławiu i Poznaniu (wspólnie z Ukrainą).",
     "short": "W Warszawie, Gdańsku, Wrocławiu i Poznaniu (wspólnie z Ukrainą).",
     "type": "text",
-    "numbers": [],
-    "keywords": [
-      "warszawie",
-      "gdańsku",
-      "wrocławiu",
-      "poznaniu"
-    ]
+    "numbers": []
   },
   {
     "id": "87c227ec",
@@ -3294,12 +2142,6 @@ const questionsDatabase = [
     "type": "text",
     "numbers": [
       "1"
-    ],
-    "keywords": [
-      "uczniowie",
-      "granatowe",
-      "września",
-      "ubierają"
     ]
   },
   {
@@ -3311,12 +2153,6 @@ const questionsDatabase = [
     "type": "text",
     "numbers": [
       "4"
-    ],
-    "keywords": [
-      "nikomedii",
-      "tradycyjne",
-      "obchodzone",
-      "górnicze"
     ]
   },
   {
@@ -3326,13 +2162,7 @@ const questionsDatabase = [
     "answer": "Pałac Kultury i Nauki (PKiN) w Warszawie – długo najwyższy budynek w Polsce.",
     "short": "Pałac Kultury i Nauki (PKiN) w Warszawie – długo najwyższy budynek w Polsce.",
     "type": "text",
-    "numbers": [],
-    "keywords": [
-      "kultury",
-      "nauki",
-      "pkin",
-      "warszawie"
-    ]
+    "numbers": []
   },
   {
     "id": "7e96ef45",
@@ -3341,12 +2171,7 @@ const questionsDatabase = [
     "answer": "Na wieży Ratusza w Poznaniu.",
     "short": "Na wieży Ratusza w Poznaniu.",
     "type": "text",
-    "numbers": [],
-    "keywords": [
-      "ratusza",
-      "poznaniu",
-      "wieży"
-    ]
+    "numbers": []
   },
   {
     "id": "ecf67be4",
@@ -3355,11 +2180,7 @@ const questionsDatabase = [
     "answer": "Włodzimierz Szaranowicz.",
     "short": "Włodzimierz Szaranowicz.",
     "type": "text",
-    "numbers": [],
-    "keywords": [
-      "szaranowicz",
-      "włodzimierz"
-    ]
+    "numbers": []
   },
   {
     "id": "9142009f",
@@ -3370,12 +2191,6 @@ const questionsDatabase = [
     "type": "text",
     "numbers": [
       "1908"
-    ],
-    "keywords": [
-      "marię",
-      "konopnicką",
-      "patriotyczna",
-      "germanizacji"
     ]
   },
   {
@@ -3388,12 +2203,6 @@ const questionsDatabase = [
     "numbers": [
       "1952",
       "1989"
-    ],
-    "keywords": [
-      "rzeczpospolita",
-      "ludowa",
-      "polski",
-      "oficjalna"
     ]
   },
   {
@@ -3405,12 +2214,6 @@ const questionsDatabase = [
     "type": "text",
     "numbers": [
       "1920"
-    ],
-    "keywords": [
-      "bitwy",
-      "warszawskiej",
-      "piłsudskiego",
-      "stanisław"
     ]
   },
   {
@@ -3420,13 +2223,7 @@ const questionsDatabase = [
     "answer": "Rosół z makaronem, kotlet schabowy z ziemniakami i kapustą, flaczki, bigos, wędliny i sałatka jarzynowa.",
     "short": "Rosół z makaronem, kotlet schabowy z ziemniakami i kapustą, flaczki, bigos, wędliny i sałatka jarzynowa.",
     "type": "list",
-    "numbers": [],
-    "keywords": [
-      "ziemniakami",
-      "makaronem",
-      "jarzynowa",
-      "schabowy"
-    ]
+    "numbers": []
   },
   {
     "id": "063e257e",
@@ -3438,12 +2235,6 @@ const questionsDatabase = [
     "numbers": [
       "24",
       "25"
-    ],
-    "keywords": [
-      "bożego",
-      "narodzenia",
-      "betlejem",
-      "zmierzających"
     ]
   },
   {
@@ -3453,10 +2244,7 @@ const questionsDatabase = [
     "answer": "Odra.",
     "short": "Odra.",
     "type": "place",
-    "numbers": [],
-    "keywords": [
-      "odra"
-    ]
+    "numbers": []
   },
   {
     "id": "6104fd55",
@@ -3465,10 +2253,7 @@ const questionsDatabase = [
     "answer": "Warta.",
     "short": "Warta.",
     "type": "place",
-    "numbers": [],
-    "keywords": [
-      "warta"
-    ]
+    "numbers": []
   },
   {
     "id": "62a9f641",
@@ -3477,10 +2262,7 @@ const questionsDatabase = [
     "answer": "W Sopocie.",
     "short": "W Sopocie.",
     "type": "place",
-    "numbers": [],
-    "keywords": [
-      "sopocie"
-    ]
+    "numbers": []
   },
   {
     "id": "7550ed73",
@@ -3489,13 +2271,7 @@ const questionsDatabase = [
     "answer": "Ksiądz Jerzy Popiełuszko (jest obecnie błogosławionym).",
     "short": "Ksiądz Jerzy Popiełuszko (jest obecnie błogosławionym).",
     "type": "text",
-    "numbers": [],
-    "keywords": [
-      "jerzy",
-      "popiełuszko",
-      "błogosławionym",
-      "obecnie"
-    ]
+    "numbers": []
   },
   {
     "id": "86b0d8df",
@@ -3504,13 +2280,7 @@ const questionsDatabase = [
     "answer": "Kresy Wschodnie to dawne wschodnie terytoria Rzeczypospolitej (dzisiejsza zachodnia Ukraina, Białoruś, Litwa), które Polska utraciła po II wojnie światowej na rzecz ZSRR.",
     "short": "Kresy Wschodnie to dawne wschodnie terytoria Rzeczypospolitej (dzisiejsza zachodnia Ukraina, Białoruś, Litwa), które Polska utraciła po II wojnie światowej na rzecz ZSRR.",
     "type": "text",
-    "numbers": [],
-    "keywords": [
-      "wschodnie",
-      "rzeczypospolitej",
-      "ukraina",
-      "białoruś"
-    ]
+    "numbers": []
   },
   {
     "id": "2d1d8bb2",
@@ -3519,13 +2289,7 @@ const questionsDatabase = [
     "answer": "Henryk Sienkiewicz (otrzymał Literacką Nagrodę Nobla).",
     "short": "Henryk Sienkiewicz (otrzymał Literacką Nagrodę Nobla).",
     "type": "person",
-    "numbers": [],
-    "keywords": [
-      "sienkiewicz",
-      "literacką",
-      "nagrodę",
-      "nobla"
-    ]
+    "numbers": []
   },
   {
     "id": "53f705ff",
@@ -3537,12 +2301,6 @@ const questionsDatabase = [
     "numbers": [
       "1655",
       "1660"
-    ],
-    "keywords": [
-      "polskę",
-      "xvii",
-      "niszczycielski",
-      "szwedzkich"
     ]
   },
   {
@@ -3552,13 +2310,7 @@ const questionsDatabase = [
     "answer": "Roman Polański. Film opowiada o losach Władysława Szpilmana podczas II wojny światowej.",
     "short": "Roman Polański.",
     "type": "person",
-    "numbers": [],
-    "keywords": [
-      "polański",
-      "władysława",
-      "szpilmana",
-      "ii"
-    ]
+    "numbers": []
   },
   {
     "id": "8e6b6c40",
@@ -3567,13 +2319,7 @@ const questionsDatabase = [
     "answer": "Syrenka (uzbrojona w miecz i tarczę).",
     "short": "Syrenka (uzbrojona w miecz i tarczę).",
     "type": "text",
-    "numbers": [],
-    "keywords": [
-      "uzbrojona",
-      "syrenka",
-      "tarczę",
-      "miecz"
-    ]
+    "numbers": []
   },
   {
     "id": "25e95137",
@@ -3582,13 +2328,7 @@ const questionsDatabase = [
     "answer": "Zakopane (położone u podnóża Tatr).",
     "short": "Zakopane (położone u podnóża Tatr).",
     "type": "place",
-    "numbers": [],
-    "keywords": [
-      "tatr",
-      "zakopane",
-      "położone",
-      "podnóża"
-    ]
+    "numbers": []
   },
   {
     "id": "2c5e1759",
@@ -3601,12 +2341,6 @@ const questionsDatabase = [
       "2050",
       "2023",
       "2025"
-    ],
-    "keywords": [
-      "polska",
-      "marszałkiem",
-      "sejmu",
-      "włodzimierz"
     ]
   },
   {
@@ -3616,13 +2350,7 @@ const questionsDatabase = [
     "answer": "Jest to orzeł w koronie na czerwonym tle. Głowa orła jest zwrócona w prawą stronę. Korona, dziób i szpony są złote.",
     "short": "Jest to orzeł w koronie na czerwonym tle.",
     "type": "text",
-    "numbers": [],
-    "keywords": [
-      "czerwonym",
-      "zwrócona",
-      "koronie",
-      "stronę"
-    ]
+    "numbers": []
   },
   {
     "id": "29678ea0",
@@ -3631,10 +2359,7 @@ const questionsDatabase = [
     "answer": "W Toruniu.",
     "short": "W Toruniu.",
     "type": "text",
-    "numbers": [],
-    "keywords": [
-      "toruniu"
-    ]
+    "numbers": []
   },
   {
     "id": "bff02ffd",
@@ -3643,12 +2368,7 @@ const questionsDatabase = [
     "answer": "W Wieliczce (koło Krakowa).",
     "short": "W Wieliczce (koło Krakowa).",
     "type": "place",
-    "numbers": [],
-    "keywords": [
-      "wieliczce",
-      "krakowa",
-      "koło"
-    ]
+    "numbers": []
   },
   {
     "id": "eca4105a",
@@ -3659,12 +2379,6 @@ const questionsDatabase = [
     "type": "text",
     "numbers": [
       "1797"
-    ],
-    "keywords": [
-      "polski",
-      "włoszech",
-      "józefa",
-      "wybickiego"
     ]
   },
   {
@@ -3674,13 +2388,7 @@ const questionsDatabase = [
     "answer": "Puszcza Białowieska (Białowieski Park Narodowy).",
     "short": "Puszcza Białowieska (Białowieski Park Narodowy).",
     "type": "text",
-    "numbers": [],
-    "keywords": [
-      "białowieska",
-      "białowieski",
-      "park",
-      "narodowy"
-    ]
+    "numbers": []
   },
   {
     "id": "ce9a858a",
@@ -3689,13 +2397,7 @@ const questionsDatabase = [
     "answer": "Składa się z litery \"P\" (Polska) i \"W\" (Walcząca). Był to symbol nadziei i oporu Polskiego Państwa Podziemnego podczas niemieckiej okupacji.",
     "short": "Składa się z litery \"P\" (Polska) i \"W\" (Walcząca).",
     "type": "text",
-    "numbers": [],
-    "keywords": [
-      "polska",
-      "walcząca",
-      "polskiego",
-      "państwa"
-    ]
+    "numbers": []
   },
   {
     "id": "338521f9",
@@ -3706,12 +2408,6 @@ const questionsDatabase = [
     "type": "person",
     "numbers": [
       "1989"
-    ],
-    "keywords": [
-      "polski",
-      "ii",
-      "niekomunistycznym",
-      "pierwszym"
     ]
   },
   {
@@ -3721,13 +2417,7 @@ const questionsDatabase = [
     "answer": "W październiku. (Rok szkolny zaczyna się we wrześniu).",
     "short": "W październiku.",
     "type": "text",
-    "numbers": [],
-    "keywords": [
-      "październiku",
-      "wrześniu",
-      "szkolny",
-      "zaczyna"
-    ]
+    "numbers": []
   },
   {
     "id": "3c5bfc6c",
@@ -3736,10 +2426,7 @@ const questionsDatabase = [
     "answer": "Sernik.",
     "short": "Sernik.",
     "type": "text",
-    "numbers": [],
-    "keywords": [
-      "sernik"
-    ]
+    "numbers": []
   },
   {
     "id": "ad18edff",
@@ -3748,12 +2435,7 @@ const questionsDatabase = [
     "answer": "Z okolic Krakowa (Małopolska).",
     "short": "Z okolic Krakowa (Małopolska).",
     "type": "place",
-    "numbers": [],
-    "keywords": [
-      "krakowa",
-      "małopolska",
-      "okolic"
-    ]
+    "numbers": []
   },
   {
     "id": "4236aa96",
@@ -3762,13 +2444,7 @@ const questionsDatabase = [
     "answer": "Wojewoda (w urzędzie wojewódzkim) lub konsul za granicą.",
     "short": "Wojewoda (w urzędzie wojewódzkim) lub konsul za granicą.",
     "type": "person",
-    "numbers": [],
-    "keywords": [
-      "wojewódzkim",
-      "wojewoda",
-      "urzędzie",
-      "granicą"
-    ]
+    "numbers": []
   },
   {
     "id": "86c058b6",
@@ -3777,12 +2453,7 @@ const questionsDatabase = [
     "answer": "W Gdańsku (Stocznia Gdańska).",
     "short": "W Gdańsku (Stocznia Gdańska).",
     "type": "text",
-    "numbers": [],
-    "keywords": [
-      "gdańsku",
-      "stocznia",
-      "gdańska"
-    ]
+    "numbers": []
   },
   {
     "id": "aa3093e8",
@@ -3793,12 +2464,6 @@ const questionsDatabase = [
     "type": "date",
     "numbers": [
       "966"
-    ],
-    "keywords": [
-      "mieszko",
-      "chrztem",
-      "polski",
-      "wydarzenie"
     ]
   },
   {
@@ -3808,8 +2473,7 @@ const questionsDatabase = [
     "answer": "WZÓR - wstaw swoje dane: \"Moja prababcia ze strony mamy, [imię i nazwisko], była Polką. Urodziła się w [rok] w [miejscowość].\" Urzędnik chce usłyszeć konkretne pokrewieństwo, imię i nazwisko, rok i miejsce urodzenia. Odpowiadaj pewnie i zawsze tak samo - to musi się zgadzać z dokumentami.",
     "short": "WZÓR - wstaw swoje dane: \"Moja prababcia ze strony mamy, [imię i nazwisko], była Polką.",
     "type": "personal",
-    "numbers": [],
-    "keywords": []
+    "numbers": []
   },
   {
     "id": "17ea6dfa",
@@ -3818,8 +2482,7 @@ const questionsDatabase = [
     "answer": "WZÓR: \"Ubiegam się przez [np. babcię ze strony ojca], [imię i nazwisko], która miała wpisaną narodowość polską w [nazwa dokumentu].\" Ustawa wymaga co najmniej jednego rodzica lub dziadka albo dwojga pradziadków narodowości polskiej.",
     "short": "WZÓR: \"Ubiegam się przez [np. babcię ze strony ojca], [imię i nazwisko], która miała wpisaną narodowość polską w [nazwa dokumentu].\" Ustawa wymaga co najmniej jednego rodzica lub dziadka albo dwojga pradziadków narodowości polskiej.",
     "type": "personal",
-    "numbers": [],
-    "keywords": []
+    "numbers": []
   },
   {
     "id": "ed2826d7",
@@ -3828,8 +2491,7 @@ const questionsDatabase = [
     "answer": "Dokumenty wydane przez polskie władze państwowe lub kościelne (np. akt chrztu, metryka, akt urodzenia) oraz dokumenty władz byłego ZSRR z wpisem o narodowości polskiej. Dokumenty wydane przez Ukrainę czy Białoruś już po uzyskaniu przez nie niepodległości nie potwierdzają pochodzenia.",
     "short": "Dokumenty wydane przez polskie władze państwowe lub kościelne (np. akt chrztu, metryka, akt urodzenia) oraz dokumenty władz byłego ZSRR z wpisem o narodowości polskiej.",
     "type": "personal",
-    "numbers": [],
-    "keywords": []
+    "numbers": []
   },
   {
     "id": "9014a1b2",
@@ -3838,8 +2500,7 @@ const questionsDatabase = [
     "answer": "WZÓR: \"Urodziła się w [rok] w [miejscowość]. Pracowała jako [zawód]. W domu mówiła po polsku i była katoliczką. Zmarła w [rok].\" Przygotuj 3-4 konkretne zdania - urzędnik sprawdza, czy więź z polskością jest prawdziwa, a nie wyuczona.",
     "short": "WZÓR: \"Urodziła się w [rok] w [miejscowość].",
     "type": "personal",
-    "numbers": [],
-    "keywords": []
+    "numbers": []
   },
   {
     "id": "3cc85b7b",
@@ -3848,8 +2509,7 @@ const questionsDatabase = [
     "answer": "WZÓR: \"Polska jest krajem moich przodków. Chcę tu mieszkać, pracować i wychowywać dzieci. Czuję się związany/a z polską kulturą i chcę być częścią tego społeczeństwa.\" Mów o więzi i planach, nie tylko o pieniądzach czy wygodzie.",
     "short": "WZÓR: \"Polska jest krajem moich przodków.",
     "type": "personal",
-    "numbers": [],
-    "keywords": []
+    "numbers": []
   },
   {
     "id": "fda969dd",
@@ -3858,8 +2518,7 @@ const questionsDatabase = [
     "answer": "WZÓR: \"Tak, babcia mówiła po polsku, znam od dziecka polskie modlitwy i kolędy.\" Albo szczerze: \"W domu mówiło się po [język], ale babcia używała polskich słów i modliła się po polsku, dlatego sam/a zacząłem/zaczęłam się uczyć.\" Szczerość jest lepsza niż zmyślanie.",
     "short": "WZÓR: \"Tak, babcia mówiła po polsku, znam od dziecka polskie modlitwy i kolędy.\" Albo szczerze: \"W domu mówiło się po [język], ale babcia używała polskich słów i modliła się po polsku, dlatego sam/a zacząłem/zaczęłam się uczyć.\" Szczerość jest lepsza niż zmyślanie.",
     "type": "personal",
-    "numbers": [],
-    "keywords": []
+    "numbers": []
   },
   {
     "id": "e55dbe6e",
@@ -3868,8 +2527,7 @@ const questionsDatabase = [
     "answer": "WZÓR: \"Obchodzimy Wigilię z opłatkiem i dwunastoma potrawami, święcimy pokarmy w Wielką Sobotę, w listopadzie odwiedzamy groby bliskich.\" Podaj konkretne zwyczaje, które naprawdę u was są - ustawa wymaga \"kultywowania polskich tradycji i zwyczajów\".",
     "short": "WZÓR: \"Obchodzimy Wigilię z opłatkiem i dwunastoma potrawami, święcimy pokarmy w Wielką Sobotę, w listopadzie odwiedzamy groby bliskich.\" Podaj konkretne zwyczaje, które naprawdę u was są - ustawa wymaga \"kultywowania polskich tradycji i zwyczajów\".",
     "type": "personal",
-    "numbers": [],
-    "keywords": []
+    "numbers": []
   },
   {
     "id": "2ff405e3",
@@ -3878,8 +2536,7 @@ const questionsDatabase = [
     "answer": "WZÓR: \"Zaczynamy po pierwszej gwiazdce. Dzielimy się opłatkiem i składamy życzenia. Na stole jest dwanaście potraw bez mięsa, jest barszcz z uszkami, karp, pierogi i kutia. Zostawiamy jedno wolne miejsce dla niespodziewanego gościa. Potem śpiewamy kolędy i idziemy na pasterkę.\"",
     "short": "WZÓR: \"Zaczynamy po pierwszej gwiazdce.",
     "type": "personal",
-    "numbers": [],
-    "keywords": []
+    "numbers": []
   },
   {
     "id": "fdf96eba",
@@ -3888,8 +2545,7 @@ const questionsDatabase = [
     "answer": "WZÓR: \"Mam żonę/męża i [liczba] dzieci. Rodzice mieszkają w [miejscowość]. Mam brata/siostrę. Z zawodu jestem [zawód].\" Mów pełnymi zdaniami - urzędnik ocenia też płynność języka polskiego.",
     "short": "WZÓR: \"Mam żonę/męża i [liczba] dzieci.",
     "type": "personal",
-    "numbers": [],
-    "keywords": []
+    "numbers": []
   },
   {
     "id": "195c0405",
@@ -3898,8 +2554,7 @@ const questionsDatabase = [
     "answer": "WZÓR: \"Nazywam się [imię i nazwisko]. Mam [liczba] lat. Urodziłem/am się w [miejscowość]. Z wykształcenia jestem [zawód], pracuję jako [stanowisko]. Mieszkam w Polsce od [rok].\" Przygotuj tę wypowiedź na pamięć - prawie zawsze jest pierwsza.",
     "short": "WZÓR: \"Nazywam się [imię i nazwisko].",
     "type": "personal",
-    "numbers": [],
-    "keywords": []
+    "numbers": []
   },
   {
     "id": "d523828b",
@@ -3908,8 +2563,7 @@ const questionsDatabase = [
     "answer": "WZÓR: \"Pracuję jako [zawód] w firmie [nazwa] w [miasto]. Zajmuję się [krótki opis obowiązków]. Pracuję na umowę o pracę.\" Miej gotowe proste zdania o swojej pracy i formie zatrudnienia.",
     "short": "WZÓR: \"Pracuję jako [zawód] w firmie [nazwa] w [miasto].",
     "type": "personal",
-    "numbers": [],
-    "keywords": []
+    "numbers": []
   },
   {
     "id": "c97f602b",
@@ -3918,8 +2572,7 @@ const questionsDatabase = [
     "answer": "WZÓR: \"Mieszkam w [miasto], w województwie [nazwa], przy ulicy [nazwa]. Wynajmuję mieszkanie / mam własne mieszkanie.\" Warto znać nazwę swojego województwa i powiatu.",
     "short": "WZÓR: \"Mieszkam w [miasto], w województwie [nazwa], przy ulicy [nazwa].",
     "type": "personal",
-    "numbers": [],
-    "keywords": []
+    "numbers": []
   },
   {
     "id": "ef2dfe16",
@@ -3928,8 +2581,7 @@ const questionsDatabase = [
     "answer": "WZÓR: \"Mieszkam w Polsce od [rok], najpierw na wizie, potem na karcie pobytu czasowego. Teraz ubiegam się o pobyt stały ze względu na polskie pochodzenie.\" Miej daty w głowie - muszą zgadzać się z dokumentami.",
     "short": "WZÓR: \"Mieszkam w Polsce od [rok], najpierw na wizie, potem na karcie pobytu czasowego.",
     "type": "personal",
-    "numbers": [],
-    "keywords": []
+    "numbers": []
   },
   {
     "id": "34928312",
@@ -3938,8 +2590,7 @@ const questionsDatabase = [
     "answer": "WZÓR: \"Tak, zamierzam osiedlić się w Polsce na stałe. Tu pracuję, tu mieszka moja rodzina, tu chcę zostać.\" Zamiar stałego osiedlenia się to ustawowy warunek - odpowiedz jednoznacznie \"tak\".",
     "short": "WZÓR: \"Tak, zamierzam osiedlić się w Polsce na stałe.",
     "type": "personal",
-    "numbers": [],
-    "keywords": []
+    "numbers": []
   },
   {
     "id": "87a81ff1",
@@ -3948,8 +2599,7 @@ const questionsDatabase = [
     "answer": "WZÓR: \"Tak, uczę się polskiego od [rok]. Chodzę na kurs / uczę się sam/a, czytam polskie książki i oglądam polską telewizję. Rozmawiam po polsku w pracy.\" Pokaż, że kontakt z językiem jest codzienny.",
     "short": "WZÓR: \"Tak, uczę się polskiego od [rok].",
     "type": "personal",
-    "numbers": [],
-    "keywords": []
+    "numbers": []
   },
   {
     "id": "b8b9e2d5",
@@ -3958,8 +2608,7 @@ const questionsDatabase = [
     "answer": "WZÓR: \"Gotujemy w domu barszcz czerwony, żurek, bigos, pierogi z kapustą i grzybami, gołąbki, schabowego z ziemniakami i mizerią, a na święta makowiec i sernik.\"",
     "short": "WZÓR: \"Gotujemy w domu barszcz czerwony, żurek, bigos, pierogi z kapustą i grzybami, gołąbki, schabowego z ziemniakami i mizerią, a na święta makowiec i sernik.\"",
     "type": "personal",
-    "numbers": [],
-    "keywords": []
+    "numbers": []
   },
   {
     "id": "bf41ede8",
@@ -3968,8 +2617,7 @@ const questionsDatabase = [
     "answer": "WZÓR: \"Boże Narodzenie z Wigilią 24 grudnia, Wielkanoc ze święconką i Śmigusem-Dyngusem, Wszystkich Świętych 1 listopada, a także 3 Maja i 11 Listopada jako święta państwowe.\"",
     "short": "WZÓR: \"Boże Narodzenie z Wigilią 24 grudnia, Wielkanoc ze święconką i Śmigusem-Dyngusem, Wszystkich Świętych 1 listopada, a także 3 Maja i 11 Listopada jako święta państwowe.\"",
     "type": "personal",
-    "numbers": [],
-    "keywords": []
+    "numbers": []
   },
   {
     "id": "15d07539",
@@ -3978,8 +2626,7 @@ const questionsDatabase = [
     "answer": "WZÓR: \"Jestem katolikiem/katoliczką, ochrzczony/a w kościele rzymskokatolickim.\" Pytanie bywa zadawane w kontekście tradycji rodzinnych; odpowiadaj zgodnie z prawdą - wyznanie nie jest warunkiem, ale chrzest bywa dowodem pochodzenia.",
     "short": "WZÓR: \"Jestem katolikiem/katoliczką, ochrzczony/a w kościele rzymskokatolickim.\" Pytanie bywa zadawane w kontekście tradycji rodzinnych; odpowiadaj zgodnie z prawdą - wyznanie nie jest warunkiem, ale chrzest bywa dowodem pochodzenia.",
     "type": "personal",
-    "numbers": [],
-    "keywords": []
+    "numbers": []
   },
   {
     "id": "c3dbf95f",
@@ -3988,8 +2635,7 @@ const questionsDatabase = [
     "answer": "WZÓR: \"Tak, w [miasto] mieszka mój [pokrewieństwo].\" Albo: \"Nie, moja najbliższa rodzina jest ze mną tutaj.\" Odpowiadaj krótko i zgodnie z prawdą.",
     "short": "WZÓR: \"Tak, w [miasto] mieszka mój [pokrewieństwo].\" Albo: \"Nie, moja najbliższa rodzina jest ze mną tutaj.\" Odpowiadaj krótko i zgodnie z prawdą.",
     "type": "personal",
-    "numbers": [],
-    "keywords": []
+    "numbers": []
   },
   {
     "id": "a4d19bde",
@@ -3998,8 +2644,7 @@ const questionsDatabase = [
     "answer": "WZÓR: \"Pracuję i płacę tu podatki, moje dzieci chodzą do polskiej szkoły, mam polskich przyjaciół, interesuję się polską historią i kulturą.\" Konkrety działają lepiej niż ogólniki.",
     "short": "WZÓR: \"Pracuję i płacę tu podatki, moje dzieci chodzą do polskiej szkoły, mam polskich przyjaciół, interesuję się polską historią i kulturą.\" Konkrety działają lepiej niż ogólniki.",
     "type": "personal",
-    "numbers": [],
-    "keywords": []
+    "numbers": []
   },
   {
     "id": "24d1d1a1",
@@ -4008,8 +2653,7 @@ const questionsDatabase = [
     "answer": "WZÓR: \"Dziadek ze strony ojca, [imię i nazwisko], urodził się w [rok] w [miejscowość] na terenie dawnej Polski. Babcia, [imię], pochodziła z [miejscowość].\" Naucz się imion, nazwisk, lat i miejscowości - to najczęstsze pytanie uzupełniające.",
     "short": "WZÓR: \"Dziadek ze strony ojca, [imię i nazwisko], urodził się w [rok] w [miejscowość] na terenie dawnej Polski.",
     "type": "personal",
-    "numbers": [],
-    "keywords": []
+    "numbers": []
   },
   {
     "id": "2769b8ca",
@@ -4018,8 +2662,7 @@ const questionsDatabase = [
     "answer": "WZÓR: \"Tak, mamy akt chrztu prababci wydany przez parafię rzymskokatolicką, stare zdjęcia i modlitewnik po polsku.\" Wymień to, co realnie posiadasz i możesz pokazać.",
     "short": "WZÓR: \"Tak, mamy akt chrztu prababci wydany przez parafię rzymskokatolicką, stare zdjęcia i modlitewnik po polsku.\" Wymień to, co realnie posiadasz i możesz pokazać.",
     "type": "personal",
-    "numbers": [],
-    "keywords": []
+    "numbers": []
   },
   {
     "id": "3b85b0e8",
@@ -4028,8 +2671,7 @@ const questionsDatabase = [
     "answer": "WZÓR: \"Chcę uregulować swój pobyt w Polsce na stałe, żyć legalnie w kraju moich przodków i w przyszłości ubiegać się o obywatelstwo polskie.\"",
     "short": "WZÓR: \"Chcę uregulować swój pobyt w Polsce na stałe, żyć legalnie w kraju moich przodków i w przyszłości ubiegać się o obywatelstwo polskie.\"",
     "type": "personal",
-    "numbers": [],
-    "keywords": []
+    "numbers": []
   },
   {
     "id": "bfe394ee",
@@ -4038,8 +2680,7 @@ const questionsDatabase = [
     "answer": "Wniosek o Kartę Polaka składa się do konsula Rzeczypospolitej Polskiej właściwego dla miejsca zamieszkania, a w Polsce do wojewody. Wniosek o zezwolenie na pobyt stały rozpatruje wojewoda właściwy dla miejsca zamieszkania.",
     "short": "Wniosek o Kartę Polaka składa się do konsula Rzeczypospolitej Polskiej właściwego dla miejsca zamieszkania, a w Polsce do wojewody.",
     "type": "personal",
-    "numbers": [],
-    "keywords": []
+    "numbers": []
   },
   {
     "id": "5e2247b8",
@@ -4048,8 +2689,7 @@ const questionsDatabase = [
     "answer": "Dokument potwierdzający tożsamość cudzoziemca i uprawniający - razem z paszportem - do pobytu w Polsce i przekraczania granicy. Przy pobycie stałym wydawana jest na 10 lat, a samo zezwolenie jest bezterminowe.",
     "short": "Dokument potwierdzający tożsamość cudzoziemca i uprawniający - razem z paszportem - do pobytu w Polsce i przekraczania granicy.",
     "type": "personal",
-    "numbers": [],
-    "keywords": []
+    "numbers": []
   },
   {
     "id": "99d50593",
@@ -4058,8 +2698,7 @@ const questionsDatabase = [
     "answer": "Zezwolenie na pobyt czasowy wydaje się maksymalnie na 3 lata i trzeba je odnawiać. Zezwolenie na pobyt stały jest bezterminowe, a karta pobytu wymieniana jest co 10 lat.",
     "short": "Zezwolenie na pobyt czasowy wydaje się maksymalnie na 3 lata i trzeba je odnawiać.",
     "type": "personal",
-    "numbers": [],
-    "keywords": []
+    "numbers": []
   },
   {
     "id": "085dcfff",
@@ -4068,8 +2707,7 @@ const questionsDatabase = [
     "answer": "WZÓR: \"Tak, po wymaganym okresie pobytu chciałbym/chciałabym złożyć wniosek o uznanie za obywatela polskiego.\" Do obywatelstwa potrzebny jest m.in. certyfikat znajomości języka polskiego na poziomie B1.",
     "short": "WZÓR: \"Tak, po wymaganym okresie pobytu chciałbym/chciałabym złożyć wniosek o uznanie za obywatela polskiego.\" Do obywatelstwa potrzebny jest m.in. certyfikat znajomości języka polskiego na poziomie B1.",
     "type": "personal",
-    "numbers": [],
-    "keywords": []
+    "numbers": []
   },
   {
     "id": "ffa47f27",
@@ -4078,8 +2716,7 @@ const questionsDatabase = [
     "answer": "WZÓR: \"Chcę dalej pracować w swoim zawodzie, poprawić znajomość polskiego, kupić mieszkanie i wychować tu dzieci.\" Mów o konkretnych, realnych planach.",
     "short": "WZÓR: \"Chcę dalej pracować w swoim zawodzie, poprawić znajomość polskiego, kupić mieszkanie i wychować tu dzieci.\" Mów o konkretnych, realnych planach.",
     "type": "personal",
-    "numbers": [],
-    "keywords": []
+    "numbers": []
   },
   {
     "id": "7334a8be",
@@ -4088,8 +2725,7 @@ const questionsDatabase = [
     "answer": "WZÓR: \"Czuję się Polakiem/Polką. Moi przodkowie byli Polakami, w domu kultywujemy polskie tradycje. Chcę oficjalnie potwierdzić swoją przynależność do Narodu Polskiego i mieć bliższy kontakt z ojczyzną przodków.\" Mów o tożsamości i więzi, nie o zniżkach i ułatwieniach.",
     "short": "WZÓR: \"Czuję się Polakiem/Polką.",
     "type": "personal",
-    "numbers": [],
-    "keywords": []
+    "numbers": []
   },
   {
     "id": "d95a0db9",
@@ -4098,8 +2734,7 @@ const questionsDatabase = [
     "answer": "Karta Polaka potwierdza przynależność do Narodu Polskiego i daje uprawnienia (zwolnienie z opłat za wizę, praca bez zezwolenia, 37% zniżki na PKP, darmowe muzea), ale nie jest dokumentem pobytowym ani obywatelstwem. Zezwolenie na pobyt stały daje prawo do stałego mieszkania w Polsce i jest bezterminowe, a kartę pobytu wydaje się na jego podstawie na 10 lat. Uzyskanie pobytu stałego unieważnia Kartę Polaka.",
     "short": "Karta Polaka potwierdza przynależność do Narodu Polskiego i daje uprawnienia (zwolnienie z opłat za wizę, praca bez zezwolenia, 37% zniżki na PKP, darmowe muzea), ale nie jest dokumentem pobytowym ani obywatelstwem.",
     "type": "personal",
-    "numbers": [],
-    "keywords": []
+    "numbers": []
   },
   {
     "id": "a017d35b",
@@ -4108,8 +2743,7 @@ const questionsDatabase = [
     "answer": "Nie. Karta Polaka nie jest obywatelstwem ani dokumentem podróży. Ułatwia jednak uzyskanie zezwolenia na pobyt stały, a potem ubieganie się o obywatelstwo.",
     "short": "Nie.",
     "type": "personal",
-    "numbers": [],
-    "keywords": []
+    "numbers": []
   },
   {
     "id": "87257f05",
@@ -4118,8 +2752,7 @@ const questionsDatabase = [
     "answer": "Na 10 lat od dnia przyznania, z możliwością przedłużenia na kolejne 10 lat. Osobie, która ukończyła 65 lat, przyznaje się ją na czas nieokreślony. Karta traci ważność, gdy jej posiadacz nabędzie obywatelstwo polskie albo uzyska zezwolenie na pobyt stały w Polsce.",
     "short": "Na 10 lat od dnia przyznania, z możliwością przedłużenia na kolejne 10 lat.",
     "type": "personal",
-    "numbers": [],
-    "keywords": []
+    "numbers": []
   },
   {
     "id": "90053a3f",
@@ -4128,8 +2761,7 @@ const questionsDatabase = [
     "answer": "WZÓR: \"Tak, moja siostra ma Kartę Polaka od [rok].\" Albo: \"Nie, jestem pierwszą osobą w rodzinie, która się o to ubiega.\" Odpowiadaj zgodnie z prawdą - urzędnik może to sprawdzić.",
     "short": "WZÓR: \"Tak, moja siostra ma Kartę Polaka od [rok].\" Albo: \"Nie, jestem pierwszą osobą w rodzinie, która się o to ubiega.\" Odpowiadaj zgodnie z prawdą - urzędnik może to sprawdzić.",
     "type": "personal",
-    "numbers": [],
-    "keywords": []
+    "numbers": []
   },
   {
     "id": "180679b4",
@@ -4138,8 +2770,7 @@ const questionsDatabase = [
     "answer": "WZÓR: \"To znaczy znać język i historię Polski, kultywować tradycje przekazane przez rodzinę, czuć się częścią polskiej wspólnoty i szanować to państwo.\" Przygotuj własną, szczerą odpowiedź - to pytanie o tożsamość, nie o wiedzę.",
     "short": "WZÓR: \"To znaczy znać język i historię Polski, kultywować tradycje przekazane przez rodzinę, czuć się częścią polskiej wspólnoty i szanować to państwo.\" Przygotuj własną, szczerą odpowiedź - to pytanie o tożsamość, nie o wiedzę.",
     "type": "personal",
-    "numbers": [],
-    "keywords": []
+    "numbers": []
   },
   {
     "id": "e7050edd",
@@ -4153,12 +2784,6 @@ const questionsDatabase = [
       "3",
       "11",
       "2"
-    ],
-    "keywords": [
-      "święto",
-      "pracy",
-      "konstytucji",
-      "narodowe"
     ]
   },
   {
@@ -4171,12 +2796,6 @@ const questionsDatabase = [
     "numbers": [
       "3",
       "1791"
-    ],
-    "keywords": [
-      "konstytucji",
-      "maja",
-      "europie",
-      "kościół"
     ]
   },
   {
@@ -4189,12 +2808,6 @@ const questionsDatabase = [
     "numbers": [
       "1918",
       "123"
-    ],
-    "keywords": [
-      "święto",
-      "niepodległości",
-      "polskę",
-      "odzyskania"
     ]
   },
   {
@@ -4206,12 +2819,6 @@ const questionsDatabase = [
     "type": "text",
     "numbers": [
       "1920"
-    ],
-    "keywords": [
-      "wniebowzięcie",
-      "najświętszej",
-      "maryi",
-      "panny"
     ]
   },
   {
@@ -4221,13 +2828,7 @@ const questionsDatabase = [
     "answer": "Dzień Flagi Rzeczypospolitej Polskiej oraz Dzień Polonii i Polaków za Granicą.",
     "short": "Dzień Flagi Rzeczypospolitej Polskiej oraz Dzień Polonii i Polaków za Granicą.",
     "type": "text",
-    "numbers": [],
-    "keywords": [
-      "flagi",
-      "rzeczypospolitej",
-      "polskiej",
-      "polonii"
-    ]
+    "numbers": []
   },
   {
     "id": "395e9234",
@@ -4236,13 +2837,7 @@ const questionsDatabase = [
     "answer": "Wszystkich Świętych. Polacy odwiedzają cmentarze, zapalają znicze i modlą się za zmarłych. Jest to dzień wolny od pracy.",
     "short": "Wszystkich Świętych.",
     "type": "text",
-    "numbers": [],
-    "keywords": [
-      "świętych",
-      "wszystkich",
-      "odwiedzają",
-      "cmentarze"
-    ]
+    "numbers": []
   },
   {
     "id": "b916e5b8",
@@ -4254,12 +2849,6 @@ const questionsDatabase = [
     "numbers": [
       "1",
       "2"
-    ],
-    "keywords": [
-      "wszystkich",
-      "świętych",
-      "zaduszny",
-      "zaduszki"
     ]
   },
   {
@@ -4272,12 +2861,6 @@ const questionsDatabase = [
     "numbers": [
       "24",
       "2025"
-    ],
-    "keywords": [
-      "polsce",
-      "niespodziewanego",
-      "pierwszej",
-      "opłatkiem"
     ]
   },
   {
@@ -4287,13 +2870,7 @@ const questionsDatabase = [
     "answer": "To najważniejszy moment Wigilii - symbol pojednania, przebaczenia i życzliwości. Każdy podchodzi do bliskich, łamie kawałek opłatka i składa życzenia.",
     "short": "To najważniejszy moment Wigilii - symbol pojednania, przebaczenia i życzliwości.",
     "type": "text",
-    "numbers": [],
-    "keywords": [
-      "wigilii",
-      "najważniejszy",
-      "przebaczenia",
-      "życzliwości"
-    ]
+    "numbers": []
   },
   {
     "id": "30b6a012",
@@ -4302,13 +2879,7 @@ const questionsDatabase = [
     "answer": "Dla niespodziewanego gościa lub wędrowca, a także w pamięci o bliskich zmarłych. Nikt nie powinien tego wieczoru zostać sam i głodny.",
     "short": "Dla niespodziewanego gościa lub wędrowca, a także w pamięci o bliskich zmarłych.",
     "type": "text",
-    "numbers": [],
-    "keywords": [
-      "niespodziewanego",
-      "wędrowca",
-      "bliskich",
-      "zmarłych"
-    ]
+    "numbers": []
   },
   {
     "id": "51346fbb",
@@ -4317,13 +2888,7 @@ const questionsDatabase = [
     "answer": "Barszcz czerwony z uszkami, zupa grzybowa, karp smażony, pierogi z kapustą i grzybami, kapusta z grochem, śledzie, kutia, kompot z suszu, makowiec i piernik. Potraw powinno być dwanaście i są bezmięsne.",
     "short": "Barszcz czerwony z uszkami, zupa grzybowa, karp smażony, pierogi z kapustą i grzybami, kapusta z grochem, śledzie, kutia, kompot z suszu, makowiec i piernik.",
     "type": "text",
-    "numbers": [],
-    "keywords": [
-      "dwanaście",
-      "bezmięsne",
-      "czerwony",
-      "grzybowa"
-    ]
+    "numbers": []
   },
   {
     "id": "b6010e10",
@@ -4335,12 +2900,6 @@ const questionsDatabase = [
     "numbers": [
       "25",
       "26"
-    ],
-    "keywords": [
-      "kalendarzu",
-      "kościelnym",
-      "szczepana",
-      "grudnia"
     ]
   },
   {
@@ -4350,13 +2909,7 @@ const questionsDatabase = [
     "answer": "Tradycyjne polskie pieśni bożonarodzeniowe. Najbardziej znane to \"Cicha noc\", \"Wśród nocnej ciszy\", \"Bóg się rodzi\", \"Lulajże, Jezuniu\", \"Dzisiaj w Betlejem\", \"Przybieżeli do Betlejem\".",
     "short": "Tradycyjne polskie pieśni bożonarodzeniowe.",
     "type": "text",
-    "numbers": [],
-    "keywords": [
-      "cicha",
-      "wśród",
-      "lulajże",
-      "jezuniu"
-    ]
+    "numbers": []
   },
   {
     "id": "718d01c0",
@@ -4365,13 +2918,7 @@ const questionsDatabase = [
     "answer": "Święto Trzech Króli (Objawienie Pańskie). Jest to dzień wolny od pracy. Odbywają się Orszaki Trzech Króli, a na drzwiach pisze się kredą litery K+M+B z datą roku.",
     "short": "Święto Trzech Króli (Objawienie Pańskie).",
     "type": "text",
-    "numbers": [],
-    "keywords": [
-      "trzech",
-      "króli",
-      "objawienie",
-      "pańskie"
-    ]
+    "numbers": []
   },
   {
     "id": "946868ef",
@@ -4382,12 +2929,6 @@ const questionsDatabase = [
     "type": "text",
     "numbers": [
       "40"
-    ],
-    "keywords": [
-      "wielkiego",
-      "postu",
-      "post",
-      "wielkanocą"
     ]
   },
   {
@@ -4400,12 +2941,6 @@ const questionsDatabase = [
     "numbers": [
       "22",
       "25"
-    ],
-    "keywords": [
-      "poniedziałek",
-      "wielkanocny",
-      "niedzielę",
-      "pierwszej"
     ]
   },
   {
@@ -4415,13 +2950,7 @@ const questionsDatabase = [
     "answer": "Koszyczek z pokarmami święcony w kościele w Wielką Sobotę. Wkłada się do niego jajko, chleb, sól, wędlinę, chrzan, ciasto i baranka z cukru lub ciasta.",
     "short": "Koszyczek z pokarmami święcony w kościele w Wielką Sobotę.",
     "type": "text",
-    "numbers": [],
-    "keywords": [
-      "wielką",
-      "sobotę",
-      "koszyczek",
-      "pokarmami"
-    ]
+    "numbers": []
   },
   {
     "id": "c5e75bf2",
@@ -4430,13 +2959,7 @@ const questionsDatabase = [
     "answer": "Jajko to nowe życie i zmartwychwstanie, chleb to ciało Chrystusa i dostatek, sól to oczyszczenie, baranek to sam Chrystus, wędlina to dobrobyt, a chrzan siłę.",
     "short": "Jajko to nowe życie i zmartwychwstanie, chleb to ciało Chrystusa i dostatek, sól to oczyszczenie, baranek to sam Chrystus, wędlina to dobrobyt, a chrzan siłę.",
     "type": "text",
-    "numbers": [],
-    "keywords": [
-      "chrystusa",
-      "chrystus",
-      "zmartwychwstanie",
-      "oczyszczenie"
-    ]
+    "numbers": []
   },
   {
     "id": "2fdf4c32",
@@ -4445,13 +2968,7 @@ const questionsDatabase = [
     "answer": "Ozdobnie malowane jajka wielkanocne. W zależności od techniki nazywa się je też kraszankami, drapankami czy oklejankami.",
     "short": "Ozdobnie malowane jajka wielkanocne.",
     "type": "text",
-    "numbers": [],
-    "keywords": [
-      "wielkanocne",
-      "kraszankami",
-      "oklejankami",
-      "zależności"
-    ]
+    "numbers": []
   },
   {
     "id": "1fe671d7",
@@ -4460,13 +2977,7 @@ const questionsDatabase = [
     "answer": "Niedziela tydzień przed Wielkanocą. Święci się palmy wielkanocne na pamiątkę wjazdu Jezusa do Jerozolimy. Słyną z nich Lipnica Murowana i Kurpie.",
     "short": "Niedziela tydzień przed Wielkanocą.",
     "type": "text",
-    "numbers": [],
-    "keywords": [
-      "wielkanocą",
-      "jezusa",
-      "jerozolimy",
-      "lipnica"
-    ]
+    "numbers": []
   },
   {
     "id": "4a60fbad",
@@ -4475,13 +2986,7 @@ const questionsDatabase = [
     "answer": "Ludowe święto plonów obchodzone pod koniec lata, jako podziękowanie za zbiory. Niesie się wieńce dożynkowe z kłosów zbóż i dzieli chlebem z nowej mąki.",
     "short": "Ludowe święto plonów obchodzone pod koniec lata, jako podziękowanie za zbiory.",
     "type": "text",
-    "numbers": [],
-    "keywords": [
-      "podziękowanie",
-      "obchodzone",
-      "dożynkowe",
-      "chlebem"
-    ]
+    "numbers": []
   },
   {
     "id": "2bcca3c0",
@@ -4490,13 +2995,7 @@ const questionsDatabase = [
     "answer": "Dzień pamięci o zmarłych. Rodziny sprzątają groby, przynoszą kwiaty (najczęściej chryzantemy) i zapalają znicze. Cmentarze wieczorem wyglądają jak morze świateł.",
     "short": "Dzień pamięci o zmarłych.",
     "type": "text",
-    "numbers": [],
-    "keywords": [
-      "najczęściej",
-      "chryzantemy",
-      "sprzątają",
-      "przynoszą"
-    ]
+    "numbers": []
   },
   {
     "id": "f3939a75",
@@ -4508,12 +3007,6 @@ const questionsDatabase = [
     "numbers": [
       "26",
       "1"
-    ],
-    "keywords": [
-      "matki",
-      "dziecka",
-      "czerwca",
-      "dzień"
     ]
   },
   {
@@ -4527,12 +3020,6 @@ const questionsDatabase = [
       "8",
       "21",
       "22"
-    ],
-    "keywords": [
-      "kobiet",
-      "babci",
-      "dziadka",
-      "stycznia"
     ]
   },
   {
@@ -4542,13 +3029,7 @@ const questionsDatabase = [
     "answer": "Dzień patrona o tym samym imieniu. Tradycyjnie w Polsce imieniny obchodzono huczniej niż urodziny, zwłaszcza wśród starszego pokolenia. Składa się życzenia i wręcza kwiaty.",
     "short": "Dzień patrona o tym samym imieniu.",
     "type": "text",
-    "numbers": [],
-    "keywords": [
-      "polsce",
-      "tradycyjnie",
-      "obchodzono",
-      "zwłaszcza"
-    ]
+    "numbers": []
   },
   {
     "id": "2c9a7b33",
@@ -4557,13 +3038,7 @@ const questionsDatabase = [
     "answer": "Popularna polska piosenka śpiewana na urodzinach, imieninach i weselach jako życzenie długiego życia: \"Sto lat, sto lat, niech żyje, żyje nam\".",
     "short": "Popularna polska piosenka śpiewana na urodzinach, imieninach i weselach jako życzenie długiego życia: \"Sto lat, sto lat, niech żyje, żyje nam\".",
     "type": "text",
-    "numbers": [],
-    "keywords": [
-      "urodzinach",
-      "imieninach",
-      "popularna",
-      "piosenka"
-    ]
+    "numbers": []
   },
   {
     "id": "84612e79",
@@ -4572,13 +3047,7 @@ const questionsDatabase = [
     "answer": "Zaczyna się od błogosławieństwa rodziców i ślubu w kościele. Młodą parę wita się chlebem i solą. O północy są oczepiny, a zabawa z orkiestrą trwa do rana. Często jest też poprawiny następnego dnia.",
     "short": "Zaczyna się od błogosławieństwa rodziców i ślubu w kościele.",
     "type": "text",
-    "numbers": [],
-    "keywords": [
-      "błogosławieństwa",
-      "następnego",
-      "orkiestrą",
-      "poprawiny"
-    ]
+    "numbers": []
   },
   {
     "id": "01a85217",
@@ -4587,13 +3056,7 @@ const questionsDatabase = [
     "answer": "To symbol gościnności i życzenie dostatku - żeby nowej rodzinie nigdy nie zabrakło jedzenia. Wita się tak nowożeńców, a także ważnych gości.",
     "short": "To symbol gościnności i życzenie dostatku - żeby nowej rodzinie nigdy nie zabrakło jedzenia.",
     "type": "text",
-    "numbers": [],
-    "keywords": [
-      "gościnności",
-      "nowożeńców",
-      "życzenie",
-      "dostatku"
-    ]
+    "numbers": []
   },
   {
     "id": "24664b18",
@@ -4602,13 +3065,7 @@ const questionsDatabase = [
     "answer": "Chrzest to przyjęcie dziecka do wspólnoty Kościoła, dziecko dostaje rodziców chrzestnych. Ślub kościelny zawiera się przed ołtarzem; w Polsce popularny jest ślub konkordatowy, który jest ważny także cywilnie.",
     "short": "Chrzest to przyjęcie dziecka do wspólnoty Kościoła, dziecko dostaje rodziców chrzestnych.",
     "type": "text",
-    "numbers": [],
-    "keywords": [
-      "kościoła",
-      "polsce",
-      "konkordatowy",
-      "chrzestnych"
-    ]
+    "numbers": []
   },
   {
     "id": "03f81d47",
@@ -4620,12 +3077,6 @@ const questionsDatabase = [
     "numbers": [
       "23",
       "24"
-    ],
-    "keywords": [
-      "nocą",
-      "kupały",
-      "czerwca",
-      "dawniej"
     ]
   },
   {
@@ -4637,12 +3088,6 @@ const questionsDatabase = [
     "type": "text",
     "numbers": [
       "4"
-    ],
-    "keywords": [
-      "śląsku",
-      "najhuczniej",
-      "obchodzone",
-      "orkiestrą"
     ]
   },
   {
@@ -4652,13 +3097,7 @@ const questionsDatabase = [
     "answer": "Strój krakowski (uznawany za najbardziej reprezentacyjny), łowicki w kolorowe pasy, góralski z Podhala, kaszubski i śląski.",
     "short": "Strój krakowski (uznawany za najbardziej reprezentacyjny), łowicki w kolorowe pasy, góralski z Podhala, kaszubski i śląski.",
     "type": "text",
-    "numbers": [],
-    "keywords": [
-      "podhala",
-      "reprezentacyjny",
-      "najbardziej",
-      "krakowski"
-    ]
+    "numbers": []
   },
   {
     "id": "afe3ae08",
@@ -4667,13 +3106,7 @@ const questionsDatabase = [
     "answer": "Polskie tańce narodowe. Jest ich pięć: polonez, mazur, krakowiak, kujawiak i oberek. Polonezem tradycyjnie otwiera się studniówkę i bale.",
     "short": "Polskie tańce narodowe.",
     "type": "text",
-    "numbers": [],
-    "keywords": [
-      "tradycyjnie",
-      "studniówkę",
-      "krakowiak",
-      "polonezem"
-    ]
+    "numbers": []
   },
   {
     "id": "5f767696",
@@ -4682,13 +3115,7 @@ const questionsDatabase = [
     "answer": "Bal maturzystów organizowany na sto dni przed egzaminem maturalnym. Otwiera go polonez.",
     "short": "Bal maturzystów organizowany na sto dni przed egzaminem maturalnym.",
     "type": "text",
-    "numbers": [],
-    "keywords": [
-      "organizowany",
-      "maturzystów",
-      "maturalnym",
-      "egzaminem"
-    ]
+    "numbers": []
   },
   {
     "id": "cb0c923f",
@@ -4699,12 +3126,6 @@ const questionsDatabase = [
     "type": "text",
     "numbers": [
       "14"
-    ],
-    "keywords": [
-      "dniem",
-      "edukacji",
-      "narodowej",
-      "października"
     ]
   },
   {
@@ -4714,13 +3135,7 @@ const questionsDatabase = [
     "answer": "Godło - biały orzeł w złotej koronie na czerwonym tle, flaga biało-czerwona oraz hymn państwowy \"Mazurek Dąbrowskiego\".",
     "short": "Godło - biały orzeł w złotej koronie na czerwonym tle, flaga biało-czerwona oraz hymn państwowy \"Mazurek Dąbrowskiego\".",
     "type": "text",
-    "numbers": [],
-    "keywords": [
-      "mazurek",
-      "dąbrowskiego",
-      "czerwonym",
-      "państwowy"
-    ]
+    "numbers": []
   },
   {
     "id": "aa4ec3f8",
@@ -4729,13 +3144,7 @@ const questionsDatabase = [
     "answer": "Biały orzeł ze złotą koroną na głowie, ze złotym dziobem i szponami, na czerwonym tle.",
     "short": "Biały orzeł ze złotą koroną na głowie, ze złotym dziobem i szponami, na czerwonym tle.",
     "type": "text",
-    "numbers": [],
-    "keywords": [
-      "czerwonym",
-      "szponami",
-      "dziobem",
-      "koroną"
-    ]
+    "numbers": []
   },
   {
     "id": "c80821b1",
@@ -4744,13 +3153,7 @@ const questionsDatabase = [
     "answer": "Biel symbolizuje czystość, uczciwość i orła, a czerwień odwagę, męstwo i przelaną krew. Biały pas jest zawsze na górze.",
     "short": "Biel symbolizuje czystość, uczciwość i orła, a czerwień odwagę, męstwo i przelaną krew.",
     "type": "text",
-    "numbers": [],
-    "keywords": [
-      "symbolizuje",
-      "uczciwość",
-      "czystość",
-      "czerwień"
-    ]
+    "numbers": []
   },
   {
     "id": "f9ad048f",
@@ -4759,13 +3162,7 @@ const questionsDatabase = [
     "answer": "\"Mazurek Dąbrowskiego\". Zaczyna się słowami: \"Jeszcze Polska nie zginęła, kiedy my żyjemy\".",
     "short": "\"Mazurek Dąbrowskiego\".",
     "type": "text",
-    "numbers": [],
-    "keywords": [
-      "dąbrowskiego",
-      "polska",
-      "mazurek",
-      "zaczyna"
-    ]
+    "numbers": []
   },
   {
     "id": "3fd59f08",
@@ -4777,12 +3174,6 @@ const questionsDatabase = [
     "numbers": [
       "1797",
       "1927"
-    ],
-    "keywords": [
-      "wybicki",
-      "reggio",
-      "emilia",
-      "włoszech"
     ]
   },
   {
@@ -4792,13 +3183,7 @@ const questionsDatabase = [
     "answer": "Generał Jan Henryk Dąbrowski, Napoleon Bonaparte, hetman Stefan Czarniecki oraz Basia i jej ojciec.",
     "short": "Generał Jan Henryk Dąbrowski, Napoleon Bonaparte, hetman Stefan Czarniecki oraz Basia i jej ojciec.",
     "type": "text",
-    "numbers": [],
-    "keywords": [
-      "henryk",
-      "dąbrowski",
-      "napoleon",
-      "bonaparte"
-    ]
+    "numbers": []
   },
   {
     "id": "895eea8e",
@@ -4807,12 +3192,7 @@ const questionsDatabase = [
     "answer": "Rzeczpospolita Polska, w skrócie RP.",
     "short": "Rzeczpospolita Polska, w skrócie RP.",
     "type": "text",
-    "numbers": [],
-    "keywords": [
-      "polska",
-      "rzeczpospolita",
-      "skrócie"
-    ]
+    "numbers": []
   },
   {
     "id": "a8159770",
@@ -4824,12 +3204,6 @@ const questionsDatabase = [
     "numbers": [
       "6",
       "2025"
-    ],
-    "keywords": [
-      "nawrocki",
-      "aktualność",
-      "egzaminem",
-      "sierpnia"
     ]
   },
   {
@@ -4841,12 +3215,6 @@ const questionsDatabase = [
     "type": "person",
     "numbers": [
       "2023"
-    ],
-    "keywords": [
-      "tusk",
-      "aktualność",
-      "egzaminem",
-      "grudnia"
     ]
   },
   {
@@ -4859,12 +3227,6 @@ const questionsDatabase = [
     "numbers": [
       "18",
       "2025"
-    ],
-    "keywords": [
-      "czarzasty",
-      "szymona",
-      "hołownię",
-      "włodzimierz"
     ]
   },
   {
@@ -4874,13 +3236,7 @@ const questionsDatabase = [
     "answer": "Lech Wałęsa, Aleksander Kwaśniewski, Lech Kaczyński, Bronisław Komorowski, Andrzej Duda i Karol Nawrocki.",
     "short": "Lech Wałęsa, Aleksander Kwaśniewski, Lech Kaczyński, Bronisław Komorowski, Andrzej Duda i Karol Nawrocki.",
     "type": "text",
-    "numbers": [],
-    "keywords": [
-      "wałęsa",
-      "aleksander",
-      "kwaśniewski",
-      "kaczyński"
-    ]
+    "numbers": []
   },
   {
     "id": "09d84d36",
@@ -4889,13 +3245,7 @@ const questionsDatabase = [
     "answer": "Republika parlamentarna (demokracja parlamentarna) z trójpodziałem władzy. Polska jest państwem unitarnym i prawnym.",
     "short": "Republika parlamentarna (demokracja parlamentarna) z trójpodziałem władzy.",
     "type": "text",
-    "numbers": [],
-    "keywords": [
-      "parlamentarna",
-      "trójpodziałem",
-      "demokracja",
-      "republika"
-    ]
+    "numbers": []
   },
   {
     "id": "41d75fac",
@@ -4906,12 +3256,6 @@ const questionsDatabase = [
     "type": "text",
     "numbers": [
       "5"
-    ],
-    "keywords": [
-      "maksymalnie",
-      "sprawować",
-      "kadencja",
-      "ponownie"
     ]
   },
   {
@@ -4921,13 +3265,7 @@ const questionsDatabase = [
     "answer": "Cztery lata. Wybory do obu izb odbywają się jednocześnie.",
     "short": "Cztery lata.",
     "type": "text",
-    "numbers": [],
-    "keywords": [
-      "jednocześnie",
-      "odbywają",
-      "cztery",
-      "wybory"
-    ]
+    "numbers": []
   },
   {
     "id": "05b78580",
@@ -4941,12 +3279,6 @@ const questionsDatabase = [
       "21",
       "30",
       "35"
-    ],
-    "keywords": [
-      "prezydentem",
-      "senatorem",
-      "głosować",
-      "posłem"
     ]
   },
   {
@@ -4956,13 +3288,7 @@ const questionsDatabase = [
     "answer": "Reprezentuje państwo na zewnątrz, jest zwierzchnikiem Sił Zbrojnych, podpisuje ustawy lub je wetuje, ratyfikuje umowy międzynarodowe, powołuje rząd, nadaje ordery i stosuje prawo łaski.",
     "short": "Reprezentuje państwo na zewnątrz, jest zwierzchnikiem Sił Zbrojnych, podpisuje ustawy lub je wetuje, ratyfikuje umowy międzynarodowe, powołuje rząd, nadaje ordery i stosuje prawo łaski.",
     "type": "text",
-    "numbers": [],
-    "keywords": [
-      "zbrojnych",
-      "zwierzchnikiem",
-      "międzynarodowe",
-      "reprezentuje"
-    ]
+    "numbers": []
   },
   {
     "id": "120226d3",
@@ -4974,12 +3300,6 @@ const questionsDatabase = [
     "numbers": [
       "3",
       "5"
-    ],
-    "keywords": [
-      "prezydenta",
-      "większością",
-      "podpisania",
-      "odrzucić"
     ]
   },
   {
@@ -4989,13 +3309,7 @@ const questionsDatabase = [
     "answer": "Bada zgodność ustaw i umów międzynarodowych z Konstytucją RP.",
     "short": "Bada zgodność ustaw i umów międzynarodowych z Konstytucją RP.",
     "type": "text",
-    "numbers": [],
-    "keywords": [
-      "konstytucją",
-      "międzynarodowych",
-      "zgodność",
-      "ustaw"
-    ]
+    "numbers": []
   },
   {
     "id": "02989ed6",
@@ -5004,13 +3318,7 @@ const questionsDatabase = [
     "answer": "Prymas Polski, a episkopatem kieruje przewodniczący Konferencji Episkopatu Polski. Większość Polaków to katolicy, ale Konstytucja gwarantuje wolność wyznania i rozdział Kościoła od państwa.",
     "short": "Prymas Polski, a episkopatem kieruje przewodniczący Konferencji Episkopatu Polski.",
     "type": "person",
-    "numbers": [],
-    "keywords": [
-      "polski",
-      "konferencji",
-      "episkopatu",
-      "polaków"
-    ]
+    "numbers": []
   },
   {
     "id": "5c9195bb",
@@ -5023,12 +3331,6 @@ const questionsDatabase = [
       "2",
       "1997",
       "17"
-    ],
-    "keywords": [
-      "zatwierdzono",
-      "października",
-      "referendum",
-      "kwietnia"
     ]
   },
   {
@@ -5040,12 +3342,6 @@ const questionsDatabase = [
     "type": "text",
     "numbers": [
       "16"
-    ],
-    "keywords": [
-      "województwo",
-      "województw",
-      "powiat",
-      "gmina"
     ]
   },
   {
@@ -5055,13 +3351,7 @@ const questionsDatabase = [
     "answer": "Mazowieckie - Warszawa, małopolskie - Kraków, dolnośląskie - Wrocław, wielkopolskie - Poznań, pomorskie - Gdańsk, śląskie - Katowice, łódzkie - Łódź, lubelskie - Lublin.",
     "short": "Mazowieckie - Warszawa, małopolskie - Kraków, dolnośląskie - Wrocław, wielkopolskie - Poznań, pomorskie - Gdańsk, śląskie - Katowice, łódzkie - Łódź, lubelskie - Lublin.",
     "type": "list",
-    "numbers": [],
-    "keywords": [
-      "warszawa",
-      "kraków",
-      "wrocław",
-      "poznań"
-    ]
+    "numbers": []
   },
   {
     "id": "e2025bae",
@@ -5073,12 +3363,6 @@ const questionsDatabase = [
     "numbers": [
       "37",
       "38"
-    ],
-    "keywords": [
-      "przybliżoną",
-      "milionów",
-      "ludności",
-      "wartość"
     ]
   },
   {
@@ -5091,12 +3375,6 @@ const questionsDatabase = [
     "numbers": [
       "312",
       "700"
-    ],
-    "keywords": [
-      "polska",
-      "europie",
-      "kwadratowych",
-      "dziewiątym"
     ]
   },
   {
@@ -5106,13 +3384,7 @@ const questionsDatabase = [
     "answer": "Język polski. Należy do grupy języków zachodniosłowiańskich.",
     "short": "Język polski.",
     "type": "text",
-    "numbers": [],
-    "keywords": [
-      "zachodniosłowiańskich",
-      "języków",
-      "polski",
-      "należy"
-    ]
+    "numbers": []
   },
   {
     "id": "09c65b1b",
@@ -5125,12 +3397,6 @@ const questionsDatabase = [
       "1999",
       "2004",
       "2007"
-    ],
-    "keywords": [
-      "organizacji",
-      "narodów",
-      "zjednoczonych",
-      "nato"
     ]
   },
   {
@@ -5142,12 +3408,6 @@ const questionsDatabase = [
     "type": "text",
     "numbers": [
       "100"
-    ],
-    "keywords": [
-      "unii",
-      "europejskiej",
-      "dzielący",
-      "przyjęła"
     ]
   },
   {
@@ -5163,12 +3423,6 @@ const questionsDatabase = [
       "50",
       "100",
       "200"
-    ],
-    "keywords": [
-      "banknoty",
-      "złotych",
-      "monety",
-      "groszy"
     ]
   },
   {
@@ -5184,12 +3438,6 @@ const questionsDatabase = [
       "50",
       "100",
       "200"
-    ],
-    "keywords": [
-      "mieszko",
-      "bolesław",
-      "chrobry",
-      "kazimierz"
     ]
   },
   {
@@ -5202,12 +3450,6 @@ const questionsDatabase = [
     "numbers": [
       "460",
       "100"
-    ],
-    "keywords": [
-      "zgromadzenie",
-      "narodowe",
-      "parlamentu",
-      "senatorów"
     ]
   },
   {
@@ -5217,11 +3459,7 @@ const questionsDatabase = [
     "answer": "Prezydent Rzeczypospolitej Polskiej.",
     "short": "Prezydent Rzeczypospolitej Polskiej.",
     "type": "person",
-    "numbers": [],
-    "keywords": [
-      "rzeczypospolitej",
-      "polskiej"
-    ]
+    "numbers": []
   },
   {
     "id": "87f4eeec",
@@ -5230,13 +3468,7 @@ const questionsDatabase = [
     "answer": "Niezależny organ, który stoi na straży wolności i praw człowieka i obywatela, powoływany przez Sejm za zgodą Senatu.",
     "short": "Niezależny organ, który stoi na straży wolności i praw człowieka i obywatela, powoływany przez Sejm za zgodą Senatu.",
     "type": "text",
-    "numbers": [],
-    "keywords": [
-      "sejm",
-      "senatu",
-      "niezależny",
-      "powoływany"
-    ]
+    "numbers": []
   },
   {
     "id": "6382caaa",
@@ -5250,12 +3482,6 @@ const questionsDatabase = [
       "997",
       "998",
       "999"
-    ],
-    "keywords": [
-      "pogotowie",
-      "ratunkowe",
-      "alarmowy",
-      "policja"
     ]
   },
   {
@@ -5265,13 +3491,7 @@ const questionsDatabase = [
     "answer": "NIP to numer identyfikacji podatkowej, a REGON to numer w rejestrze podmiotów gospodarki narodowej. Obu używa się w działalności gospodarczej.",
     "short": "NIP to numer identyfikacji podatkowej, a REGON to numer w rejestrze podmiotów gospodarki narodowej.",
     "type": "text",
-    "numbers": [],
-    "keywords": [
-      "regon",
-      "identyfikacji",
-      "działalności",
-      "gospodarczej"
-    ]
+    "numbers": []
   },
   {
     "id": "ed3d956e",
@@ -5280,13 +3500,7 @@ const questionsDatabase = [
     "answer": "Zakład Ubezpieczeń Społecznych - instytucja zajmująca się ubezpieczeniami społecznymi, emeryturami, rentami i zasiłkami.",
     "short": "Zakład Ubezpieczeń Społecznych - instytucja zajmująca się ubezpieczeniami społecznymi, emeryturami, rentami i zasiłkami.",
     "type": "text",
-    "numbers": [],
-    "keywords": [
-      "ubezpieczeń",
-      "społecznych",
-      "ubezpieczeniami",
-      "społecznymi"
-    ]
+    "numbers": []
   },
   {
     "id": "7a82341d",
@@ -5295,13 +3509,7 @@ const questionsDatabase = [
     "answer": "Narodowy Fundusz Zdrowia - instytucja finansująca publiczną opiekę zdrowotną w Polsce.",
     "short": "Narodowy Fundusz Zdrowia - instytucja finansująca publiczną opiekę zdrowotną w Polsce.",
     "type": "text",
-    "numbers": [],
-    "keywords": [
-      "fundusz",
-      "zdrowia",
-      "polsce",
-      "finansująca"
-    ]
+    "numbers": []
   },
   {
     "id": "740bfdd3",
@@ -5313,11 +3521,6 @@ const questionsDatabase = [
     "numbers": [
       "60",
       "65"
-    ],
-    "keywords": [
-      "mężczyźni",
-      "kobiety",
-      "wieku"
     ]
   },
   {
@@ -5327,13 +3530,7 @@ const questionsDatabase = [
     "answer": "Przestrzeganie prawa, płacenie podatków, wierność Rzeczypospolitej, dbanie o dobro wspólne i ochrona środowiska.",
     "short": "Przestrzeganie prawa, płacenie podatków, wierność Rzeczypospolitej, dbanie o dobro wspólne i ochrona środowiska.",
     "type": "text",
-    "numbers": [],
-    "keywords": [
-      "rzeczypospolitej",
-      "przestrzeganie",
-      "środowiska",
-      "płacenie"
-    ]
+    "numbers": []
   },
   {
     "id": "9718ae8e",
@@ -5346,12 +3543,6 @@ const questionsDatabase = [
       "18",
       "2024",
       "800"
-    ],
-    "keywords": [
-      "świadczenie",
-      "wychowawcze",
-      "miesięcznie",
-      "wypłacane"
     ]
   },
   {
@@ -5361,13 +3552,7 @@ const questionsDatabase = [
     "answer": "Przedszkole, ośmioletnia szkoła podstawowa, potem liceum, technikum lub szkoła branżowa, a następnie studia. Naukę kończy egzamin maturalny.",
     "short": "Przedszkole, ośmioletnia szkoła podstawowa, potem liceum, technikum lub szkoła branżowa, a następnie studia.",
     "type": "text",
-    "numbers": [],
-    "keywords": [
-      "przedszkole",
-      "ośmioletnia",
-      "podstawowa",
-      "technikum"
-    ]
+    "numbers": []
   },
   {
     "id": "f84110ae",
@@ -5378,12 +3563,6 @@ const questionsDatabase = [
     "type": "date",
     "numbers": [
       "1"
-    ],
-    "keywords": [
-      "poszczególnych",
-      "województw",
-      "września",
-      "zaczyna"
     ]
   },
   {
@@ -5393,13 +3572,7 @@ const questionsDatabase = [
     "answer": "Z siedmioma: Niemcami, Czechami, Słowacją, Ukrainą, Białorusią, Litwą i Rosją (obwód kaliningradzki). Najdłuższa granica jest z Czechami, a najkrótsza z Litwą. Od północy Polskę zamyka Morze Bałtyckie.",
     "short": "Z siedmioma: Niemcami, Czechami, Słowacją, Ukrainą, Białorusią, Litwą i Rosją (obwód kaliningradzki).",
     "type": "text",
-    "numbers": [],
-    "keywords": [
-      "niemcami",
-      "czechami",
-      "słowacją",
-      "ukrainą"
-    ]
+    "numbers": []
   },
   {
     "id": "f8c4a305",
@@ -5408,13 +3581,7 @@ const questionsDatabase = [
     "answer": "O Smoku Wawelskim, o Lechu, Czechu i Rusie, o Warsie i Sawie, o bazyliszku z Warszawy, o Panu Twardowskim, o toruńskich piernikach oraz o królu Popielu zjedzonym przez myszy.",
     "short": "O Smoku Wawelskim, o Lechu, Czechu i Rusie, o Warsie i Sawie, o bazyliszku z Warszawy, o Panu Twardowskim, o toruńskich piernikach oraz o królu Popielu zjedzonym przez myszy.",
     "type": "text",
-    "numbers": [],
-    "keywords": [
-      "smoku",
-      "wawelskim",
-      "lechu",
-      "czechu"
-    ]
+    "numbers": []
   },
   {
     "id": "f75eb431",
@@ -5423,13 +3590,7 @@ const questionsDatabase = [
     "answer": "Pod Wawelem mieszkał smok, który pożerał ludzi i bydło. Szewczyk Dratewka podrzucił mu barana wypchanego siarką. Smok zjadł go, poczuł ogromne pragnienie i pił wodę z Wisły tak długo, aż pękł.",
     "short": "Pod Wawelem mieszkał smok, który pożerał ludzi i bydło.",
     "type": "text",
-    "numbers": [],
-    "keywords": [
-      "wawelem",
-      "dratewka",
-      "wisły",
-      "wypchanego"
-    ]
+    "numbers": []
   },
   {
     "id": "a439d59a",
@@ -5438,13 +3599,7 @@ const questionsDatabase = [
     "answer": "Trzej bracia wędrowali w poszukiwaniu miejsca na osiedlenie. Czech poszedł na południe, Rus na wschód, a Lech został na północy, gdzie zobaczył białego orła na tle czerwonego zachodzącego słońca. Założył tam Gniezno, a orzeł stał się godłem Polski.",
     "short": "Trzej bracia wędrowali w poszukiwaniu miejsca na osiedlenie.",
     "type": "text",
-    "numbers": [],
-    "keywords": [
-      "lech",
-      "gniezno",
-      "polski",
-      "poszukiwaniu"
-    ]
+    "numbers": []
   },
   {
     "id": "691e52cb",
@@ -5453,13 +3608,7 @@ const questionsDatabase = [
     "answer": "Z legendy o rybaku Warsie i syrenie Sawie. Od ich imion powstała nazwa miasta, a syrena jest herbem Warszawy.",
     "short": "Z legendy o rybaku Warsie i syrenie Sawie.",
     "type": "text",
-    "numbers": [],
-    "keywords": [
-      "warsie",
-      "sawie",
-      "warszawy",
-      "powstała"
-    ]
+    "numbers": []
   },
   {
     "id": "71933c18",
@@ -5468,13 +3617,7 @@ const questionsDatabase = [
     "answer": "Bohater legendy - szlachcic, który zaprzedał duszę diabłu w zamian za wiedzę i moc. Gdy diabeł porwał go do piekła, Twardowski zaczął śpiewać godzinki i utknął na Księżycu.",
     "short": "Bohater legendy - szlachcic, który zaprzedał duszę diabłu w zamian za wiedzę i moc.",
     "type": "person",
-    "numbers": [],
-    "keywords": [
-      "twardowski",
-      "księżycu",
-      "szlachcic",
-      "zaprzedał"
-    ]
+    "numbers": []
   },
   {
     "id": "0066079a",
@@ -5483,13 +3626,7 @@ const questionsDatabase = [
     "answer": "Czeladnik Bogumił, chcąc zdobyć rękę córki mistrza piekarskiego, za radą pszczelej królowej upiekł pierniki z miodem i przyprawami. Toruń słynie z nich do dziś, a najsłynniejszy kształt to katarzynka.",
     "short": "Czeladnik Bogumił, chcąc zdobyć rękę córki mistrza piekarskiego, za radą pszczelej królowej upiekł pierniki z miodem i przyprawami.",
     "type": "text",
-    "numbers": [],
-    "keywords": [
-      "bogumił",
-      "najsłynniejszy",
-      "piekarskiego",
-      "przyprawami"
-    ]
+    "numbers": []
   },
   {
     "id": "256a5b39",
@@ -5498,13 +3635,7 @@ const questionsDatabase = [
     "answer": "Bigos, żurek, rosół, pierogi, gołąbki, kotlet schabowy z ziemniakami i mizerią, placki ziemniaczane, barszcz czerwony, flaki i zupa ogórkowa.",
     "short": "Bigos, żurek, rosół, pierogi, gołąbki, kotlet schabowy z ziemniakami i mizerią, placki ziemniaczane, barszcz czerwony, flaki i zupa ogórkowa.",
     "type": "text",
-    "numbers": [],
-    "keywords": [
-      "ziemniaczane",
-      "ziemniakami",
-      "schabowy",
-      "czerwony"
-    ]
+    "numbers": []
   },
   {
     "id": "bf3a2bae",
@@ -5513,13 +3644,7 @@ const questionsDatabase = [
     "answer": "Danie z kapusty kiszonej i świeżej, duszonej z różnymi rodzajami mięsa, kiełbasą, suszonymi grzybami i śliwkami. Im częściej odgrzewany, tym lepszy. Nazywany bywa daniem narodowym.",
     "short": "Danie z kapusty kiszonej i świeżej, duszonej z różnymi rodzajami mięsa, kiełbasą, suszonymi grzybami i śliwkami.",
     "type": "text",
-    "numbers": [],
-    "keywords": [
-      "odgrzewany",
-      "rodzajami",
-      "suszonymi",
-      "narodowym"
-    ]
+    "numbers": []
   },
   {
     "id": "33dceb2e",
@@ -5528,13 +3653,7 @@ const questionsDatabase = [
     "answer": "Kwaśna zupa na zakwasie z mąki żytniej, z białą kiełbasą, jajkiem i ziemniakami. Tradycyjnie jada się go na Wielkanoc, czasem podawany w chlebie.",
     "short": "Kwaśna zupa na zakwasie z mąki żytniej, z białą kiełbasą, jajkiem i ziemniakami.",
     "type": "text",
-    "numbers": [],
-    "keywords": [
-      "wielkanoc",
-      "ziemniakami",
-      "tradycyjnie",
-      "zakwasie"
-    ]
+    "numbers": []
   },
   {
     "id": "66a1a2ac",
@@ -5543,13 +3662,7 @@ const questionsDatabase = [
     "answer": "Ciasto nadziewane farszem, gotowane w wodzie. Najpopularniejsze to ruskie (twaróg i ziemniaki), z kapustą i grzybami, z mięsem, z jagodami oraz leniwe.",
     "short": "Ciasto nadziewane farszem, gotowane w wodzie.",
     "type": "text",
-    "numbers": [],
-    "keywords": [
-      "najpopularniejsze",
-      "nadziewane",
-      "ziemniaki",
-      "gotowane"
-    ]
+    "numbers": []
   },
   {
     "id": "a4c4b718",
@@ -5558,13 +3671,7 @@ const questionsDatabase = [
     "answer": "Makowiec, sernik, szarlotka (jabłecznik), piernik, babka, mazurek wielkanocny i kremówka.",
     "short": "Makowiec, sernik, szarlotka (jabłecznik), piernik, babka, mazurek wielkanocny i kremówka.",
     "type": "text",
-    "numbers": [],
-    "keywords": [
-      "wielkanocny",
-      "jabłecznik",
-      "szarlotka",
-      "makowiec"
-    ]
+    "numbers": []
   },
   {
     "id": "ceb21271",
@@ -5575,12 +3682,6 @@ const questionsDatabase = [
     "type": "text",
     "numbers": [
       "1999"
-    ],
-    "keywords": [
-      "paweł",
-      "ii",
-      "wadowicach",
-      "polsce"
     ]
   },
   {
@@ -5590,13 +3691,7 @@ const questionsDatabase = [
     "answer": "Kompot z owoców, kwas chlebowy, herbata z cytryną, a z alkoholi wódka, miód pitny, nalewki i piwo.",
     "short": "Kompot z owoców, kwas chlebowy, herbata z cytryną, a z alkoholi wódka, miód pitny, nalewki i piwo.",
     "type": "text",
-    "numbers": [],
-    "keywords": [
-      "chlebowy",
-      "alkoholi",
-      "herbata",
-      "cytryną"
-    ]
+    "numbers": []
   },
   {
     "id": "417e61e7",
@@ -5605,13 +3700,7 @@ const questionsDatabase = [
     "answer": "\"Litwo! Ojczyzno moja! Ty jesteś jak zdrowie. Ile cię trzeba cenić, ten tylko się dowie, kto cię stracił.\"",
     "short": "\"Litwo!",
     "type": "text",
-    "numbers": [],
-    "keywords": [
-      "ojczyzno",
-      "zdrowie",
-      "stracił",
-      "jesteś"
-    ]
+    "numbers": []
   },
   {
     "id": "cef186dd",
@@ -5620,13 +3709,7 @@ const questionsDatabase = [
     "answer": "Adam Mickiewicz, Juliusz Słowacki i Zygmunt Krasiński. Czasem dołącza się do nich Cypriana Kamila Norwida.",
     "short": "Adam Mickiewicz, Juliusz Słowacki i Zygmunt Krasiński.",
     "type": "person",
-    "numbers": [],
-    "keywords": [
-      "mickiewicz",
-      "juliusz",
-      "słowacki",
-      "zygmunt"
-    ]
+    "numbers": []
   },
   {
     "id": "3da43fbd",
@@ -5637,12 +3720,6 @@ const questionsDatabase = [
     "type": "person",
     "numbers": [
       "1905"
-    ],
-    "keywords": [
-      "nagrody",
-      "nobla",
-      "trylogii",
-      "ogniem"
     ]
   },
   {
@@ -5652,13 +3729,7 @@ const questionsDatabase = [
     "answer": "Andrzej Wajda, Roman Polański, Krzysztof Kieślowski, Agnieszka Holland i Paweł Pawlikowski. Wajda, Polański i Pawlikowski zdobyli Oscary.",
     "short": "Andrzej Wajda, Roman Polański, Krzysztof Kieślowski, Agnieszka Holland i Paweł Pawlikowski.",
     "type": "text",
-    "numbers": [],
-    "keywords": [
-      "wajda",
-      "roman",
-      "polański",
-      "krzysztof"
-    ]
+    "numbers": []
   },
   {
     "id": "7d57c653",
@@ -5667,13 +3738,7 @@ const questionsDatabase = [
     "answer": "Fryderyk Chopin, Stanisław Moniuszko, Karol Szymanowski, Witold Lutosławski, Krzysztof Penderecki, Wojciech Kilar i Henryk Górecki.",
     "short": "Fryderyk Chopin, Stanisław Moniuszko, Karol Szymanowski, Witold Lutosławski, Krzysztof Penderecki, Wojciech Kilar i Henryk Górecki.",
     "type": "text",
-    "numbers": [],
-    "keywords": [
-      "chopin",
-      "stanisław",
-      "moniuszko",
-      "karol"
-    ]
+    "numbers": []
   },
   {
     "id": "54c6e4d9",
@@ -5682,13 +3747,7 @@ const questionsDatabase = [
     "answer": "Międzynarodowy Konkurs Pianistyczny im. Fryderyka Chopina, organizowany w Warszawie co pięć lat. Jest jednym z najbardziej prestiżowych konkursów muzycznych świata.",
     "short": "Międzynarodowy Konkurs Pianistyczny im.",
     "type": "text",
-    "numbers": [],
-    "keywords": [
-      "konkurs",
-      "pianistyczny",
-      "chopina",
-      "warszawie"
-    ]
+    "numbers": []
   },
   {
     "id": "c2d12b04",
@@ -5699,12 +3758,6 @@ const questionsDatabase = [
     "type": "person",
     "numbers": [
       "1932"
-    ],
-    "keywords": [
-      "rejewski",
-      "jerzy",
-      "różycki",
-      "henryk"
     ]
   },
   {
@@ -5716,12 +3769,6 @@ const questionsDatabase = [
     "type": "person",
     "numbers": [
       "1912"
-    ],
-    "keywords": [
-      "wprowadził",
-      "biochemik",
-      "witaminy",
-      "witamina"
     ]
   },
   {
@@ -5733,12 +3780,6 @@ const questionsDatabase = [
     "type": "text",
     "numbers": [
       "1"
-    ],
-    "keywords": [
-      "lewandowski",
-      "świątek",
-      "kamil",
-      "stoch"
     ]
   },
   {
@@ -5748,13 +3789,7 @@ const questionsDatabase = [
     "answer": "Skoki narciarskie. Najsłynniejsza skocznia to Wielka Krokiew w Zakopanem, a największe gwiazdy to Adam Małysz i Kamil Stoch.",
     "short": "Skoki narciarskie.",
     "type": "text",
-    "numbers": [],
-    "keywords": [
-      "wielka",
-      "krokiew",
-      "zakopanem",
-      "adam"
-    ]
+    "numbers": []
   },
   {
     "id": "ddcba6dc",
@@ -5766,12 +3801,6 @@ const questionsDatabase = [
     "numbers": [
       "2004",
       "60"
-    ],
-    "keywords": [
-      "warszawie",
-      "powstania",
-      "warszawskiego",
-      "uczestnikom"
     ]
   },
   {
@@ -5781,13 +3810,7 @@ const questionsDatabase = [
     "answer": "Niemiecki nazistowski obóz koncentracyjny i zagłady w Oświęcimiu, największy w czasie II wojny światowej. Dziś muzeum i miejsce pamięci wpisane na listę UNESCO.",
     "short": "Niemiecki nazistowski obóz koncentracyjny i zagłady w Oświęcimiu, największy w czasie II wojny światowej.",
     "type": "text",
-    "numbers": [],
-    "keywords": [
-      "oświęcimiu",
-      "ii",
-      "unesco",
-      "koncentracyjny"
-    ]
+    "numbers": []
   },
   {
     "id": "d31bb920",
@@ -5796,13 +3819,7 @@ const questionsDatabase = [
     "answer": "Między innymi Stare Miasto w Krakowie i w Warszawie, kopalnia soli w Wieliczce i Bochni, Puszcza Białowieska, zamek w Malborku, Auschwitz-Birkenau, Kalwaria Zebrzydowska, Hala Stulecia we Wrocławiu i drewniane kościoły południowej Małopolski.",
     "short": "Między innymi Stare Miasto w Krakowie i w Warszawie, kopalnia soli w Wieliczce i Bochni, Puszcza Białowieska, zamek w Malborku, Auschwitz-Birkenau, Kalwaria Zebrzydowska, Hala Stulecia we Wrocławiu i drewniane kościoły południowej Małopolski.",
     "type": "text",
-    "numbers": [],
-    "keywords": [
-      "stare",
-      "miasto",
-      "krakowie",
-      "warszawie"
-    ]
+    "numbers": []
   },
   {
     "id": "60ec4323",
@@ -5814,12 +3831,6 @@ const questionsDatabase = [
     "numbers": [
       "1",
       "8"
-    ],
-    "keywords": [
-      "kraków",
-      "łódź",
-      "wrocław",
-      "poznań"
     ]
   },
   {
@@ -5831,12 +3842,6 @@ const questionsDatabase = [
     "type": "text",
     "numbers": [
       "1993"
-    ],
-    "keywords": [
-      "jerzego",
-      "owsiaka",
-      "charytatywna",
-      "organizowana"
     ]
   },
   {
@@ -5850,12 +3855,6 @@ const questionsDatabase = [
       "27",
       "1918",
       "1919"
-    ],
-    "keywords": [
-      "polaków",
-      "niemcom",
-      "wielkopolsce",
-      "wielkopolska"
     ]
   },
   {
@@ -5865,13 +3864,7 @@ const questionsDatabase = [
     "answer": "Pisarz renesansowy, nazywany ojcem literatury polskiej, bo jako pierwszy tworzył głównie po polsku. Znany z cytatu: \"A niechaj narodowie wżdy postronni znają, iż Polacy nie gęsi, iż swój język mają\".",
     "short": "Pisarz renesansowy, nazywany ojcem literatury polskiej, bo jako pierwszy tworzył głównie po polsku.",
     "type": "person",
-    "numbers": [],
-    "keywords": [
-      "polacy",
-      "renesansowy",
-      "literatury",
-      "narodowie"
-    ]
+    "numbers": []
   },
   {
     "id": "6627079c",
@@ -5880,12 +3873,6 @@ const questionsDatabase = [
     "answer": "Powiedzenie \"Gość w dom, Bóg w dom\" oznacza, że gościa przyjmuje się serdecznie i zawsze częstuje jedzeniem. Odmowa poczęstunku bywa odbierana jako nietakt.",
     "short": "Powiedzenie \"Gość w dom, Bóg w dom\" oznacza, że gościa przyjmuje się serdecznie i zawsze częstuje jedzeniem.",
     "type": "text",
-    "numbers": [],
-    "keywords": [
-      "gość",
-      "powiedzenie",
-      "poczęstunku",
-      "serdecznie"
-    ]
+    "numbers": []
   }
 ];

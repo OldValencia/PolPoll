@@ -5,7 +5,7 @@
 **A trainer for the Karta Polaka and permanent-residence interviews**
 **Trener do rozmowy na Kartę Polaka i kartę stałego pobytu**
 
-392 questions · 105 dates on a timeline · 5 drill modes · spaced repetition · works offline
+392 questions · 105 dates on a timeline · spaced repetition · works offline
 
 [**▶ Open the app / Otwórz aplikację**](https://oldvalencia.github.io/PolPoll/)
 
@@ -42,28 +42,28 @@ Nothing to install, no account, no payment.
 | Mode | What it is for |
 |---|---|
 | 🗣️ **Fiszki** (flashcards) | Answer out loud, then grade yourself. Closest to the real interview |
-| ⌨️ **Typing** | Checked against keywords. Typos are forgiven, **dates are not** |
 | 🎯 **Quiz** | Four options. Wrong ones are drawn from questions of the same type, never at random |
-| ⚖️ **True / False** | A snap decision — excellent for drilling dates and names |
 | 👆 **Swipe** | One-handed: tap to flip the card, swipe sideways to grade it |
 | ⏱️ **Sprint** | A modifier: 60 seconds, every mistake costs 2 |
+| 📅 **Test dat** | The timeline dates on their own, block by block, in both directions |
 | 🕰️ **Oś czasu** (study) | 105 dates on seven anchors, meanings masked until you ask. Nothing is graded |
 | 📖 **Czytelnia** (reader) | Every question in one searchable, filterable list |
 
 ### How it teaches
 
-**Dates are checked strictly.** Typing `1026` instead of `1025` is not accepted.
-Half the exam is about years, and a trainer that confirms a wrong fact is worse
-than no trainer at all.
-
-**You see exactly what counted.** After each answer the matched words are
-highlighted and the missing ones are listed. If the checker got it wrong, the
-**"Jednak wiedziałem – zalicz"** button overrides the verdict and repairs your
-statistics.
+**Dates get their own drill.** The seven anchors are selectable as blocks, and
+questions run in both directions: name the year for an event, or name the event
+for a year. The first is what the interview asks; the second is what stops a
+year from being a meaningless number.
 
 <div align="center">
-<img src="docs/screen-check.png" width="480" alt="Answer breakdown with highlighted keywords">
+<img src="docs/screen-timeline.png" width="520" alt="The timeline with a revealed anchor">
 </div>
+
+**Every date carries its spoken form** — "w tysiąc siedemset dziewięćdziesiątym
+piątym roku". Knowing the digits is a different skill from producing them aloud,
+and only the second one counts at the interview. Generated from Polish grammar
+at build time, so it stays correct for dates added later.
 
 **Spaced repetition (SM-2).** Every question carries its own interval: what you
 know moves weeks away, what you keep missing comes back tomorrow. It runs
@@ -73,8 +73,9 @@ survives updates to the question base.
 
 **Personal questions are never auto-graded.** In the "Pochodzenie i Rodzina"
 category the answers are templates you adapt to yourself ("My great-grandmother
-[name] was born in [year] in [place]"). There is nothing to match against
-keywords, so these always go through self-assessment.
+[name] was born in [year] in [place]"). There is no right answer to score them
+against, so they always route to say-it-then-rate-yourself and never appear as a
+wrong option in the quiz.
 
 ### Accuracy
 
@@ -137,13 +138,19 @@ Once edited, rebuild the base:
 python sources/build_db.py
 ```
 
-The script extracts keywords and numbers, assigns each question a stable `id`
-(a hash of the question text, so nobody loses their progress), classifies the
-answer type and collapses duplicates.
+The script pulls out the numbers, assigns each question a stable `id` (a hash of
+the question text, so nobody loses their progress), classifies the answer type
+and collapses duplicates.
 
 Categories are declared in the `CATEGORIES` dictionary inside `build_db.py`.
-Categories holding personal questions go into `PERSONAL_CATEGORIES` — their
-keywords are stripped and they are excluded from quiz options.
+Categories holding personal questions go into `PERSONAL_CATEGORIES` — they are
+never auto-graded and never offered as a quiz option.
+
+The timeline has its own source, `sources/os_czasu.txt`, compiled to
+`timeline.js` by the same script. `##` opens an era, `-` marks an event the
+consul actually asks about, `~` one kept for completeness, `!` a memory hook.
+Offsets between dates and the spoken form of each year are generated, not
+written by hand.
 
 > After changing the base, bump `CACHE_VERSION` in `sw.js`, or users will keep
 > the old version from the offline cache.
@@ -152,13 +159,14 @@ keywords are stripped and they are excluded from quiz options.
 
 ```
 index.html          markup for every screen
-app.js              all the logic: SM-2, answer checking, modes, reader
+app.js              all the logic: SM-2, drill modes, timeline, reader
 style.css           styling, dark theme, glassmorphism
 questions.js        generated question base (do not edit)
+timeline.js         generated date timeline (do not edit)
 sw.js               service worker, offline cache
 manifest.webmanifest
 assets/             icons and a self-hosted Outfit font
-sources/            source questions and the base generator
+sources/            source texts and the generator that builds both bases
 ```
 
 There are no external dependencies at all: the font is local (47 KB), the
@@ -187,23 +195,22 @@ Nic nie trzeba instalować, nie ma kont ani opłat.
 | Tryb | Do czego służy |
 |---|---|
 | 🗣️ **Fiszki** | Odpowiadasz na głos, potem sam się oceniasz. Najbliżej prawdziwej rozmowy |
-| ⌨️ **Wpisywanie** | Sprawdzanie po słowach kluczowych. Literówki wybaczane, **daty nie** |
 | 🎯 **Quiz** | Cztery warianty. Błędne losowane z pytań tego samego typu, nigdy przypadkowo |
-| ⚖️ **Prawda / Fałsz** | Błyskawiczna decyzja — świetne do utrwalania dat i nazwisk |
 | 👆 **Swipe** | Jedną ręką: dotknij, aby odwrócić kartę, przeciągnij w bok, aby ocenić |
 | ⏱️ **Sprint** | Modyfikator: 60 sekund, każdy błąd kosztuje 2 |
+| 📅 **Test dat** | Same daty z osi czasu, blok po bloku, w obie strony |
 | 🕰️ **Oś czasu** (nauka) | 105 dat na siedmiu kotwicach, znaczenia zakryte do kliknięcia. Nic nie jest oceniane |
 | 📖 **Czytelnia** | Wszystkie pytania na jednej liście z wyszukiwarką i filtrami |
 
 ### Jak uczy
 
-**Daty sprawdzane są ściśle.** Wpisanie `1026` zamiast `1025` nie zostanie
-zaliczone. Połowa egzaminu dotyczy lat, a trener potwierdzający błędny fakt jest
-gorszy niż żaden.
+**Daty mają własny test.** Siedem kotwic wybiera się jako bloki, a pytania idą
+w obie strony: podaj rok do wydarzenia albo wydarzenie do roku. Pierwsze pada na
+rozmowie, drugie sprawia, że rok przestaje być pustą liczbą.
 
-**Widać dokładnie, co zostało zaliczone.** Po odpowiedzi trafione słowa są
-podświetlone, a brakujące wypisane. Jeśli sprawdzanie się pomyliło, przycisk
-**„Jednak wiedziałem – zalicz"** zmienia werdykt i poprawia statystykę.
+**Każda data ma zapis wymowy** — „w tysiąc siedemset dziewięćdziesiątym piątym
+roku". Znajomość cyfr to inna umiejętność niż wypowiedzenie ich na głos, a liczy
+się tylko ta druga. Generowane z reguł polskiej gramatyki przy budowaniu bazy.
 
 **Powtórki rozłożone w czasie (SM-2).** Każde pytanie ma własny interwał: to, co
 umiesz, wraca za tygodnie, a to, co ciągle mylisz — jutro. Działa niewidocznie:
@@ -213,8 +220,9 @@ pytania, więc przetrwa aktualizację bazy.
 
 **Pytania osobiste nigdy nie są oceniane automatycznie.** W kategorii
 „Pochodzenie i Rodzina" odpowiedzi to wzory do dopasowania do siebie („Moja
-prababcia [imię] urodziła się w [rok] w [miejscowość]"). Nie ma tam czego
-porównywać ze słowami kluczowymi, więc zawsze idą przez samoocenę.
+prababcia [imię] urodziła się w [rok] w [miejscowość]"). Nie ma tam poprawnej
+odpowiedzi do sprawdzenia, więc zawsze idą przez samoocenę i nigdy nie trafiają
+do wariantów w quizie.
 
 ### Rzetelność
 
@@ -277,13 +285,18 @@ Po edycji przebuduj bazę:
 python sources/build_db.py
 ```
 
-Skrypt sam wyciąga słowa kluczowe i liczby, nadaje każdemu pytaniu stabilne `id`
-(hash treści pytania, żeby nikt nie stracił postępu), rozpoznaje typ odpowiedzi
-i scala duplikaty.
+Skrypt sam wyciąga liczby, nadaje każdemu pytaniu stabilne `id` (hash treści
+pytania, żeby nikt nie stracił postępu), rozpoznaje typ odpowiedzi i scala
+duplikaty.
 
 Kategorie deklaruje się w słowniku `CATEGORIES` w pliku `build_db.py`. Kategorie
-z pytaniami osobistymi trafiają do `PERSONAL_CATEGORIES` — nie mają słów
-kluczowych i nie pojawiają się jako warianty w quizie.
+z pytaniami osobistymi trafiają do `PERSONAL_CATEGORIES` — nigdy nie są oceniane
+automatycznie ani pokazywane jako wariant w quizie.
+
+Oś czasu ma własne źródło, `sources/os_czasu.txt`, kompilowane do `timeline.js`
+tym samym skryptem. `##` otwiera epokę, `-` oznacza wydarzenie, o które realnie
+pytają, `~` dodatkowe dla pełności, `!` podpowiedź do zapamiętania. Odstępy
+między datami i zapis wymowy są generowane, nie wpisywane ręcznie.
 
 > Po zmianie bazy podnieś `CACHE_VERSION` w `sw.js`, inaczej użytkownikom
 > zostanie stara wersja z pamięci offline.
@@ -292,13 +305,14 @@ kluczowych i nie pojawiają się jako warianty w quizie.
 
 ```
 index.html          znaczniki wszystkich ekranów
-app.js              cała logika: SM-2, sprawdzanie odpowiedzi, tryby, czytelnia
+app.js              cała logika: SM-2, tryby, oś czasu, czytelnia
 style.css           style, ciemny motyw, glassmorphism
 questions.js        wygenerowana baza pytań (nie edytować)
+timeline.js         wygenerowana oś czasu (nie edytować)
 sw.js               service worker, pamięć offline
 manifest.webmanifest
 assets/             ikony i lokalna kopia fontu Outfit
-sources/            pytania źródłowe i generator bazy
+sources/            teksty źródłowe i generator obu baz
 ```
 
 Nie ma żadnych zewnętrznych zależności: font leży lokalnie (47 KB), konfetti

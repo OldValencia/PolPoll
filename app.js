@@ -221,77 +221,6 @@ function normalize(text) {
         .trim();
 }
 
-function levenshtein(a, b) {
-    if (a === b) return 0;
-    if (!a.length) return b.length;
-    if (!b.length) return a.length;
-    let prev = new Array(a.length + 1);
-    let curr = new Array(a.length + 1);
-    for (let j = 0; j <= a.length; j++) prev[j] = j;
-    for (let i = 1; i <= b.length; i++) {
-        curr[0] = i;
-        for (let j = 1; j <= a.length; j++) {
-            curr[j] = b.charAt(i - 1) === a.charAt(j - 1)
-                ? prev[j - 1]
-                : Math.min(prev[j - 1], curr[j - 1], prev[j]) + 1;
-        }
-        [prev, curr] = [curr, prev];
-    }
-    return prev[a.length];
-}
-
-/**
- * Typos are forgiven in words but never in numbers - on this exam the date is
- * the answer, and accepting "1026" for "1025" teaches the wrong fact.
- */
-function fuzzyEquals(word, target) {
-    if (word === target) return true;
-    if (/\d/.test(target) || /\d/.test(word)) return false;
-    const distance = levenshtein(word, target);
-    if (target.length > 7 && distance <= 2) return true;
-    if (target.length > 4 && distance <= 1) return true;
-    // Polish inflection: "Mieszka" for "Mieszko", "polskim" for "polski".
-    if (target.length > 5 && word.length > 4 && word.slice(0, 5) === target.slice(0, 5)) return true;
-    return false;
-}
-
-/**
- * Returns a verdict plus the evidence behind it, so the UI can show the user
- * exactly which parts of their answer counted.
- */
-function checkTyping(raw, question) {
-    const userWords = normalize(raw).split(' ').filter(Boolean);
-    const userSet = new Set(userWords);
-
-    const numbers = (question.numbers || []).map(value => ({
-        value,
-        ok: userSet.has(value)
-    }));
-
-    const keywords = (question.keywords || []).map(keyword => {
-        const target = normalize(keyword);
-        return { value: keyword, ok: userWords.some(word => fuzzyEquals(word, target)) };
-    });
-
-    const matchedWords = keywords.filter(k => k.ok).length;
-    const requiredWords = keywords.length
-        ? Math.max(1, Math.round(keywords.length * CONFIG.keywordRatio))
-        : 0;
-
-    const numbersOk = numbers.every(n => n.ok);
-    const wordsOk = matchedWords >= requiredWords;
-
-    let reason = '';
-    if (!numbersOk) reason = 'Brakuje daty lub liczby.';
-    else if (!wordsOk) reason = 'Brakuje kluczowych informacji.';
-
-    return {
-        pass: numbersOk && wordsOk && (numbers.length > 0 || keywords.length > 0),
-        numbers, keywords, reason,
-        matchedWords, requiredWords,
-        userWords
-    };
-}
 
 /* -------------------------------------------------------- distractors */
 
@@ -303,8 +232,11 @@ function pickDistractors(question, count) {
     const used = new Set([normalize(question.short || question.answer)]);
     const chosen = [];
 
-    // Personal templates ("Moja prababcia...") are never valid options.
-    const pool = DB.filter(q => q.id !== question.id && q.type !== 'personal');
+    // Personal templates ("Moja prababcia...") are never valid options. A date
+    // drill supplies its own pool so the four options are other dates, not
+    // sentences pulled out of the main question base.
+    const source = (session && session.pool) || DB;
+    const pool = source.filter(q => q.id !== question.id && q.type !== 'personal');
     const tiers = [
         pool.filter(q => q.category === question.category && q.type === question.type),
         pool.filter(q => q.type === question.type),
@@ -508,15 +440,12 @@ function cacheDom() {
         sprintTime: 'sprint-time',
         panel: 'question-panel', qText: 'question-text', speakBtn: 'speak-btn',
 
-        typingArea: 'typing-area', userAnswerInput: 'user-answer', checkBtn: 'check-btn',
         flashcardArea: 'flashcard-area', showAnswerBtn: 'show-answer-btn',
         quizArea: 'quiz-area', quizOptions: 'quiz-options',
-        tfArea: 'tf-area', tfClaim: 'tf-claim',
         swipeArea: 'swipe-area', swipeCard: 'swipe-card', swipeFace: 'swipe-face',
 
         feedbackArea: 'feedback-area', feedbackTitle: 'feedback-title',
-        answerDiff: 'answer-diff', correctAnswerText: 'correct-answer-text',
-        overrideBtn: 'override-btn', selfGradeControls: 'self-grade-controls',
+        correctAnswerText: 'correct-answer-text', selfGradeControls: 'self-grade-controls',
         nextBtn: 'next-btn',
 
         resultHeading: 'result-heading', scoreCircle: 'score-circle',
@@ -525,6 +454,10 @@ function cacheDom() {
         restartBtn: 'restart-btn', retryMistakesBtn: 'retry-mistakes-btn',
         confetti: 'confetti',
 
+        trainPane: 'train-pane', datesPane: 'dates-pane',
+        blocksContainer: 'blocks-container', blocksAll: 'blocks-all', blocksNone: 'blocks-none',
+        dateDirection: 'date-direction', dateMode: 'date-mode', dateCoreOnly: 'date-core-only',
+        dateSprint: 'date-sprint', dateStartBtn: 'date-start-btn', dateCount: 'date-count',
         studyBtn: 'study-btn', studyBack: 'study-back', studyBody: 'study-body',
         studyHint: 'study-hint', studyRevealAll: 'study-reveal-all',
         studyCoreOnly: 'study-core-only', studyCoreWrap: 'study-core-wrap',
@@ -533,9 +466,9 @@ function cacheDom() {
         readerReveal: 'reader-reveal', readerCount: 'reader-count', readerList: 'reader-list'
     };
     Object.keys(ids).forEach(key => { UI[key] = document.getElementById(ids[key]); });
-    UI.studyTabs = Array.from(document.querySelectorAll('.study-tab'));
+    UI.studyTabs = Array.from(document.querySelectorAll('#study-screen .study-tab'));
+    UI.trainTabs = Array.from(document.querySelectorAll('[data-train-tab]'));
     UI.gradeBtns = Array.from(document.querySelectorAll('.grade-btn'));
-    UI.tfBtns = Array.from(document.querySelectorAll('.tf-btn'));
 }
 
 function switchScreen(name) {
@@ -626,13 +559,11 @@ function renderDashboard() {
 
 const MODE_HINTS = {
     flashcard: 'Odpowiadasz na głos, potem sam oceniasz - najbliżej prawdziwego egzaminu.',
-    typing: 'Sprawdzanie po słowach kluczowych. Daty muszą się zgadzać co do roku.',
     quiz: '4 warianty, błędne losowane z pytań tego samego typu.',
-    truefalse: 'Błyskawiczna decyzja - świetne do utrwalania dat i nazwisk.',
     swipe: 'Jedna ręka: dotknij, aby odwrócić, przeciągnij w bok, aby ocenić.'
 };
 
-const SPRINT_MODES = new Set(['quiz', 'truefalse', 'swipe', 'flashcard']);
+const SPRINT_MODES = new Set(['quiz', 'swipe', 'flashcard']);
 
 let session = null;
 
@@ -643,6 +574,7 @@ function createSession(questions, mode, options) {
         index: 0,
         mode,
         sprint: Boolean(settings.sprint) && SPRINT_MODES.has(mode),
+        pool: settings.pool || null,
         planned: questions.length,
         resolved: 0,
         correctFirst: 0,
@@ -653,7 +585,6 @@ function createSession(questions, mode, options) {
         repeats: {},
         locked: false,
         current: null,
-        currentPayload: null,
         sprintEndsAt: 0,
         sprintTimer: null,
         finished: false
@@ -729,13 +660,10 @@ function loadQuestion() {
     UI.qText.textContent = question.question;
 
     // Reset every area, then show the one this mode needs.
-    [UI.typingArea, UI.flashcardArea, UI.quizArea, UI.tfArea, UI.swipeArea, UI.feedbackArea]
+    [UI.flashcardArea, UI.quizArea, UI.swipeArea, UI.feedbackArea]
         .forEach(el => el.classList.add('hidden'));
     UI.nextBtn.classList.add('hidden');
     UI.selfGradeControls.classList.add('hidden');
-    UI.overrideBtn.classList.add('hidden');
-    UI.answerDiff.classList.add('hidden');
-    UI.answerDiff.innerHTML = '';
     UI.feedbackTitle.className = '';
     UI.panel.classList.remove('shake');
 
@@ -744,9 +672,7 @@ function loadQuestion() {
     session.activeMode = effectiveMode(question);
 
     switch (session.activeMode) {
-        case 'typing': renderTyping(question); break;
         case 'quiz': renderQuiz(question); break;
-        case 'truefalse': renderTrueFalse(question); break;
         case 'swipe': renderSwipe(question); break;
         default: renderFlashcard(question);
     }
@@ -754,8 +680,8 @@ function loadQuestion() {
 
 /**
  * "Pochodzenie i Rodzina" answers are templates about the user's own life, so
- * there is nothing to auto-grade or to build wrong options from. Those always
- * fall back to say-it-then-rate-yourself, which is how the real interview goes.
+ * there is nothing to build wrong options from. Those always fall back to
+ * say-it-then-rate-yourself, which is how the real interview goes.
  */
 function effectiveMode(question) {
     if (question.type !== 'personal') return session.mode;
@@ -793,72 +719,7 @@ function revealFlashcard() {
 
 /* ---------------------------------------------------------- mode: typing */
 
-function renderTyping() {
-    UI.typingArea.classList.remove('hidden');
-    UI.userAnswerInput.value = '';
-    if (!isTouchDevice()) UI.userAnswerInput.focus();
-}
 
-function submitTyping() {
-    if (!session || session.locked) return;
-    const question = currentQuestion();
-    const raw = UI.userAnswerInput.value;
-    if (!normalize(raw)) {
-        toast('Wpisz odpowiedź albo naciśnij "Nie wiem".');
-        return;
-    }
-    session.locked = true;
-
-    const verdict = checkTyping(raw, question);
-    UI.typingArea.classList.add('hidden');
-    UI.feedbackArea.classList.remove('hidden');
-    UI.correctAnswerText.textContent = question.answer;
-    UI.nextBtn.classList.remove('hidden');
-
-    renderAnswerDiff(verdict, raw);
-
-    if (verdict.pass) {
-        UI.feedbackTitle.textContent = 'Dobrze! Sens się zgadza ✅';
-        UI.feedbackTitle.className = 'feedback-success';
-        settleAnswer(question, true, 5);
-    } else {
-        UI.feedbackTitle.textContent = `Nie do końca - ${verdict.reason} ❌`;
-        UI.feedbackTitle.className = 'feedback-error';
-        UI.overrideBtn.classList.remove('hidden');
-        shakePanel();
-        settleAnswer(question, false, 0);
-    }
-    UI.nextBtn.focus();
-}
-
-/** Shows precisely which required parts were found, and which were missed. */
-function renderAnswerDiff(verdict, raw) {
-    const chips = []
-        .concat(verdict.numbers.map(n => ({ ...n, kind: 'number' })))
-        .concat(verdict.keywords.map(k => ({ ...k, kind: 'word' })));
-
-    if (!chips.length) { UI.answerDiff.classList.add('hidden'); return; }
-
-    const matchedTargets = new Set(
-        verdict.keywords.filter(k => k.ok).map(k => normalize(k.value))
-            .concat(verdict.numbers.filter(n => n.ok).map(n => n.value))
-    );
-    const userHtml = normalize(raw).split(' ').filter(Boolean).map(word => {
-        const hit = Array.from(matchedTargets).some(target => fuzzyEquals(word, target) || word === target);
-        return hit ? `<mark>${escapeHtml(word)}</mark>` : escapeHtml(word);
-    }).join(' ');
-
-    UI.answerDiff.innerHTML = `
-        <div class="diff-user">${userHtml}</div>
-        <div class="diff-chips">
-            ${chips.map(chip => `
-                <span class="chip ${chip.ok ? 'chip-ok' : 'chip-miss'} ${chip.kind === 'number' ? 'chip-number' : ''}">
-                    ${chip.ok ? '✓' : '✕'} ${escapeHtml(chip.value)}
-                </span>`).join('')}
-        </div>
-        <p class="diff-legend">Zielone = zaliczone. ${verdict.numbers.length ? 'Liczby i daty muszą się zgadzać dokładnie.' : ''}</p>`;
-    UI.answerDiff.classList.remove('hidden');
-}
 
 /* ------------------------------------------------------------ mode: quiz */
 
@@ -895,32 +756,7 @@ function answerQuiz(button) {
 
 /* ------------------------------------------------------ mode: true/false */
 
-function renderTrueFalse(question) {
-    UI.tfArea.classList.remove('hidden');
-    const showTruth = Math.random() < 0.5;
-    let claim = optionText(question);
-    if (!showTruth) {
-        const alternatives = pickDistractors(question, 1);
-        if (alternatives.length) claim = alternatives[0];
-    }
-    session.currentPayload = { truth: claim === optionText(question) };
-    UI.tfClaim.textContent = claim;
-    UI.tfBtns.forEach(btn => { btn.disabled = false; btn.classList.remove('is-correct', 'is-wrong'); });
-}
 
-function answerTrueFalse(said) {
-    if (!session || session.locked) return;
-    session.locked = true;
-    const question = currentQuestion();
-    const isCorrect = said === session.currentPayload.truth;
-    UI.tfBtns.forEach(btn => {
-        btn.disabled = true;
-        const value = btn.dataset.tf === 'true';
-        if (value === session.currentPayload.truth) btn.classList.add('is-correct');
-        else if (value === said) btn.classList.add('is-wrong');
-    });
-    showVerdict(question, isCorrect);
-}
 
 /* ----------------------------------------------------------- mode: swipe */
 
@@ -1089,39 +925,6 @@ function settlePartial(question) {
     updateProgressColor();
 }
 
-/** "Jednak wiedziałem" - repairs a false negative from the typing checker. */
-function overrideAsCorrect() {
-    if (!session) return;
-    const question = currentQuestion();
-
-    // Undo the failure we just recorded, then re-record it as a success.
-    session.correctCount++;
-    if (session.failedIds.has(question.id)) {
-        session.failedIds.delete(question.id);
-        session.mistakes = session.mistakes.filter(m => m.id !== question.id);
-        session.correctFirst++;
-    }
-    if (session.repeats[question.id]) {
-        session.repeats[question.id]--;
-        const last = session.queue.lastIndexOf(question);
-        if (last > session.index) session.queue.splice(last, 1);
-    }
-    session.resolved++;
-
-    const card = state.cards[question.id];
-    if (card) {                                  // roll back the lapse
-        card.wrong = Math.max(0, card.wrong - 1);
-        card.lapses = Math.max(0, card.lapses - 1);
-    }
-    recordReview(question.id, 4);
-
-    UI.overrideBtn.classList.add('hidden');
-    UI.feedbackTitle.textContent = 'Zaliczone ✅';
-    UI.feedbackTitle.className = 'feedback-success';
-    updateProgressColor();
-    toast('Zaliczone. Postęp poprawiony.');
-}
-
 function advance() {
     if (!session || session.finished) return;
     session.index++;
@@ -1202,6 +1005,138 @@ function retryMistakes() {
     const again = session ? session.mistakes.slice() : [];
     if (!again.length) return;
     startSession(shuffle(again), session.mode, { sprint: false });
+}
+
+/* --------------------------------------------------- start screen tabs */
+
+/** Training and the date drill are one panel; only one pane shows at a time. */
+function showTrainTab(name) {
+    UI.trainPane.classList.toggle('hidden', name !== 'train');
+    UI.datesPane.classList.toggle('hidden', name !== 'dates');
+    UI.trainTabs.forEach(tab => tab.classList.toggle('is-active', tab.dataset.trainTab === name));
+    savePreferences();
+}
+
+/* ------------------------------------------------------- date drill */
+
+/**
+ * The timeline is read-only, so its dates were the one thing the drill modes
+ * could not reach. These turn each event into a question-shaped object the
+ * existing session engine already knows how to run.
+ *
+ * Two directions, because they exercise different things: naming the year is
+ * what the interview asks for, naming the event is what makes a bare number
+ * mean something.
+ */
+function buildDateQuestions(anchorYears, direction, coreOnly) {
+    const out = [];
+
+    TIMELINE.forEach(anchor => {
+        if (!anchorYears.includes(String(anchor.year))) return;
+        const label = `${anchor.year} ${anchor.title}`;
+
+        anchor.events.forEach(event => {
+            if (coreOnly && !event.core) return;
+
+            const wants = direction === 'mixed'
+                ? (Math.random() < 0.5 ? 'toYear' : 'toEvent')
+                : direction;
+
+            if (wants === 'toYear') {
+                out.push({
+                    id: `dt-y-${event.year}-${shortHash(event.title)}`,
+                    category: label,
+                    type: 'date-year',
+                    question: `W którym roku: ${event.title}?`,
+                    answer: `${event.year} - ${event.say}`,
+                    short: String(event.year),
+                    numbers: [String(event.year)],
+                    keywords: []
+                });
+            } else {
+                out.push({
+                    id: `dt-e-${event.year}-${shortHash(event.title)}`,
+                    category: label,
+                    type: 'date-event',
+                    question: `Co wydarzyło się w ${event.year} r.?`,
+                    answer: event.note ? `${event.title}. ${event.note}` : event.title,
+                    short: event.title,
+                    numbers: [],
+                    keywords: titleKeywords(event.title)
+                });
+            }
+        });
+    });
+
+    return out;
+}
+
+/**
+ * Several events can share a year - 1939 alone holds the pact, the German
+ * attack and the Soviet one - so the year is not enough to key a card on.
+ * Hashing the title keeps ids unique and stable across rebuilds.
+ */
+function shortHash(text) {
+    let hash = 0;
+    for (let i = 0; i < text.length; i++) {
+        hash = ((hash << 5) - hash + text.charCodeAt(i)) | 0;
+    }
+    return Math.abs(hash).toString(36).slice(0, 6);
+}
+
+/** Enough of the title to check a typed answer against, without a stop list. */
+function titleKeywords(title) {
+    return normalize(title)
+        .split(' ')
+        .filter(word => word.length >= 5)
+        .slice(0, 3);
+}
+
+function selectedBlocks() {
+    return Array.from(UI.blocksContainer.querySelectorAll('input:checked')).map(i => i.value);
+}
+
+function currentDateSet() {
+    return buildDateQuestions(
+        selectedBlocks(),
+        UI.dateDirection.value,
+        UI.dateCoreOnly.checked
+    );
+}
+
+function refreshDateCount() {
+    const total = currentDateSet().length;
+    UI.dateCount.textContent = total;
+    UI.dateStartBtn.disabled = total === 0;
+    UI.dateStartBtn.classList.toggle('is-disabled', total === 0);
+}
+
+function buildBlockCheckboxes() {
+    if (!TIMELINE.length) return;
+    UI.blocksContainer.innerHTML = TIMELINE.map(anchor => {
+        const core = anchor.events.filter(e => e.core).length;
+        return `
+            <label class="checkbox-label">
+                <input type="checkbox" value="${anchor.year}" checked>
+                <span>${anchor.year} ${escapeHtml(anchor.title)}</span>
+                <span class="cat-count">${core}</span>
+            </label>`;
+    }).join('');
+}
+
+function handleDateStart() {
+    const set = currentDateSet();
+    if (!set.length) {
+        toast('Wybierz przynajmniej jeden blok.');
+        return;
+    }
+    // Ordered by what is most overdue, same as the main trainer.
+    const now = Date.now();
+    const ordered = shuffle(set).sort((a, b) => priority(a, now) - priority(b, now));
+    startSession(shuffle(ordered), UI.dateMode.value, {
+        sprint: UI.dateSprint.checked,
+        pool: set                       // quiz options must come from other dates
+    });
 }
 
 /* ---------------------------------------------------------------- study */
@@ -1421,9 +1356,6 @@ function plural(count, one, few, many) {
 
 /* ----------------------------------------------------------------- setup */
 
-function isTouchDevice() {
-    return window.matchMedia('(hover: none) and (pointer: coarse)').matches;
-}
 
 function selectedCategories() {
     return Array.from(UI.catContainer.querySelectorAll('input:checked')).map(input => input.value);
@@ -1492,17 +1424,7 @@ function handleKeydown(event) {
 }
 
 function quizKeys(event) {
-    const typingInInput = event.target === UI.userAnswerInput;
-
     if (event.key === 'Escape') { event.preventDefault(); return finishSession('quit'); }
-
-    if (typingInInput) {
-        if (event.key === 'Enter' && (event.ctrlKey || event.metaKey)) {
-            event.preventDefault();
-            submitTyping();
-        }
-        return;
-    }
 
     const mode = session ? (session.activeMode || session.mode) : null;
 
@@ -1528,11 +1450,6 @@ function quizKeys(event) {
     if (mode === 'swipe' && UI.swipeCard.dataset.face === 'answer' && !session.locked) {
         if (event.key === 'ArrowLeft') return commitSwipe(false);
         if (event.key === 'ArrowRight') return commitSwipe(true);
-    }
-
-    if (mode === 'truefalse' && !session.locked) {
-        if (event.key === 'ArrowLeft') return answerTrueFalse(false);
-        if (event.key === 'ArrowRight') return answerTrueFalse(true);
     }
 
     if (mode === 'quiz' && !session.locked && /^[1-4]$/.test(event.key)) {
@@ -1567,10 +1484,8 @@ function bindEvents() {
 
     UI.modeSelect.addEventListener('change', handleModeChange);
     UI.showAnswerBtn.addEventListener('click', revealFlashcard);
-    UI.checkBtn.addEventListener('click', submitTyping);
     UI.nextBtn.addEventListener('click', advance);
     UI.quitBtn.addEventListener('click', () => finishSession('quit'));
-    UI.overrideBtn.addEventListener('click', overrideAsCorrect);
     UI.speakBtn.addEventListener('click', () => {
         const question = session && session.current;
         if (question) Speech.speak(UI.feedbackArea.classList.contains('hidden') ? question.question : question.answer);
@@ -1578,9 +1493,6 @@ function bindEvents() {
 
     UI.gradeBtns.forEach(button => {
         button.addEventListener('click', event => handleGrade(event.currentTarget.dataset.grade));
-    });
-    UI.tfBtns.forEach(button => {
-        button.addEventListener('click', event => answerTrueFalse(event.currentTarget.dataset.tf === 'true'));
     });
 
     UI.restartBtn.addEventListener('click', () => {
@@ -1590,6 +1502,18 @@ function bindEvents() {
     });
     UI.retryMistakesBtn.addEventListener('click', retryMistakes);
 
+    UI.trainTabs.forEach(tab => tab.addEventListener('click', () => showTrainTab(tab.dataset.trainTab)));
+    UI.dateStartBtn.addEventListener('click', handleDateStart);
+    UI.blocksAll.addEventListener('click', () => {
+        UI.blocksContainer.querySelectorAll('input').forEach(i => { i.checked = true; });
+        refreshDateCount();
+    });
+    UI.blocksNone.addEventListener('click', () => {
+        UI.blocksContainer.querySelectorAll('input').forEach(i => { i.checked = false; });
+        refreshDateCount();
+    });
+    UI.blocksContainer.addEventListener('change', refreshDateCount);
+    [UI.dateDirection, UI.dateCoreOnly].forEach(el => el.addEventListener('change', refreshDateCount));
     UI.studyBtn.addEventListener('click', openStudy);
     UI.studyBack.addEventListener('click', () => { renderDashboard(); switchScreen('start'); });
     UI.studyRevealAll.addEventListener('click', toggleRevealAll);
@@ -1658,7 +1582,8 @@ function savePreferences() {
         count: UI.numQuestions.value,
         mode: UI.modeSelect.value,
         sprint: UI.sprintToggle.checked,
-        tts: UI.ttsToggle.checked
+        tts: UI.ttsToggle.checked,
+        pane: UI.datesPane && !UI.datesPane.classList.contains('hidden') ? 'dates' : 'train'
     };
     saveState();
 }
@@ -1670,6 +1595,7 @@ function restorePreferences() {
     if (prefs.mode) UI.modeSelect.value = prefs.mode;
     UI.sprintToggle.checked = Boolean(prefs.sprint);
     UI.ttsToggle.checked = Boolean(prefs.tts);
+    if (prefs.pane === 'dates') showTrainTab('dates');
 }
 
 function init() {
@@ -1685,6 +1611,8 @@ function init() {
 
     UI.dbCount.textContent = DB.length;
     buildCategoryCheckboxes();
+    buildBlockCheckboxes();
+    refreshDateCount();
     restorePreferences();
     handleModeChange();
     bindEvents();

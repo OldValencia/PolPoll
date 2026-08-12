@@ -352,7 +352,7 @@ label { display: block; margin-bottom: 0.45rem; color: var(--text-muted); font-s
 .link-btn.danger { color: var(--text-muted); }
 .link-btn.danger:hover { color: var(--error); }
 
-select, textarea, input[type="search"] {
+select, input[type="search"] {
     width: 100%;
     background: rgba(0, 0, 0, 0.25);
     border: 1px solid var(--glass-border);
@@ -365,15 +365,13 @@ select, textarea, input[type="search"] {
     transition: border-color 0.2s;
 }
 
-select:focus, textarea:focus, input[type="search"]:focus { border-color: var(--primary-red); }
+select:focus, input[type="search"]:focus { border-color: var(--primary-red); }
 
 /* No `option` colours on purpose. The dropdown popup is drawn by the OS, and any
    author colour we set is applied to the resting rows but not to the row the
    browser highlights - which is exactly how the text ended up washed out in
    Firefox. `color-scheme: dark` on :root gives the popup a dark palette with a
    highlight the browser guarantees to be contrasting. */
-
-textarea { resize: vertical; min-height: 110px; margin-bottom: 1rem; line-height: 1.5; }
 
 .mode-hint {
     color: var(--text-muted);
@@ -443,7 +441,7 @@ button {
 }
 
 button:focus-visible, a:focus-visible, input:focus-visible, select:focus-visible,
-textarea:focus-visible, summary:focus-visible {
+summary:focus-visible {
     outline: 2px solid var(--info);
     outline-offset: 2px;
 }
@@ -638,34 +636,6 @@ kbd {
     opacity: 1;
 }
 
-/* True / False ----------------------------------------------------------- */
-
-.tf-statement {
-    background: rgba(0, 0, 0, 0.25);
-    border: 1px solid var(--glass-border);
-    border-radius: 14px;
-    padding: 1.1rem 1.2rem;
-    margin-bottom: 1rem;
-}
-
-.tf-label { font-size: 0.75rem; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.06em; }
-#tf-claim { font-size: 1.15rem; margin-top: 0.35rem; line-height: 1.4; }
-
-.tf-buttons { display: flex; gap: 0.8rem; }
-
-.tf-btn {
-    flex: 1;
-    background: rgba(255, 255, 255, 0.06);
-    border: 1px solid var(--glass-border);
-    padding: 1rem 0.75rem;
-}
-
-.tf-btn.true:hover:not(:disabled) { background: rgba(16, 185, 129, 0.2); border-color: var(--success); }
-.tf-btn.false:hover:not(:disabled) { background: rgba(239, 68, 68, 0.2); border-color: var(--error); }
-.tf-btn.is-correct { background: rgba(16, 185, 129, 0.25); border-color: var(--success); }
-.tf-btn.is-wrong { background: rgba(239, 68, 68, 0.25); border-color: var(--error); }
-.tf-btn:disabled { cursor: default; }
-
 /* Swipe ------------------------------------------------------------------ */
 
 .swipe-card {
@@ -734,55 +704,6 @@ kbd {
 
 .feedback-success { color: var(--success) !important; }
 .feedback-error { color: var(--error) !important; }
-
-.answer-diff {
-    background: rgba(0, 0, 0, 0.28);
-    border: 1px solid var(--glass-border);
-    border-radius: 14px;
-    padding: 0.9rem 1rem;
-    margin-bottom: 1.1rem;
-}
-
-.diff-user {
-    font-size: 0.95rem;
-    color: var(--text-muted);
-    line-height: 1.7;
-    margin-bottom: 0.7rem;
-    word-break: break-word;
-}
-
-.diff-user mark {
-    background: rgba(16, 185, 129, 0.25);
-    color: #6ee7b7;
-    padding: 0.05rem 0.3rem;
-    border-radius: 5px;
-    font-weight: 600;
-}
-
-.diff-chips { display: flex; flex-wrap: wrap; gap: 0.4rem; }
-
-.chip {
-    font-size: 0.78rem;
-    padding: 0.22rem 0.6rem;
-    border-radius: 999px;
-    border: 1px solid transparent;
-    white-space: nowrap;
-}
-
-.chip-ok { background: rgba(16, 185, 129, 0.16); color: #6ee7b7; border-color: rgba(16, 185, 129, 0.35); }
-.chip-miss { background: rgba(239, 68, 68, 0.14); color: #fca5a5; border-color: rgba(239, 68, 68, 0.32); }
-.chip-number { font-variant-numeric: tabular-nums; font-weight: 700; }
-
-.diff-legend { font-size: 0.74rem; color: var(--text-muted); margin-top: 0.65rem; }
-
-.link-btn.override {
-    display: block;
-    margin: 0 auto 1.25rem;
-    color: var(--partial);
-    font-size: 0.9rem;
-}
-
-.link-btn.override:hover { color: #fbbf24; }
 
 .grade-controls { text-align: center; margin-bottom: 1.25rem; }
 .grade-controls p { margin-bottom: 0.85rem; color: var(--text-muted); font-size: 0.9rem; }
@@ -1189,3 +1110,6 @@ kbd {
     color: var(--text-muted);
     margin-bottom: 0.15rem;
 }
+
+/* Training / date-drill tabs share the study-screen tab component. */
+.config-panel .study-tabs { margin-bottom: 1.5rem; }

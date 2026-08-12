@@ -84,10 +84,14 @@
                 </div>
             </details>
 
-            <!-- Configuration -->
+            <!-- Training and the date drill share one panel, switched by tabs -->
             <div class="glass-panel config-panel">
-                <h2>Własny trening</h2>
+                <div class="study-tabs" role="tablist">
+                    <button class="study-tab is-active" data-train-tab="train" role="tab">🎯 Trening</button>
+                    <button class="study-tab" data-train-tab="dates" role="tab">📅 Test dat</button>
+                </div>
 
+                <div id="train-pane" class="train-pane">
                 <div class="form-group">
                     <div class="label-row">
                         <label id="cat-label">Kategorie:</label>
@@ -114,9 +118,7 @@
                         <label for="test-mode">Tryb nauki:</label>
                         <select id="test-mode">
                             <option value="flashcard">🗣️ Fiszki - tryb ustny</option>
-                            <option value="typing">⌨️ Wpisywanie odpowiedzi</option>
                             <option value="quiz">🎯 Quiz - 4 warianty</option>
-                            <option value="truefalse">⚖️ Prawda czy Fałsz</option>
                             <option value="swipe">👆 Swipe - szybka powtórka</option>
                         </select>
                     </div>
@@ -136,6 +138,58 @@
                 </div>
 
                 <button id="start-btn" class="primary-btn big-btn">Rozpocznij trening</button>
+                </div>
+
+                <!-- The timeline is otherwise read-only, so its dates drill here -->
+                <div id="dates-pane" class="train-pane hidden">
+                <p class="mode-hint">Same daty z osi czasu, blok po bloku.</p>
+
+                <div class="form-group">
+                    <div class="label-row">
+                        <label id="block-label">Bloki:</label>
+                        <div class="mini-actions">
+                            <button type="button" class="link-btn" id="blocks-all">Wszystkie</button>
+                            <button type="button" class="link-btn" id="blocks-none">Żadna</button>
+                        </div>
+                    </div>
+                    <div class="checkbox-group" id="blocks-container" role="group" aria-labelledby="block-label"></div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="date-direction">Kierunek:</label>
+                        <select id="date-direction">
+                            <option value="mixed" selected>↔️ Mieszane</option>
+                            <option value="toYear">📅 Wydarzenie → rok</option>
+                            <option value="toEvent">📖 Rok → wydarzenie</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="date-mode">Tryb:</label>
+                        <select id="date-mode">
+                            <option value="quiz" selected>🎯 Quiz - 4 warianty</option>
+                            <option value="flashcard">🗣️ Fiszki - tryb ustny</option>
+                            <option value="swipe">👆 Swipe</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="toggle-group">
+                    <label class="switch-label">
+                        <input type="checkbox" id="date-core-only" checked>
+                        <span>⭐ Tylko kluczowe daty</span>
+                    </label>
+                    <label class="switch-label">
+                        <input type="checkbox" id="date-sprint">
+                        <span>⏱️ Sprint - 60 sekund na czasie</span>
+                    </label>
+                </div>
+
+                <button id="date-start-btn" class="primary-btn big-btn">
+                    Rozpocznij test dat <span class="pill" id="date-count">0</span>
+                </button>
+                </div>
             </div>
 
             <!-- Study, as opposed to testing: nothing here is graded -->
@@ -174,13 +228,6 @@
                     <button id="speak-btn" class="icon-btn" title="Przeczytaj na głos" aria-label="Przeczytaj na głos">🔊</button>
                 </div>
 
-                <!-- Typing -->
-                <div id="typing-area" class="input-area hidden">
-                    <textarea id="user-answer" aria-label="Twoja odpowiedź"
-                              placeholder="Wpisz odpowiedź... (Ctrl+Enter sprawdza)"></textarea>
-                    <button id="check-btn" class="primary-btn">Sprawdź odpowiedź</button>
-                </div>
-
                 <!-- Flashcard -->
                 <div id="flashcard-area" class="input-area">
                     <button id="show-answer-btn" class="secondary-btn">Pokaż odpowiedź <kbd>Spacja</kbd></button>
@@ -189,18 +236,6 @@
                 <!-- Quiz (multiple choice) -->
                 <div id="quiz-area" class="input-area hidden">
                     <div id="quiz-options" class="quiz-options"></div>
-                </div>
-
-                <!-- True / False -->
-                <div id="tf-area" class="input-area hidden">
-                    <div class="tf-statement">
-                        <span class="tf-label">Odpowiedź:</span>
-                        <p id="tf-claim">...</p>
-                    </div>
-                    <div class="tf-buttons">
-                        <button class="tf-btn false" data-tf="false">❌ Fałsz <kbd>←</kbd></button>
-                        <button class="tf-btn true" data-tf="true">✅ Prawda <kbd>→</kbd></button>
-                    </div>
                 </div>
 
                 <!-- Swipe -->
@@ -216,10 +251,7 @@
                 <!-- Feedback -->
                 <div id="feedback-area" class="feedback-panel hidden" aria-live="polite">
                     <h3 id="feedback-title">Prawidłowa odpowiedź:</h3>
-                    <div id="answer-diff" class="answer-diff hidden"></div>
                     <p id="correct-answer-text">Tutaj poprawna odpowiedź</p>
-
-                    <button id="override-btn" class="link-btn override hidden">Jednak wiedziałem - zalicz</button>
 
                     <div id="self-grade-controls" class="grade-controls hidden">
                         <p>Jak Ci poszło?</p>

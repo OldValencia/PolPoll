@@ -12,6 +12,7 @@
 Mieszko I przyjmuje chrzest. Od tej daty liczy się istnienie państwa polskiego w chrześcijańskiej Europie.
 ! Tysiąclecie chrztu Polski obchodzono w 1966 r. - te same trzy cyfry, tysiąc lat później.
 ! Pierwsza epoka to Piastowie: od Mieszka I (966) do zjednoczenia przez Łokietka (1320).
+! Uwaga na trzech Bolesławów: Chrobry (1025, pierwszy król), Śmiały (1076, zabił biskupa Stanisława), Krzywousty (1138, podzielił państwo między synów).
 ~ 965 | Ślub Mieszka I z Dobrawą | Czeska księżniczka; małżeństwo przygotowało grunt pod chrzest rok później.
 - 966 | Chrzest Polski | Mieszko I przyjmuje chrzest z Czech, omijając zależność od cesarstwa niemieckiego.
 ~ 968 | Pierwsze biskupstwo w Poznaniu | Biskup Jordan, początek organizacji kościelnej w Polsce.
@@ -25,7 +26,7 @@ Mieszko I przyjmuje chrzest. Od tej daty liczy się istnienie państwa polskiego
 ~ 1076 | Koronacja Bolesława Śmiałego | Odnowienie królestwa po okresie kryzysu.
 ~ 1079 | Zabójstwo biskupa Stanisława | Konflikt króla z biskupem krakowskim; św. Stanisław to jeden z patronów Polski.
 ~ 1109 | Obrona Głogowa i bitwa na Psim Polu | Bolesław Krzywousty odpiera najazd cesarza Henryka V.
-- 1138 | Testament Bolesława Krzywoustego | Podział państwa między synów. Początek rozbicia dzielnicowego na prawie 200 lat.
+- 1138 | Testament Bolesława Krzywoustego | Bolesław III Krzywousty dzieli państwo między swoich synów i wprowadza zasadę senioratu: najstarszy z rodu miał rządzić w Krakowie. Zasada szybko upadła i zaczęło się rozbicie dzielnicowe na prawie 200 lat.
 - 1226 | Konrad Mazowiecki sprowadza Krzyżaków | Zaprosił zakon do walki z Prusami. Z pomocnika wyrósł najgroźniejszy wróg.
 - 1241 | Najazd Mongołów i bitwa pod Legnicą | Ginie Henryk Pobożny; Mongołowie pustoszą południe Polski.
 - 1320 | Koronacja Władysława Łokietka | Koniec rozbicia dzielnicowego, państwo znów zjednoczone.
