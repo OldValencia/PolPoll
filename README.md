@@ -331,6 +331,11 @@ Jeśli przygotowujesz się do tej samej rozmowy — bierz i korzystaj. Powodzeni
 ---
 
 <div align="center">
+
+<sub>Free, no ads, no accounts. If it helped, you can buy me a coffee —
+[Ko-fi](https://ko-fi.com/oldvalencia) · [Buy Me a Coffee](https://buymeacoffee.com/oldvalencia) · [GitHub Sponsors](https://github.com/sponsors/s0flY)<br>
+Bezpłatnie, bez reklam i bez kont. Jeśli się przydało, możesz postawić kawę.</sub>
+
 <sub>Educational material only, not legal advice. Verify current requirements with
 the consulate or the voivodeship office.<br>
 Materiał ma charakter wyłącznie edukacyjny i nie stanowi porady prawnej. Aktualne

@@ -499,6 +499,17 @@ kbd {
     padding-bottom: 1rem;
 }
 
+/* Deliberately as quiet as the question count next to it. */
+.footnote a {
+    color: inherit;
+    text-decoration: underline;
+    text-underline-offset: 3px;
+    text-decoration-color: rgba(255, 255, 255, 0.25);
+}
+
+.footnote a:hover { color: var(--info); }
+.footnote-sep { opacity: 0.5; margin: 0 0.15rem; }
+
 /* Quiz screen ------------------------------------------------------------ */
 
 .progress-container { margin-bottom: 1.5rem; }
