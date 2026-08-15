@@ -260,7 +260,7 @@ const dateTimeline = [
         "year": 1525,
         "say": "w tysiąc pięćset dwudziestym piątym roku",
         "title": "Hołd pruski",
-        "note": "Albrecht Hohenzollern klęka przed Zygmuntem I Starym na rynku w Krakowie.",
+        "note": "Książę pruski Albrecht, dawny wielki mistrz krzyżacki, klęka przed polskim królem na rynku w Krakowie. Prusy uznają władzę Polski.",
         "core": true
       },
       {

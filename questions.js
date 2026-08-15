@@ -440,8 +440,8 @@ const questionsDatabase = [
     "id": "36a60ff9",
     "category": "Historia Polski",
     "question": "Co to był Hołd Pruski i kiedy miał miejsce?",
-    "answer": "Złożenie hołdu lennego królowi Zygmuntowi I Staremu przez Albrechta Hohenzollerna w 1525 r. w Krakowie.",
-    "short": "Złożenie hołdu lennego królowi Zygmuntowi I Staremu przez Albrechta Hohenzollerna w 1525 r. w Krakowie.",
+    "answer": "W 1525 r. w Krakowie książę pruski Albrecht klęknął przed królem Zygmuntem Starym i uznał jego władzę. Był to hołd lenny.",
+    "short": "W 1525 r. w Krakowie książę pruski Albrecht uznał władzę króla Zygmunta Starego.",
     "type": "text",
     "numbers": [
       "1525"
